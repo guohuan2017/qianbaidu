@@ -17,13 +17,30 @@
 			
 			<input type="button" value="连接数据库login" onclick="operate('sqllogin.action')"/>
 			<input type="button" value="连接数据库regist" onclick="operate('sqlregist.action')"/>
+			<br />
+		
+			storename<input type="text" name="storename" id="username"
+				placeholder="请输入店名" value=${param.username}><br />
+			tel<input type="text" name="tel" id="tel"
+				placeholder="请输入电话" value=${param.tel}><br />
+			密码<input type="password" name="password" id="password"
+				placeholder="请输入密码" />  <br />	
+			<input type="button" value="商家login" onclick="operate('storelogin.action')"/>
+			<input type="button" value="商家regist" onclick="operate('storeregist.action')"/>
+			<br />
+			
+			
+			
+			
+			<input type="button" value="管理员login" onclick="operate('adminlogin.action')"/>
+			<input type="button" value="管理员regist" onclick="operate('adminregist.action')"/>
 	</form>
 	${message }
 	
 	<script type="text/javascript">
-		var form=document.getElementById("loginform");
 		function operate(action)
         {
+			var form=document.getElementById("loginform");
             form.action=action;
             form.submit();
         }
