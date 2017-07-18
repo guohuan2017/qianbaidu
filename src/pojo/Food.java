@@ -8,7 +8,9 @@ public class Food {
     private Double price;
     private Integer catelog_id;
     private Integer store_id;
+    private String type;
     private String photo;
+    
 	public Integer getId() {
 		return id;
 	}
@@ -51,7 +53,12 @@ public class Food {
 	public void setPhoto(String photo) {
 		this.photo = photo;
 	}
-	
+	public String getType() {
+		return type;
+	}
+	public void setType(String type) {
+		this.type = type;
+	}
 	@Override
 	public int hashCode() {
 		final int prime = 31;
@@ -63,6 +70,7 @@ public class Food {
 		result = prime * result + ((photo == null) ? 0 : photo.hashCode());
 		result = prime * result + ((price == null) ? 0 : price.hashCode());
 		result = prime * result + ((store_id == null) ? 0 : store_id.hashCode());
+		result = prime * result + ((type == null) ? 0 : type.hashCode());
 		return result;
 	}
 	@Override
@@ -109,12 +117,17 @@ public class Food {
 				return false;
 		} else if (!store_id.equals(other.store_id))
 			return false;
+		if (type == null) {
+			if (other.type != null)
+				return false;
+		} else if (!type.equals(other.type))
+			return false;
 		return true;
 	}
 	@Override
 	public String toString() {
 		return "Food [id=" + id + ", foodname=" + foodname + ", foodinfo=" + foodinfo + ", price=" + price
-				+ ", catelog_id=" + catelog_id + ", store_id=" + store_id + ", photo=" + photo + "]";
+				+ ", catelog_id=" + catelog_id + ", store_id=" + store_id + ", type=" + type + ", photo=" + photo + "]";
 	}
 	public Food() {
 	}
@@ -157,37 +170,58 @@ public class Food {
 		this.catelog_id = catelog_id;
 		this.store_id = store_id;
 	}
-	public Food(String foodname, String foodinfo, Double price, Integer store_id, String photo) {
+	public Food(String foodname, String foodinfo, Double price, Integer store_id, String type) {
 		this.foodname = foodname;
 		this.foodinfo = foodinfo;
 		this.price = price;
 		this.store_id = store_id;
-		this.photo = photo;
+		this.type = type;
 	}
-	public Food(Integer id, String foodname, String foodinfo, Double price, Integer store_id, String photo) {
+	public Food(Integer id, String foodname, String foodinfo, Double price, Integer store_id, String type) {
 		this.id = id;
 		this.foodname = foodname;
 		this.foodinfo = foodinfo;
 		this.price = price;
 		this.store_id = store_id;
-		this.photo = photo;
+		this.type = type;
 	}
-	public Food(String foodname, String foodinfo, Double price, Integer catelog_id, Integer store_id, String photo) {
+	public Food(String foodname, String foodinfo, Double price, Integer catelog_id, Integer store_id, String type) {
 		this.foodname = foodname;
 		this.foodinfo = foodinfo;
 		this.price = price;
 		this.catelog_id = catelog_id;
 		this.store_id = store_id;
+		this.type = type;
+	}
+	public Food(Integer id, String foodname, String foodinfo, Double price, Integer catelog_id, Integer store_id,
+			String type) {
+		this.id = id;
+		this.foodname = foodname;
+		this.foodinfo = foodinfo;
+		this.price = price;
+		this.catelog_id = catelog_id;
+		this.store_id = store_id;
+		this.type = type;
+	}
+	public Food(String foodname, String foodinfo, Double price, Integer catelog_id, Integer store_id, String type,
+			String photo) {
+		this.foodname = foodname;
+		this.foodinfo = foodinfo;
+		this.price = price;
+		this.catelog_id = catelog_id;
+		this.store_id = store_id;
+		this.type = type;
 		this.photo = photo;
 	}
 	public Food(Integer id, String foodname, String foodinfo, Double price, Integer catelog_id, Integer store_id,
-			String photo) {
+			String type, String photo) {
 		this.id = id;
 		this.foodname = foodname;
 		this.foodinfo = foodinfo;
 		this.price = price;
 		this.catelog_id = catelog_id;
 		this.store_id = store_id;
+		this.type = type;
 		this.photo = photo;
 	}
     

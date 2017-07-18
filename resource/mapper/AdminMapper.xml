@@ -108,4 +108,12 @@
       password = #{password,jdbcType=VARCHAR}
     where id = #{id,jdbcType=INTEGER}
   </update>
+  <!-- 以上是自动生成的 -->
+  <select id="loginSelect" resultMap="BaseResultMap" parameterType="pojo.Admin" >
+    select 
+    <include refid="Base_Column_List" />
+    from admin
+    where username = #{username,jdbcType=VARCHAR}
+    and password = #{password,jdbcType=VARCHAR}
+  </select>  
 </mapper>
