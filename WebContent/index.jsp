@@ -8,6 +8,7 @@
 </head>
 <body>
 	<h1>hello</h1>
+	<h1>hello</h1>
 	<a href = "index.action">跳转index页面</a><br />
 	<a href = "language.html">测试浏览器语言环境</a><br />
 	<% //response.sendRedirect("hello/index.action"); %>
