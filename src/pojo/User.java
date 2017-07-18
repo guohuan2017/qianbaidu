@@ -1,5 +1,10 @@
 package pojo;
 
+import java.io.UnsupportedEncodingException;
+
+import sun.management.snmp.jvminstr.JvmRTInputArgsTableMetaImpl;
+import util.MD5;
+
 public class User {
 	
     private Integer id;
@@ -22,9 +27,17 @@ public class User {
 	public String getPassword() {
 		return password;
 	}
+	
+	//在set方法时加密 SpringMVC自动封装时用无参构造+set方法
 	public void setPassword(String password) {
-		this.password = password;
+		try {
+			this.password = new MD5().jiami(password);
+		} catch (UnsupportedEncodingException e) {
+			e.printStackTrace();
+		}
 	}
+	
+	
 	public String getPhone() {
 		return phone;
 	}
