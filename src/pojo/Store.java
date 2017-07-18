@@ -13,7 +13,9 @@ public class Store {
     private String address;
     private String info;
     private String type;
+    private String subtype;
     private String photo;
+    
 	public Integer getId() {
 		return id;
 	}
@@ -70,6 +72,12 @@ public class Store {
 	public void setPhoto(String photo) {
 		this.photo = photo;
 	}
+	public String getSubtype() {
+		return subtype;
+	}
+	public void setSubtype(String subtype) {
+		this.subtype = subtype;
+	}
 	@Override
 	public int hashCode() {
 		final int prime = 31;
@@ -80,6 +88,7 @@ public class Store {
 		result = prime * result + ((password == null) ? 0 : password.hashCode());
 		result = prime * result + ((photo == null) ? 0 : photo.hashCode());
 		result = prime * result + ((storename == null) ? 0 : storename.hashCode());
+		result = prime * result + ((subtype == null) ? 0 : subtype.hashCode());
 		result = prime * result + ((tel == null) ? 0 : tel.hashCode());
 		result = prime * result + ((type == null) ? 0 : type.hashCode());
 		return result;
@@ -123,6 +132,11 @@ public class Store {
 				return false;
 		} else if (!storename.equals(other.storename))
 			return false;
+		if (subtype == null) {
+			if (other.subtype != null)
+				return false;
+		} else if (!subtype.equals(other.subtype))
+			return false;
 		if (tel == null) {
 			if (other.tel != null)
 				return false;
@@ -138,7 +152,7 @@ public class Store {
 	@Override
 	public String toString() {
 		return "Store [id=" + id + ", storename=" + storename + ", tel=" + tel + ", password=" + password + ", address="
-				+ address + ", info=" + info + ", type=" + type + ", photo=" + photo + "]";
+				+ address + ", info=" + info + ", type=" + type + ", subtype=" + subtype + ", photo=" + photo + "]";
 	}
 	
 	public Store() {
@@ -183,7 +197,17 @@ public class Store {
 		this.type = type;
 		this.photo = photo;
 	}
-	
+	public Store(String storename, String tel, String password, String address, String info, String type,
+			String subtype, String photo) {
+		this.storename = storename;
+		this.tel = tel;
+		this.password = password;
+		this.address = address;
+		this.info = info;
+		this.type = type;
+		this.subtype = subtype;
+		this.photo = photo;
+	}
 	public Store(Integer id, String tel, String password) {
 		this.id = id;
 		this.tel = tel;
@@ -228,6 +252,18 @@ public class Store {
 		this.address = address;
 		this.info = info;
 		this.type = type;
+		this.photo = photo;
+	}
+	public Store(Integer id, String storename, String tel, String password, String address, String info, String type,
+			String subtype, String photo) {
+		this.id = id;
+		this.storename = storename;
+		this.tel = tel;
+		this.password = password;
+		this.address = address;
+		this.info = info;
+		this.type = type;
+		this.subtype = subtype;
 		this.photo = photo;
 	}
     
