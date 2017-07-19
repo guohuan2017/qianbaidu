@@ -4,9 +4,20 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>店铺申请</title>
+<title>开店申请</title>
+<link rel="stylesheet" href="../css/shop/apply.css"/>
 </head>
 <body>
+	<div id="header-bar">
+	
+	</div>
+	<div id="guider-bar">
+		
+	</div>
+	<div id="content">
+		
+		
+	</div>
 
 </body>
 </html>
