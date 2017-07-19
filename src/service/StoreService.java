@@ -4,7 +4,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import dao.StoreMapper;
-import dao.UserMapper;
 import pojo.Store;
 
 @Service

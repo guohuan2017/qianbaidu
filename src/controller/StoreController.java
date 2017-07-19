@@ -1,8 +1,5 @@
 package controller;
 
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -28,12 +25,12 @@ public class StoreController {
 		Store store2 = service.loginSelect(store);
 		if(store2==null){
 			System.out.println("登陆失败");
-			ModelAndView mav = new ModelAndView("login");
+			ModelAndView mav = new ModelAndView("test/login");
 			mav.addObject("message","登陆失败");
 			return mav;
 		}else{
 			System.out.println("登陆成功");
-			ModelAndView mav = new ModelAndView("welcome");
+			ModelAndView mav = new ModelAndView("test/welcome2");
 			mav.addObject("message","登陆成功");
 			mav.addObject("store", store2);
 			System.out.println(store2);
@@ -44,17 +41,16 @@ public class StoreController {
 	@RequestMapping("/storeregist.action")
 	public ModelAndView regist(Store store){
 	
-		int i = service.insertSelective(store);
-		System.out.println(i);
+		int i = service.insert(store);
 		Store store2 = service.loginSelect(store);
 		if(store2==null){
 			System.out.println("注册失败");
-			ModelAndView mav = new ModelAndView("login");
+			ModelAndView mav = new ModelAndView("test/login");
 			mav.addObject("message","注册失败");
 			return mav;
 		}else{
 			System.out.println("注册成功");
-			ModelAndView mav = new ModelAndView("welcome");
+			ModelAndView mav = new ModelAndView("test/welcome2");
 			mav.addObject("message","注册成功");
 			mav.addObject("store", store2);
 			System.out.println(store2);
@@ -62,17 +58,4 @@ public class StoreController {
 		}
 	}
 
-//	@RequestMapping("welcome.action")
-//	public String login(User user, Model model) {
-//		System.out.println(user.getUsername() + " " + user.getPassword());
-//		user = service.checkLogin(user.getUsername(), user.getPassword());
-//		System.out.println(user.getUsername() + " " + user.getPassword());
-//		if (null != user) {
-//			model.addAttribute("user", user);
-//			System.out.println("---- login --> welcome ----");
-//			return "welcome";
-//		}
-//		System.out.println("---- login --> login ----");
-//		return "login";
-//	}
 }
