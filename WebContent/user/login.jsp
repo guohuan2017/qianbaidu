@@ -19,7 +19,7 @@
 			</div>
 
 			<h1 id="center">登录</h1>
-			<h1 id="right">注册</h1>
+			<h1 id="right"><a href="../user/register.jsp" style="color: white;">注册</a></h1>
 
 		</div>
 
