@@ -26,10 +26,10 @@
 		<form action="login" method="post">
 			<div id="loginparent">
 				<div class="logincontentdiv">
-					<input type="text" class="logincontent" name="name" placeholder="手机/邮箱/用户名" />
+					<input type="text" class="logincontent" name="name" placeholder="请输入手机号/用户名" />
 				</div>
 				<div class="logincontentdiv" style="border-bottom: 1px solid; border-color: rgb(221, 221, 221);">
-					<input type="password" class="logincontent" name="password" placeholder="密码" />
+					<input type="password" class="logincontent" name="password" placeholder="请输入密码" />
 				</div>
 
 				<button id="loginbtn">登录</button>
