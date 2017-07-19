@@ -22,7 +22,7 @@
 
 		</div>
 
-		<form action="login" method="post">
+		<form action="register" method="post">
 			<div id="loginparent">
 				<div class="logincontentdiv">
 					<input type="text" class="logincontent" name="name" placeholder="请输入用户名" />
