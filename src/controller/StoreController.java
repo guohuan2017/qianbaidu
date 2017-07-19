@@ -25,12 +25,12 @@ public class StoreController {
 		Store store2 = service.loginSelect(store);
 		if(store2==null){
 			System.out.println("登陆失败");
-			ModelAndView mav = new ModelAndView("login");
+			ModelAndView mav = new ModelAndView("test/login");
 			mav.addObject("message","登陆失败");
 			return mav;
 		}else{
 			System.out.println("登陆成功");
-			ModelAndView mav = new ModelAndView("welcome2");
+			ModelAndView mav = new ModelAndView("test/welcome2");
 			mav.addObject("message","登陆成功");
 			mav.addObject("store", store2);
 			System.out.println(store2);
@@ -45,12 +45,12 @@ public class StoreController {
 		Store store2 = service.loginSelect(store);
 		if(store2==null){
 			System.out.println("注册失败");
-			ModelAndView mav = new ModelAndView("login");
+			ModelAndView mav = new ModelAndView("test/login");
 			mav.addObject("message","注册失败");
 			return mav;
 		}else{
 			System.out.println("注册成功");
-			ModelAndView mav = new ModelAndView("welcome2");
+			ModelAndView mav = new ModelAndView("test/welcome2");
 			mav.addObject("message","注册成功");
 			mav.addObject("store", store2);
 			System.out.println(store2);
