@@ -2,7 +2,8 @@
     pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
-<head>
+
+	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<title>用户注册</title>
 		<link rel="stylesheet" href="../css/user/register.css" />
@@ -12,8 +13,10 @@
 		<div id="head-bar">
 			<div id="back">
 				<svg viewBox="0 0 20 32" id="arrow-left">
-					<path fill="#fff" d="M16.552 5.633L14.508 3.59 2.243 15.853 14.508 28.41l2.044-2.043-10.22-10.513z">
-					</path>
+					<a href="../home/shop.jsp">
+						<path fill="#fff" d="M16.552 5.633L14.508 3.59 2.243 15.853 14.508 28.41l2.044-2.043-10.22-10.513z">
+						</path>
+					</a>
 				</svg>
 			</div>
 
@@ -40,4 +43,5 @@
 		</form>
 
 	</body>
+
 </html>
