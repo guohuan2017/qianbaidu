@@ -78,12 +78,17 @@
 					<div id="">
 						<label class="title"><span class="title-span">*</span>门店照片</label>
 						<div id="facediv">
-							<div id="facetitle">
+							<div id="facetitlediv">
 								<span id="facetitlespan">门脸照</span>
 							</div>
 							<div id="uploadface">
 								<div id="uploadbtn">
-									<input type="file" class="uploadimg">
+									<img id="background-img" src="../img/shop/apply/upload.bmp"/>
+									<form action="" method="post" enctype="multipart/form-data">
+										<input type="file" class="uploadbtn">
+										<input type="submit"  class="uploadbtn"/>
+									</form>
+									
 								</div>
 								<span id="facedemospan">一张真实美观的门脸照可以提升店铺形象</span>
 								<img id="facedemo" class="photodemo" src="../img/shop/apply/151955.jpg">
