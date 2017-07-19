@@ -16,6 +16,7 @@
 	<!-- 视图解析器jsp 内部资源视图解析器 /WEB-INF/pages/index.jsp -->
 	<bean id="jspViewResolver"
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<!-- 不放在WEB-INF下 -->
 		<property name="prefix" value="/" />
 		<property name="suffix" value=".jsp" />
 	</bean>
