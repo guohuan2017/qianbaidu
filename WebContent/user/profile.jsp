@@ -4,14 +4,9 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>qianbaidu</title>
+<title>个人信息</title>
 </head>
 <body>
-	<h1>gyx</h1>
-	<h1>hello</h1>
-	<h1>gjw</h1>
-	<a href = "index.action">跳转index页面</a><br />
-	<a href = "language.html">测试浏览器语言环境</a><br />
-	<% //response.sendRedirect("hello/index.action"); %>
+
 </body>
 </html>
