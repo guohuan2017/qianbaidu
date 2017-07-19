@@ -5,8 +5,44 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>店铺首页</title>
+<link rel="stylesheet" type="text/css" href="css/shop.css" />
 </head>
-<body>
+	<body>
+		<div id="head-div">
+			<div id="head-bar">
+				<div id="head-bar-center"></div>
+			</div>
+		</div>
+		<div id="tool-bar">
+			<div id="tool-bar-center">
 
-</body>
+			</div>
+		</div>
+		<div id="content">
+			<div id="content-center">
+				<div id="content-center-right">
+					<div id="shop-notice">
+						
+					</div>
+				</div>
+				<div id="content-center-left">
+					<div id="head-catalog">
+						
+					</div>
+					<div class="goods-display">
+						<div class="title"></div>
+						<div class="good-display-left">
+							<P>good-display-left</P>
+						</div>
+						<div class="good-display-right">
+							<P>good-display-right</P>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+
+	</body>
+
 </html>
