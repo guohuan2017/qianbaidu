@@ -19,12 +19,12 @@ public class AdminController {
 		Admin admin2 = service.loginSelect(admin);
 		if(admin2==null){
 			System.out.println("登陆失败");
-			ModelAndView mav = new ModelAndView("login");
+			ModelAndView mav = new ModelAndView("test/login");
 			mav.addObject("message","登陆失败");
 			return mav;
 		}else{
 			System.out.println("登陆成功");
-			ModelAndView mav = new ModelAndView("welcome2");
+			ModelAndView mav = new ModelAndView("test/welcome2");
 			mav.addObject("message","登陆成功");
 			mav.addObject("admin",admin2);
 			System.out.println(admin2);
@@ -38,12 +38,12 @@ public class AdminController {
 		Admin admin2 = service.loginSelect(admin);
 		if(admin2==null){
 			System.out.println("注册失败");
-			ModelAndView mav = new ModelAndView("login");
+			ModelAndView mav = new ModelAndView("test/login");
 			mav.addObject("message","注册失败");
 			return mav;
 		}else{
 			System.out.println("注册成功");
-			ModelAndView mav = new ModelAndView("welcome2");
+			ModelAndView mav = new ModelAndView("test/welcome2");
 			mav.addObject("message","注册成功");
 			mav.addObject("admin",admin2);
 			System.out.println(admin2);

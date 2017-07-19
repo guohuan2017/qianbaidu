@@ -23,7 +23,7 @@ public class UserController {
 	
 	@RequestMapping("/index.action")
 	public ModelAndView hello(HttpServletRequest request, HttpServletResponse response) throws Exception {
-		return new ModelAndView("login");
+		return new ModelAndView("test/login");
 	}
 	
 	@RequestMapping("/sqllogin.action")
@@ -31,12 +31,12 @@ public class UserController {
 		User user2 = service.loginSelect(user);
 		if(user2==null){
 			System.out.println("登陆失败");
-			ModelAndView mav = new ModelAndView("login");
+			ModelAndView mav = new ModelAndView("test/login");
 			mav.addObject("message","登陆失败");
 			return mav;
 		}else{
 			System.out.println("登陆成功");
-			ModelAndView mav = new ModelAndView("welcome");
+			ModelAndView mav = new ModelAndView("test/welcome");
 			mav.addObject("message","登陆成功");
 			mav.addObject("user", user2);
 			System.out.println(user2);
@@ -50,12 +50,12 @@ public class UserController {
 		User user2 = service.loginSelect(user);
 		if(user2==null){
 			System.out.println("注册失败");
-			ModelAndView mav = new ModelAndView("login");
+			ModelAndView mav = new ModelAndView("test/login");
 			mav.addObject("message","注册失败");
 			return mav;
 		}else{
 			System.out.println("注册成功");
-			ModelAndView mav = new ModelAndView("welcome");
+			ModelAndView mav = new ModelAndView("test/welcome");
 			mav.addObject("message","注册成功");
 			mav.addObject("user", user2);
 			System.out.println(user2);

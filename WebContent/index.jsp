@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>SpringMVCDemo</title>
+<title>qianbaidu</title>
 </head>
 <body>
 	<h1>gyx</h1>
