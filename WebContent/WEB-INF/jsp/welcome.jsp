@@ -28,5 +28,11 @@
 	<hr>
 	<spring:eval expression="user.username"></spring:eval>
 	<spring:eval expression="user.password"></spring:eval>
+	<hr>
+	商家<br>
+	store.username + store.password：${store.username } + ${store.password }
+	<hr>
+	管理员<br>
+	admin.username + admin.password：${admin.username } + ${admin.password }
 </body>
 </html>
