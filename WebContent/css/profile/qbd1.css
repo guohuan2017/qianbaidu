@@ -1,0 +1,323 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+.logo {
+	width: 105px;
+	height: 60px;
+	margin-right: 30px;
+	line-height: inherit;
+	float: left;
+}
+
+.logo1 {
+	vertical-align: top;
+	box-sizing: inherit;
+}
+
+.sy {
+	width: 112px;
+	font-size: 16px;
+	position: relative;
+	color: #fff;
+	text-align: center;
+	float: left;
+	background-color: #1E89E0;
+}
+
+.sy:hover {
+	background-color: #006bc7;
+}
+
+.wddd {
+	width: 134px;
+	font-size: 16px;
+	position: relative;
+	color: #fff;
+	text-align: center;
+	float: left;
+	background-color: #1E89E0;
+}
+
+.wddd:hover {
+	background-color: #006bc7;
+}
+
+.jmhz {
+	width: 134px;
+	font-size: 16px;
+	position: relative;
+	color: #fff;
+	text-align: center;
+	float: left;
+	background-color: #1E89E0;
+}
+
+.jmhz:hover {
+	background-color: #006bc7;
+}
+
+.fwzx {
+	padding: 0 10px;
+	width: 86px;
+	color: inherit;
+	position: relative;
+	cursor: pointer;
+	float: left;
+	text-align: center;
+	color: #D2E7F9;
+}
+
+.fwzx:hover {
+	color: white;
+}
+
+.fwzx1 {
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 22px;
+}
+
+.gzzx {
+	padding: 0 10px;
+	width: 86px;
+	color: inherit;
+	position: relative;
+	cursor: pointer;
+	float: left;
+	text-align: center;
+	color: #D2E7F9;
+}
+
+.gzzx:hover {
+	color: white;
+}
+
+.sjyy {
+	padding: 0 10px;
+	width: 86px;
+	color: inherit;
+	position: relative;
+	cursor: pointer;
+	float: left;
+	text-align: center;
+	color: #D2E7F9;
+}
+
+.sjyy:hover {
+	color: white;
+}
+
+.sjyy1 {
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 22px;
+}
+
+.dlzc1 {
+	font-size: 22px;
+	vertical-align: middle;
+}
+
+.dlzc2 {
+	color: #D2E7F9;
+}
+
+.dlzc2:hover {
+	color: white;
+}
+
+.dqwz {
+	color: #999;
+	margin-right: 5px;
+	line-height: 54px;
+	vertical-align: top;
+	font-size: 12px;
+}
+
+.dqwz1 {
+	white-space: nowrap;
+	margin-right: .5em;
+	width: 138px;
+	height: 54px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	display: inline-block;
+	line-height: 54px;
+	vertical-align: top;
+	/*background-color: #F1F1F1;*/
+}
+
+.dqwz1_1 {
+	color: inherit;
+	white-space: nowrap;
+	line-height: 54px;
+	height: 16px;
+	color: #333;
+}
+
+.dqwz1_1:hover {
+	color: #0089dc;
+}
+
+.dqwz1_2 {
+	display: inline-block;
+	line-height: 54px;
+	vertical-align: top;
+	position: relative;
+	white-space: nowrap;
+	font-size: 12px;
+}
+
+.dqwz1_3 {
+	color: #0089dc;
+}
+
+.ss1 {
+	float: right;
+	width: 30px;
+	text-align: center;
+	color: #999;
+	font-size: 20px;
+	cursor: pointer;
+	border: none;
+	outline: 0;
+	background-color: transparent;
+	padding: 0 8px;
+	margin: 4px 0;
+	line-height: 24px;
+	background-image: url(../../img/home/index/ss.jpg);
+	background-repeat: no-repeat;
+}
+
+.ss1_1 {
+	width: 220px;
+	border: 0;
+	outline: 0;
+	transition: width .3s ease-in-out;
+	padding: 0 8px;
+	margin: 4px 0;
+	line-height: 24px;
+}
+
+.takeout {
+	width: 186px;
+	height: 55px;
+	vertical-align: middle;
+}
+
+.sjfl_1 {
+	position: absolute;
+	left: 10px;
+	top: 13px;
+	color: #999;
+	padding: 0 10px;
+	margin-right: 8px;
+}
+
+.sjfl_2 {
+	line-height: 36px;
+	font-size: 14px;
+	border-radius: 0;
+	margin: 0;
+	padding: 0 16px;
+	height: 38px;
+	color: #666;
+	display: inline-block;
+}
+
+
+/*鼠标悬停变背景色*/
+
+.sjfl_2:hover {
+	background-color: #F6F6F6;
+}
+
+
+/*鼠标点击变字体色、背景色*/
+
+.sjfl_2:focus {
+	color: #fff;
+	background-color: #0089dc;
+	border-radius: 3px;
+}
+
+.sjpp {
+	width: 25%;
+	/*height: 140px;*/
+	border-bottom: 1px #f5f5f5 solid;
+	float: left;
+	font-size: 12px;
+	position: relative;
+}
+
+.sjpp:hover {
+	background-color: #F7F7F7;
+}
+
+.rstblock-activity {
+	background: #fff;
+	color: #999999;
+	border: 1px solid;
+	padding: 0;
+	display: inline-block;
+	vertical-align: middle;
+	font-style: normal;
+	font-size: 12px;
+	line-height: 16px;
+	overflow: hidden;
+	text-align: center;
+	width: 16px;
+	border-radius: 2px;
+	white-space: nowrap;
+}
+
+.transclud {
+	line-height: 54px;
+	vertical-align: top;
+	position: relative;
+	display: inline-block;
+}
+
+.icon-arrow-right {
+	margin: 21px 12px 0;
+	float: left;
+	color: #999;
+	font-size: 16px;
+}
+
+.icon-line-home {
+	display: inline-block;
+	width: 30px;
+	font-size: 16px;
+	line-height: 26px;
+}
+
+.profile-sidebar {
+	margin-bottom: 32px;
+}
+
+.profile-sidebar-sectiontitle {
+	margin-bottom: 8px;
+	font-weight: 700;
+	font-size: 18px;
+}
+
+.profile-sidebar-section-ul {
+	padding-left: 35px;
+}
+
+.profile-sidebar-section-ul-li {
+	padding: 4px 0;
+	font-size: 14px;
+}
+
+.profile-sidebar-a {
+	color: #666666;
+}

@@ -13,8 +13,10 @@
 		<div id="head-bar">
 			<div id="back">
 				<svg viewBox="0 0 20 32" id="arrow-left">
-					<path fill="#fff" d="M16.552 5.633L14.508 3.59 2.243 15.853 14.508 28.41l2.044-2.043-10.22-10.513z">
-					</path>
+					<a href="../home/shop.jsp">
+						<path fill="#fff" d="M16.552 5.633L14.508 3.59 2.243 15.853 14.508 28.41l2.044-2.043-10.22-10.513z">
+						</path>
+					</a>
 				</svg>
 			</div>
 
