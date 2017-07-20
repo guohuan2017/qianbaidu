@@ -29,7 +29,7 @@
 					</a>
 					<div id="dlzc">
 						<span class="dlzc1"> <img src="../img/home/index//dlzc.jpg" />
-				</span> <span> <a href="../user/login.jsp" class="dlzc2">登陆/注册</a>
+				</span> <span> <a class="dlzc2">欢迎:</a>
 				</span>
 					</div>
 				</nav>
