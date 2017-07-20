@@ -144,6 +144,12 @@
 							</p>
 							<div class="formfield">
 								<label class="ng-binding">
+									原密码
+								</label>
+								<input type="password" name="" class="formfield-npwd" placeholder="请输入原密码"/>
+							</div>
+							<div class="formfield">
+								<label class="ng-binding">
 									新密码
 								</label>
 								<input type="password" name="" class="formfield-npwd" placeholder="请输入新密码"/>
