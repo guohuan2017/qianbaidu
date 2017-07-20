@@ -19,7 +19,7 @@
 			<div id="shouye1">
 				<a href="../home/shop.jsp" class="logo"> <img class="logo1" src="../../img/home/index/logo.jpg" />
 				</a>
-				<a href="../home/shop.jsp" class="sy"> 首页 </a>
+				<a href="../../home/shop.jsp" class="sy"> 首页 </a>
 				<a href="" class="wddd">
 					我的订单 </a>
 				<a href="" class="jmhz"> 加盟合作 </a>
