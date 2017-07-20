@@ -35,8 +35,9 @@
 				</div>
 
 				<button id="loginbtn">登录</button>
-
 			</div>
+			<div style="text-align: center"><span style="color: red;">${message}</span></div>
+			
 		</form>
 
 	</body>

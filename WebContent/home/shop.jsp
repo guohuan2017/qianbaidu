@@ -173,7 +173,7 @@
 						</a>
 						<a href="" class="sjpp">
 							<div id="rstblock-logo">
-								<img src="/qianbaidu/img/home/index/港岛记.jpeg" width="70" height="70" /> <span id="rstblock-span">33分钟</span>
+								<img src="/qianbaidu/img/home/index/港岛记.jpg" width="70" height="70" /> <span id="rstblock-span">33分钟</span>
 							</div>
 							<div id="rstblock-content">
 								<div id="rstblock-title">港岛记（上海田尚坊店）</div>

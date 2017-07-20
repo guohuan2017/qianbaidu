@@ -37,8 +37,7 @@
 					<input type="password" class="logincontent" name="password" placeholder="请输入密码" />
 				</div>
 
-				<button id="loginbtn">注册</button>
-
+				<button id="loginbtn" type="submit">注册</button>
 			</div>
 		</form>
 
