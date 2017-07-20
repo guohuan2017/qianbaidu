@@ -6,14 +6,14 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<title>用户注册</title>
-		<link rel="stylesheet" href="../css/user/register.css" />
+		<link rel="stylesheet" href="/qianbaidu/css/user/register.css" />
 	</head>
 
 	<body>
 		<div id="head-bar">
 			<div id="back">
 				<svg viewBox="0 0 20 32" id="arrow-left">
-					<a href="../home/shop.jsp">
+					<a href="/qianbaidu/home/shop.jsp">
 						<path fill="#fff" d="M16.552 5.633L14.508 3.59 2.243 15.853 14.508 28.41l2.044-2.043-10.22-10.513z">
 						</path>
 					</a>
@@ -21,11 +21,11 @@
 			</div>
 
 			<h1 id="center">注册</h1>
-			<h1 id="right"><a href="../user/login.jsp" style="color: white;">登陆</a></h1>
+			<h1 id="right"><a href="/qianbaidu/user/login.jsp" style="color: white;">登陆</a></h1>
 
 		</div>
 
-		<form action="../userregister.action" method="post">
+		<form action="/qianbaidu/userregister.action" method="post">
 			<div id="loginparent">
 				<div class="logincontentdiv">
 					<input type="text" class="logincontent" name="username" placeholder="请输入用户名" />
