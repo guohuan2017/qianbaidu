@@ -64,6 +64,19 @@
 
 #shopname {
 	width: 316px;
+	margin-left: 14px;
+}
+
+#outtel{
+	margin-left: 14px;
+}
+
+#shopcatalog{
+	margin-left: 12px;
+}
+
+#opentime{
+	margin-left:14px;
 }
 
 .radiospan {
@@ -92,8 +105,13 @@
 	padding-left: 10px;
 }
 
+#province{
+	margin-left: 35px;
+}
+
 #detailaddress {
 	width: 319px;
+	margin-left: 8px;
 }
 
 #locate {
@@ -107,10 +125,10 @@
 }
 
 #map {
-	width: 796px;
+	width: 787px;
 	height: 500px;
 	border: 1px solid rgb(204, 204, 204);
-	margin-left: 101px;
+	margin-left: 110px;
 	margin-bottom: 25px;
 }
 
@@ -119,19 +137,20 @@
 }
 
 .box{
-	width: 796px;
+	margin-left: 6px;
+	width: 790px;
 	height: 94px;
 	border: 1px solid rgb(204, 204, 204);
 	display: inline-block;
 }
 
 #downbox{
-	margin-left: 100px;
+	margin-left: 107px;
 }
 
 #logobox{
 	width: 320px;
-	margin-left: -4px;
+	margin-left: 2px;
 	margin-top: 25px;
 }
 
@@ -173,6 +192,7 @@
 #stepforward{
 	width: 318px;
 	background-color: #0091ea;
+	color: white;
 }
 
 

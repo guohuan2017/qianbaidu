@@ -42,7 +42,7 @@
 
 					<div class="single-line">
 						<label class="title"><span class="title-span">*</span>营业时间</label>
-						<input type="radio" name="opentime" value="24h" /><span class="radiospan">24小时</span>
+						<input type="radio" name="opentime" id="opentime" value="24h" /><span class="radiospan">24小时</span>
 						<input type="radio" name="opentime" value="custmize" /><span class="radiospan">自定义</span>
 						<span class="timespan">从</span>
 						<input type="time" name="fromtime" id="fromtime" class="time" />
@@ -52,7 +52,7 @@
 
 					<div class="single-line">
 						<label class="title"><span class="title-span">*</span>城市</label>
-						<select name="province" class="address">
+						<select name="province" class="address" id="province">
 							<option value="安徽省">安徽省</option>
 							<option value="河北省">河北省</option>
 						</select>
