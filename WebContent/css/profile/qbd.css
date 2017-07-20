@@ -190,3 +190,16 @@ ul {
 	margin-top: 20px;
 	width: 170px;
 }
+
+#profile-panel {
+	margin-left: 170px;
+	border: 1px solid #eee;
+	background-color: #fff;
+	min-height: 680px;
+	padding: 20px 18px;
+}
+
+#profile-panelcontent {
+	display: inline-block;
+	width: 100%;
+}

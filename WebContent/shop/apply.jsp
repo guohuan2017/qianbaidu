@@ -16,7 +16,7 @@
 		<div id="guider-bar">
 
 		</div>
-		<form action="" method="post">
+		<form action="" method="post" enctype="multipart/form-data">
 			<div id="content">
 				<div id="content-center">
 					<div class="single-line">
@@ -75,33 +75,29 @@
 
 					<div id="map"></div>
 
-					<div id="as">
+					<div class="photo">
 						<label class="title"><span class="title-span">*</span>门店照片</label>
-						<div id="facediv">
-							<div id="facetitlediv">
-								<span id="facetitlespan">门脸照</span>
-							</div>
-							<div id="uploadface">
-								<div id="uploaddiv">
-									<form action="" method="post" enctype="multipart/form-data">
-										<input type="file" class="uploadbtn">
-									</form>
-								</div>
-								<span id="facedemospan">一张真实美观的门脸照可以提升店铺形象</span>
-								<img id="facedemo" src="../img/shop/apply/151955.jpg">
-							</div>
+						<div class="box" id="upbox">
+
+						</div>
+						<div class="box" id="downbox">
+
 						</div>
 					</div>
-					
+					<div class="photo">
+						<label class="title"><span class="title-span">*</span>门店Logo</label>
+						<div class="box" id="logobox">
+
+						</div>
+					</div>
 					<div id="otherplatform">
 						<label id="otherlinktitle" class="title">其他平台开店链接</label>
 						<input type="text" name="otherlink" id="otherlink" class="input-box" />
 					</div>
 				</div>
-				
 				<div id="btn-group">
 					<input type="button" id="stepback" class="stepbtn" value="返回上一步" />
-					<input type="button" id="stepforward" class="stepbtn"  value="提交并进入下一步" />
+					<input type="button" id="stepforward" class="stepbtn" value="提交并进入下一步" />
 				</div>
 
 			</div>

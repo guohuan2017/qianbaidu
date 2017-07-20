@@ -11,7 +11,7 @@
 
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<title>饿了么-网上订餐_外卖</title>
+		<title>个人中心_地址管理</title>
 	</head>
 
 	<body>
@@ -20,7 +20,7 @@
 				<a href="../home/shop.jsp" class="logo"> <img class="logo1" src="../../img/home/index/logo.jpg" />
 				</a>
 				<a href="../../home/shop.jsp" class="sy"> 首页 </a>
-				<a href="../profile/myorde.jsp" class="wddd">
+				<a href="myorde.jsp" class="wddd">
 					我的订单 </a>
 				<a href="" class="jmhz"> 加盟合作 </a>
 				<nav id="shouye2">
@@ -56,7 +56,7 @@
 					<i class="icon-arrow-right">
 						<img src="../../img/user/profile/右图标.jpg"/>
 					</i>
-					<span class="ng-binding-span">近三个月订单</span>
+					<span class="ng-binding-span">地址管理</span>
 						</span>
 					</div>
 				</div>
@@ -66,7 +66,7 @@
 							<i class="icon-line-home">
 								<img src="../../img/user/profile/个人中心.jpg"/>
 							</i>
-							<a href="" style=" color: inherit;;">个人中心</a>
+							<a href="" style=" color: inherit;">个人中心</a>
 						</h2>
 					</li>
 					<li class="profile-sidebar">
@@ -74,11 +74,11 @@
 							<i class="icon-line-home">
 								<img src="../../img/user/profile/我的订单.jpg"/>
 							</i>
-							<a  style=" color: inherit;;">我的订单</a>
+							<a style=" color: inherit;;">我的订单</a>
 						</h2>
 						<ul class="profile-sidebar-section-ul">
 							<li class="profile-sidebar-section-ul-li">
-								<a class="profile-sidebar-a" style="color: #0089dc;" href="myorde.jsp">近三个月订单</a>
+								<a class="profile-sidebar-a" href="myorde.jsp">近三个月订单</a>
 							</li>
 							<li class="profile-sidebar-section-ul-li">
 								<a class="profile-sidebar-a" href="">待评价订单</a>
@@ -119,7 +119,7 @@
 								<a class="profile-sidebar-a" href="">个人资料</a>
 							</li>
 							<li class="profile-sidebar-section-ul-li">
-								<a class="profile-sidebar-a" href="address.jsp">地址管理</a>
+								<a class="profile-sidebar-a" style="color: #0089dc;" href="">地址管理</a>
 							</li>
 							<li class="profile-sidebar-section-ul-li">
 								<a class="profile-sidebar-a" href="">安全中心</a>
@@ -132,11 +132,43 @@
 					<li class="profile-sidebar"></li>
 				</ul>
 				<div id="profile-panel">
-				<h3 class="profile-paneltitle-ng-scope">
+					<h3 class="profile-paneltitle-ng-scope">
 						<span class="">
-							近三个月订单
+							地址管理
 						</span>
 					</h3>
+					<div class="profile-panelcontent">
+						<div class="desk-top">
+							<div class="desktop-addresslist">
+								<div class="desktop-addressblock">
+									<div class="desktop-addressblock-buttons">
+										<button class="desktop-addressblock-botton" onclick="">
+											修改
+										</button>
+										<button class="desktop-addressblock-botton" onclick="">
+											删除
+										</button>
+									</div>
+									<div class="desktop-addressblock-name">
+										顾
+										<span class="desktop-addressblock-name-binding">先生</span>
+									</div>
+									<div class="desktop-addressblock-address">
+									天等路430弄24号 102室
+									</div>
+									<div class="desktop-addressblock-mobile">
+									18201727218
+									</div>
+								</div>
+							<button class="desktop-addressblock2" ondblclick="">
+							<i class="icon-plus">
+							<img src="../../img/user/profile/加号.jpg">
+							添加新地址
+							</i>
+							</button>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>

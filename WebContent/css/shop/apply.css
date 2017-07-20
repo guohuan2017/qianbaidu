@@ -26,7 +26,7 @@
 #content-center {
 	margin: 0 auto;
 	padding: 32px 50px;
-	height: 1455px;
+	height: 1470px;
 	width: 900px;
 	background-color: white;
 }
@@ -107,70 +107,32 @@
 }
 
 #map {
-	width: 800px;
+	width: 796px;
 	height: 500px;
 	border: 1px solid rgb(204, 204, 204);
 	margin-left: 101px;
 	margin-bottom: 25px;
 }
 
-#facediv {
+.photo{
+	/*vertical-align: middle;*/
+}
+
+.box{
 	width: 796px;
-	height: 92px;
+	height: 94px;
 	border: 1px solid rgb(204, 204, 204);
 	display: inline-block;
 }
 
-#facetitlediv {
-	width: 92px;
-	height: 92px;
-	background-color: rgb(245, 245, 245);
-	line-height: 92px;
-	text-align: center;
-	
+#downbox{
+	margin-left: 100px;
 }
 
-
-#facetitlespan {
-	width: 36px;
-	height: 14px;
-	color: #999;
-	font-family: -apple-system, Helvetica Neue, Arial, PingFang SC, lucida grande, lucida sans unicode, lucida, helvetica, Hiragino Sans GB, Microsoft YaHei, WenQuanYi Micro Hei, sans-serif;
-	font-size: 12px;
-	margin: 0 auto;
-	
-}
-
-#uploadface{
-	line-height: 94px;
-	display: inline-block;
-}
-
-#uploaddiv {
-	width: 100px;
-	height: 75px;
-	border-radius: 4px;
-	background-color: #eaeaea;
-	background-size: cover;
-	text-align: center;
-	background-image: url(../../img/shop/apply/1195431.jpg);
-	display: inline-block;
-}
-
-#as{
-	vertical-align: text-top;
-}
-
-
-#facedemo {
-	width: 100px;
-	height: 75px;
-}
-
-#facedemospan {
-	color: #999;
-	font-family: -apple-system, Helvetica Neue, Arial, PingFang SC, lucida grande, lucida sans unicode, lucida, helvetica, Hiragino Sans GB, Microsoft YaHei, WenQuanYi Micro Hei, sans-serif;
-	font-size: 12px;
+#logobox{
+	width: 320px;
+	margin-left: -4px;
+	margin-top: 25px;
 }
 
 #otherplatform{
@@ -178,6 +140,7 @@
 	height: 80px;
 	background-color: #f5f5f5;
 	line-height: 80px;
+	margin-top: 25px;
 }
 
 #otherlinktitle{
