@@ -149,8 +149,24 @@
 											删除
 										</button>
 									</div>
-								</div>
+									<div class="desktop-addressblock-name">
+										顾
+										<span class="desktop-addressblock-name-binding">先生</span>
+									</div>
+									<div class="desktop-addressblock-address">
+									天等路430弄24号 102室
+									</div>
+									<div class="desktop-addressblock-mobile">
+									18201727218
+									</div>
+								</div
 							</div>
+							<button class="desktop-addressblock2" ondblclick="">
+							<i class="icon-plus">
+							<img src="../../img/user/profile/加号.jpg">
+							"添加新地址"
+							</i>
+							</button>
 						</div>
 					</div>
 				</div>
