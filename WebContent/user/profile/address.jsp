@@ -2,12 +2,12 @@
     pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 
-<script type="text/javascript" src="../../js/profile/Abiaoqian.js">
+<script type="text/javascript" src="/qianbaidu/js/profile/Abiaoqian.js">
 </script>
 
 <html>
-	<link rel="stylesheet" type="text/css" href="../../css/profile/qbd.css" />
-	<link rel="stylesheet" type="text/css" href="../../css/profile/qbd1.css" />
+	<link rel="stylesheet" type="text/css" href="/qianbaidu/css/profile/qbd.css" />
+	<link rel="stylesheet" type="text/css" href="/qianbaidu/css/profile/qbd1.css" />
 
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -17,22 +17,22 @@
 	<body>
 		<div id="shouye">
 			<div id="shouye1">
-				<a href="../home/shop.jsp" class="logo"> <img class="logo1" src="../../img/home/index/logo.jpg" />
+				<a href="/qianbaidu/home/shop.jsp" class="logo"> <img class="logo1" src="/qianbaidu/img/home/index/logo.jpg" />
 				</a>
-				<a href="../../home/shop.jsp" class="sy"> 首页 </a>
+				<a href="/qianbaidu/home/shop.jsp" class="sy"> 首页 </a>
 				<a href="myorde.jsp" class="wddd">
 					我的订单 </a>
 				<a href="" class="jmhz"> 加盟合作 </a>
 				<nav id="shouye2">
-					<a href="" class="fwzx"> <i class="fwzx1"> <img src="../../img/home/index/fwzx.jpg" />
+					<a href="" class="fwzx"> <i class="fwzx1"> <img src="/qianbaidu/img/home/index/fwzx.jpg" />
 			</i> 服务中心
 					</a>
 					<a href="" class="gzzx"> 规则中心 </a>
-					<a href="" class="sjyy"> <i class="sjyy1"> <img src="../../img/home/index/sjyy.jpg" />
+					<a href="" class="sjyy"> <i class="sjyy1"> <img src="/qianbaidu/img/home/index/sjyy.jpg" />
 			</i> 手机应用
 					</a>
 					<div id="dlzc">
-						<span class="dlzc1"> <img src="../../img/home/index//dlzc.jpg" />
+						<span class="dlzc1"> <img src="/qianbaidu/img/home/index//dlzc.jpg" />
 				</span> <span> <a class="dlzc2">欢迎:</a>
 				</span>
 					</div>
@@ -54,7 +54,7 @@
 				</span>
 						<span class="transclud">
 					<i class="icon-arrow-right">
-						<img src="../../img/user/profile/右图标.jpg"/>
+						<img src="/qianbaidu/img/user/profile/右图标.jpg"/>
 					</i>
 					<span class="ng-binding-span">地址管理</span>
 						</span>
@@ -64,7 +64,7 @@
 					<li class="profile-sidebar">
 						<h2 class="profile-sidebar-sectiontitle">
 							<i class="icon-line-home">
-								<img src="../../img/user/profile/个人中心.jpg"/>
+								<img src="/qianbaidu/img/user/profile/个人中心.jpg"/>
 							</i>
 							<a href="" style=" color: inherit;">个人中心</a>
 						</h2>
@@ -72,7 +72,7 @@
 					<li class="profile-sidebar">
 						<h2 class="profile-sidebar-sectiontitle">
 							<i class="icon-line-home">
-								<img src="../../img/user/profile/我的订单.jpg"/>
+								<img src="/qianbaidu/img/user/profile/我的订单.jpg"/>
 							</i>
 							<a style=" color: inherit;;">我的订单</a>
 						</h2>
@@ -91,7 +91,7 @@
 					<li class="profile-sidebar">
 						<h2 class="profile-sidebar-sectiontitle">
 							<i class="icon-line-home">
-								<img src="../../img/user/profile/我的的资产.jpg"/>
+								<img src="/qianbaidu/img/user/profile/我的的资产.jpg"/>
 							</i>
 							<a  style=" color: inherit;;">我的资产</a>
 						</h2>
@@ -110,7 +110,7 @@
 					<li class="profile-sidebar">
 						<h2 class="profile-sidebar-sectiontitle">
 							<i class="icon-line-home">
-								<img src="../../img/user/profile/我的资料.jpg"/>
+								<img src="/qianbaidu/img/user/profile/我的资料.jpg"/>
 							</i>
 							<a  style=" color: inherit;;">我的资料</a>
 						</h2>
@@ -162,7 +162,7 @@
 								</div>
 							<button class="desktop-addressblock2" ondblclick="">
 							<i class="icon-plus">
-							<img src="../../img/user/profile/加号.jpg">
+							<img src="/qianbaidu/img/user/profile/加号.jpg">
 							添加新地址
 							</i>
 							</button>

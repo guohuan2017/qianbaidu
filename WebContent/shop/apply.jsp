@@ -6,14 +6,51 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<title>开店申请</title>
-		<link rel="stylesheet" href="../css/shop/apply.css" />
+		<link rel="stylesheet" href="/qianbaidu/css/shop/apply.css" />
 	</head>
 
 	<body>
 		<div id="header-bar">
-
+			<div id="header-bar-center">
+				<span class="whitecolor" id="businesscenterspan">饿了么商户中心 </span>
+				<a href="#" class="whitecolor" id="integrity-book">点击查看《廉正告知书》</a>
+				<a class="whitecolor" id="pleasecontact">如开店过程遇到问题，可以拨打客服电话：xxx-xxxxxxx</a>
+			</div>
 		</div>
 		<div id="guider-bar">
+			<div id="guider-bar-center">
+				<ul>
+					<li>
+						<i class="number-this">1</i>
+						门店信息 -----
+					</li>
+					
+					<li>
+						<i class="number-other">2</i>
+						资质信息 -----
+					</li>
+					<li>
+						<i class="number-other">3</i>
+						合作方案 -----
+					</li>
+					<li>
+						<i class="number-other">4</i>
+						配送方案 -----
+					</li>
+					<li>
+						<i class="number-other">5</i>
+						结算信息 -----
+					</li>
+					<li>
+						<i class="number-other">6</i>
+						商品内容 -----
+					</li>
+					<li>
+						<i class="number-other">7</i>
+						活动信息
+					</li>
+				</ul>
+			</div>
 
 		</div>
 		<form action="" method="post" enctype="multipart/form-data">
@@ -42,7 +79,7 @@
 
 					<div class="single-line">
 						<label class="title"><span class="title-span">*</span>营业时间</label>
-						<input type="radio" name="opentime" value="24h" /><span class="radiospan">24小时</span>
+						<input type="radio" name="opentime" id="opentime" value="24h" /><span class="radiospan">24小时</span>
 						<input type="radio" name="opentime" value="custmize" /><span class="radiospan">自定义</span>
 						<span class="timespan">从</span>
 						<input type="time" name="fromtime" id="fromtime" class="time" />
@@ -52,7 +89,7 @@
 
 					<div class="single-line">
 						<label class="title"><span class="title-span">*</span>城市</label>
-						<select name="province" class="address">
+						<select name="province" class="address" id="province">
 							<option value="安徽省">安徽省</option>
 							<option value="河北省">河北省</option>
 						</select>

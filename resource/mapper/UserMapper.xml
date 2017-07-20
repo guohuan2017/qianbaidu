@@ -142,7 +142,7 @@
     select 
     <include refid="Base_Column_List" />
     from user
-    where username = #{username,jdbcType=VARCHAR}
+    where phone = #{phone,jdbcType=VARCHAR}
     and password = #{password,jdbcType=VARCHAR}
   </select>
 </mapper>
