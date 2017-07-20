@@ -185,5 +185,11 @@
     from store
     where tel = #{tel,jdbcType=VARCHAR}
     and password = #{password,jdbcType=VARCHAR}
-  </select>  
+  </select>
+  <update id="updatePhotoById" parameterType="pojo.Store" >
+    
+    update store
+    set photo = #{photo,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
 </mapper>
