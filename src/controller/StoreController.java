@@ -43,9 +43,11 @@ public class StoreController {
 			System.out.println("登陆成功");
 			ModelAndView mav = new ModelAndView("test/welcome2");
 			mav.addObject("message","登陆成功");
-			mav.addObject("store", store2);
+			mav.addObject("user", store2);
+//			mav.addObject("store", store2);
 			System.out.println(store2);
-			request.getSession().setAttribute("store", store2);
+			request.getSession().setAttribute("user", store2);
+//			request.getSession().setAttribute("store", store2);
 			return mav;
 		}
 	}
@@ -64,9 +66,11 @@ public class StoreController {
 			System.out.println("注册成功");
 			ModelAndView mav = new ModelAndView("test/welcome2");
 			mav.addObject("message","注册成功");
-			mav.addObject("store", store2);
+			mav.addObject("user", store2);
+//			mav.addObject("store", store2);
 			System.out.println(store2);
-			request.getSession().setAttribute("store", store2);
+			request.getSession().setAttribute("user", store2);
+//			request.getSession().setAttribute("store", store2);
 			return mav;
 		}
 	}
@@ -111,8 +115,10 @@ public class StoreController {
 		
 		store.setPhoto("uploadstore/"+store.getId()+"_"+store.getStorename()+"/"+filename);
 		if(service.updatePhotoById(store)>0){
-			session.setAttribute("store", store);
-			mav.addObject("store", store);
+			session.setAttribute("user", store);
+			mav.addObject("user", store);
+//			session.setAttribute("store", store);
+//			mav.addObject("store", store);
 			mav.addObject("message","上传成功");
 		}else{
 			mav.addObject("message","上传失败");
