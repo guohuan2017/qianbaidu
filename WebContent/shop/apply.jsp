@@ -11,9 +11,18 @@
 
 	<body>
 		<div id="header-bar">
-
+			<div id="header-bar-center">
+				<span class="whitecolor" id="businesscenterspan">饿了么商户中心 </span>
+				<a href="#" class="whitecolor" id="integrity-book">点击查看《廉正告知书》</a>
+				<a class="whitecolor" id="pleasecontact">如开店过程遇到问题，可以拨打客服电话：xxx-xxxxxxx</a>
+			</div>
 		</div>
 		<div id="guider-bar">
+			<div id="guider-bar-center">
+				<ul>
+					<li></li>
+				</ul>
+			</div>
 
 		</div>
 		<form action="" method="post" enctype="multipart/form-data">
