@@ -1,5 +1,4 @@
 @CHARSET "UTF-8";
-
 * {
 	margin: 0;
 	padding: 0;
@@ -9,12 +8,77 @@
 	width: 100%;
 	height: 60px;
 	background-color: rgb(0, 145, 234);
+	line-height: 60px;
+	font-family: -apple-system, Helvetica Neue, Arial, PingFang SC, lucida grande, lucida sans unicode, lucida, helvetica, Hiragino Sans GB, Microsoft YaHei, WenQuanYi Micro Hei, sans-serif;
+	cursor: pointer;
+}
+
+#header-bar-center {
+	margin: 0 auto;
+	width: 1000px;
+	height: 60px;
+}
+
+.whitecolor {
+	color: white;
+}
+
+#businesscenterspan {
+	font-size: 20px;
+	font-weight: 700;
+}
+
+#integrity-book {
+	font-size: 14px;
+	font-weight: 300;
+	text-decoration: none;
+}
+
+#integrity-book:hover {
+	text-decoration: underline;
+}
+
+#pleasecontact {
+	font-size: 14px;
+	float: right;
 }
 
 #guider-bar {
 	width: 100%;
 	height: 60px;
 	background-color: #455a64;
+	line-height: 60px;
+}
+
+#guider-bar-center {
+	margin: 0 auto;
+	width: 1000px;
+	height: 60px;
+}
+
+ul {
+	width: 100%;
+	list-style: none;
+	color: white;
+}
+
+li {
+	margin-left: 10px;
+	float: left;
+}
+
+.number-this {
+	padding: 1px 7px;
+	border-radius: 4px;
+	background-color: #0091ea;
+	margin-right: 5px;
+}
+
+.number-other {
+	padding: 1px 7px;
+	border-radius: 4px;
+	background-color: #cccccc;
+	margin-right: 5px;
 }
 
 #content {
@@ -67,16 +131,16 @@
 	margin-left: 14px;
 }
 
-#outtel{
+#outtel {
 	margin-left: 14px;
 }
 
-#shopcatalog{
+#shopcatalog {
 	margin-left: 12px;
 }
 
-#opentime{
-	margin-left:14px;
+#opentime {
+	margin-left: 14px;
 }
 
 .radiospan {
@@ -105,7 +169,7 @@
 	padding-left: 10px;
 }
 
-#province{
+#province {
 	margin-left: 35px;
 }
 
@@ -132,11 +196,11 @@
 	margin-bottom: 25px;
 }
 
-.photo{
+.photo {
 	/*vertical-align: middle;*/
 }
 
-.box{
+.box {
 	margin-left: 6px;
 	width: 790px;
 	height: 94px;
@@ -144,17 +208,17 @@
 	display: inline-block;
 }
 
-#downbox{
+#downbox {
 	margin-left: 107px;
 }
 
-#logobox{
+#logobox {
 	width: 320px;
 	margin-left: 2px;
 	margin-top: 25px;
 }
 
-#otherplatform{
+#otherplatform {
 	width: 900px;
 	height: 80px;
 	background-color: #f5f5f5;
@@ -162,37 +226,35 @@
 	margin-top: 25px;
 }
 
-#otherlinktitle{
+#otherlinktitle {
 	height: 80px;
 	margin-left: 40px;
 }
 
-#otherlink{
+#otherlink {
 	width: 319px;
 }
 
-#btn-group{
+#btn-group {
 	margin: 35px auto;
-	width:900px;
+	width: 900px;
 	text-align: center;
 }
 
-.stepbtn{
+.stepbtn {
 	height: 50px;
 	border-radius: 4px;
 	border: 1px solid rgb(204, 204, 204);
 	margin-right: 20px;
 }
 
-#stepback{
+#stepback {
 	width: 198px;
 	background-color: white;
 }
 
-#stepforward{
+#stepforward {
 	width: 318px;
 	background-color: #0091ea;
 	color: white;
 }
-
-

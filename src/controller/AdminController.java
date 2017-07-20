@@ -29,9 +29,11 @@ public class AdminController {
 			System.out.println("登陆成功");
 			ModelAndView mav = new ModelAndView("test/welcome2");
 			mav.addObject("message","登陆成功");
-			mav.addObject("admin",admin2);
+			mav.addObject("user",admin2);
+//			mav.addObject("admin",admin2);
 			System.out.println(admin2);
-			request.getSession().setAttribute("admin", admin2);
+			request.getSession().setAttribute("user", admin2);
+//			request.getSession().setAttribute("admin", admin2);
 			return mav;
 		}
 	}
@@ -49,9 +51,11 @@ public class AdminController {
 			System.out.println("注册成功");
 			ModelAndView mav = new ModelAndView("test/welcome2");
 			mav.addObject("message","注册成功");
-			mav.addObject("admin",admin2);
+			mav.addObject("user",admin2);
+//			mav.addObject("admin",admin2);
 			System.out.println(admin2);
-			request.getSession().setAttribute("admin", admin2);
+			request.getSession().setAttribute("user", admin2);
+//			request.getSession().setAttribute("admin", admin2);
 			return mav;
 		}
 	}	
