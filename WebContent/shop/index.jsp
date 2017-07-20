@@ -5,7 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>店铺首页</title>
-<link rel="stylesheet" type="text/css" href="../css/shop/index.css" />
+<link rel="stylesheet" type="text/css" href="/qianbaidu/css/shop/index.css" />
 </head>
 	<body>
 		<div id="head-div">
