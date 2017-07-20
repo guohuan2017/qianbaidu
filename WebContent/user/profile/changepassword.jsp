@@ -11,7 +11,7 @@
 
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<title>饿了么-网上订餐_外卖</title>
+		<title>个人中心_更改密码</title>
 	</head>
 
 	<body>
@@ -20,7 +20,7 @@
 				<a href="../home/shop.jsp" class="logo"> <img class="logo1" src="../../img/home/index/logo.jpg" />
 				</a>
 				<a href="../../home/shop.jsp" class="sy"> 首页 </a>
-				<a href="../profile/myorde.jsp" class="wddd">
+				<a href="myorde.jsp" class="wddd">
 					我的订单 </a>
 				<a href="" class="jmhz"> 加盟合作 </a>
 				<nav id="shouye2">
@@ -56,7 +56,7 @@
 					<i class="icon-arrow-right">
 						<img src="../../img/user/profile/右图标.jpg"/>
 					</i>
-					<span class="ng-binding-span">近三个月订单</span>
+					<span class="ng-binding-span">设置密码</span>
 						</span>
 					</div>
 				</div>
@@ -74,11 +74,11 @@
 							<i class="icon-line-home">
 								<img src="../../img/user/profile/我的订单.jpg"/>
 							</i>
-							<a  style=" color: inherit;;">我的订单</a>
+							<a style=" color: inherit;;">我的订单</a>
 						</h2>
 						<ul class="profile-sidebar-section-ul">
 							<li class="profile-sidebar-section-ul-li">
-								<a class="profile-sidebar-a" style="color: #0089dc;" href="myorde.jsp">近三个月订单</a>
+								<a class="profile-sidebar-a" href="myorde.jsp">近三个月订单</a>
 							</li>
 							<li class="profile-sidebar-section-ul-li">
 								<a class="profile-sidebar-a" href="">待评价订单</a>
@@ -125,18 +125,42 @@
 								<a class="profile-sidebar-a" href="">安全中心</a>
 							</li>
 							<li class="profile-sidebar-section-ul-li">
-								<a class="profile-sidebar-a" href="changepassword.jsp">修改密码</a>
+								<a class="profile-sidebar-a" style="color: #0089dc;" href="changepassword.jsp">修改密码</a>
 							</li>
 						</ul>
 					</li>
 					<li class="profile-sidebar"></li>
 				</ul>
 				<div id="profile-panel">
-				<h3 class="profile-paneltitle-ng-scope">
+					<h3 class="profile-paneltitle-ng-scope">
 						<span class="">
-							近三个月订单
+							设置密码
 						</span>
 					</h3>
+					<div id="profile-panelcontent">
+						<form class="profile-changewd" action="" method="post">
+							<p class="changewd-tip">
+								饿了么提示你：使用大小写字母、数字与标点符号的组合，可以大幅提升帐号安全！
+							</p>
+							<div class="formfield">
+								<label class="ng-binding">
+									新密码
+								</label>
+								<input type="password" name="" class="formfield-npwd" placeholder="请输入新密码"/>
+							</div>
+							<div class="formfield">
+								<label class="ng-binding">
+									确认密码
+								</label>
+								<input type="password" name="" class="formfield-npwd" placeholder="请再次输入密码"/>
+							</div>
+							<div class="formfield">
+								<label class="ng-binding">
+								</label>
+								<button type="submit" class="formfield-button">确认</button>
+							</div>
+						</form>
+					</div>
 				</div>
 			</div>
 		</div>
