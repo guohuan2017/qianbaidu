@@ -27,7 +27,7 @@ public class UserController {
 	}
 	
 	@RequestMapping("/sqllogin.action")
-	public ModelAndView sqllogin(User user){
+	public ModelAndView sqllogin(User user,HttpServletRequest request, HttpServletResponse response){
 		User user2 = service.loginSelect(user);
 		if(user2==null){
 			System.out.println("登陆失败");
@@ -40,12 +40,13 @@ public class UserController {
 			mav.addObject("message","登陆成功");
 			mav.addObject("user", user2);
 			System.out.println(user2);
+			request.getSession().setAttribute("user", user2);
 			return mav;
 		}
 	}
 	
 	@RequestMapping("/sqlregist.action")
-	public ModelAndView regist(User user){
+	public ModelAndView regist(User user,HttpServletRequest request, HttpServletResponse response){
 		int i = service.insert(user);
 		User user2 = service.loginSelect(user);
 		if(user2==null){
@@ -59,6 +60,7 @@ public class UserController {
 			mav.addObject("message","注册成功");
 			mav.addObject("user", user2);
 			System.out.println(user2);
+			request.getSession().setAttribute("user", user2);
 			return mav;
 		}
 	}
