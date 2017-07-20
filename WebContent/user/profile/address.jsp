@@ -163,7 +163,7 @@
 							<button class="desktop-addressblock2" ondblclick="">
 							<i class="icon-plus">
 							<img src="../../img/user/profile/加号.jpg">
-							"添加新地址"
+							添加新地址
 							</i>
 							</button>
 							</div>
