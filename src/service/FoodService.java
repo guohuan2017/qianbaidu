@@ -17,4 +17,28 @@ public class FoodService {
 	public void setDao(FoodMapper dao) {
 		this.dao = dao;
 	}
+	
+	public int deleteByPrimaryKey(Integer id){
+		return dao.deleteByPrimaryKey(id);
+	}
+
+	public int insert(Food record){
+		return dao.insert(record);
+	}
+
+	public int insertSelective(Food record){
+		return dao.insertSelective(record);
+	}
+
+	public Food selectByPrimaryKey(Integer id){
+		return dao.selectByPrimaryKey(id);
+	}
+
+	public int updateByPrimaryKeySelective(Food record){
+		return dao.updateByPrimaryKeySelective(record);
+	}
+
+	public int updateByPrimaryKey(Food record){
+		return dao.updateByPrimaryKey(record);
+	}
 }
