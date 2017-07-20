@@ -75,7 +75,7 @@
 
 					<div id="map"></div>
 
-					<div id="">
+					<div id="as">
 						<label class="title"><span class="title-span">*</span>门店照片</label>
 						<div id="facediv">
 							<div id="facetitlediv">
@@ -92,6 +92,11 @@
 								<img id="facedemo" src="../img/shop/apply/151955.jpg">
 							</div>
 						</div>
+					</div>
+					
+					<div id="otherplatform">
+						<label id="otherlinktitle" class="title">其他平台开店链接</label>
+						<input type="text" name="otherlink" id="otherlink" class="input-box" />
 					</div>
 				</div>
 
