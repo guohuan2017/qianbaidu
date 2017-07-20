@@ -69,7 +69,7 @@
 					<div class="single-line">
 						<label class="title"><span class="title-span">*</span>详细地址</label>
 						<input type="text" name="detailaddress" id="detailaddress" class="input-box" />
-						<button type="button" class="" id="locate"> 去定位 </button>
+						<button type="button" class="" id="locate">去定位</button>
 
 					</div>
 
@@ -82,16 +82,14 @@
 								<span id="facetitlespan">门脸照</span>
 							</div>
 							<div id="uploadface">
-								<div id="uploadbtn">
-									<img id="background-img" src="../img/shop/apply/upload.bmp"/>
+								<div id="uploaddiv">
 									<form action="" method="post" enctype="multipart/form-data">
 										<input type="file" class="uploadbtn">
 										<input type="submit"  class="uploadbtn"/>
 									</form>
-									
 								</div>
 								<span id="facedemospan">一张真实美观的门脸照可以提升店铺形象</span>
-								<img id="facedemo" class="photodemo" src="../img/shop/apply/151955.jpg">
+								<img id="facedemo" src="../img/shop/apply/151955.jpg">
 							</div>
 						</div>
 					</div>
