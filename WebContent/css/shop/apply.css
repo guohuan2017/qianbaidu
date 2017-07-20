@@ -1,4 +1,5 @@
 @CHARSET "UTF-8";
+
 * {
 	margin: 0;
 	padding: 0;
@@ -114,7 +115,7 @@
 }
 
 #facediv {
-	width: 798px;
+	width: 796px;
 	height: 92px;
 	border: 1px solid rgb(204, 204, 204);
 	display: inline-block;
@@ -125,6 +126,8 @@
 	height: 92px;
 	background-color: rgb(245, 245, 245);
 	line-height: 92px;
+	text-align: center;
+	
 }
 
 
@@ -135,28 +138,27 @@
 	font-family: -apple-system, Helvetica Neue, Arial, PingFang SC, lucida grande, lucida sans unicode, lucida, helvetica, Hiragino Sans GB, Microsoft YaHei, WenQuanYi Micro Hei, sans-serif;
 	font-size: 12px;
 	margin: 0 auto;
-	display: block;
 	
 }
 
-#uploadbtn {
+#uploadface{
+	line-height: 94px;
+	display: inline-block;
+}
+
+#uploaddiv {
 	width: 100px;
 	height: 75px;
-	border-radius: 2px;
-	background-color: ;
+	border-radius: 4px;
 	background-color: #eaeaea;
 	background-size: cover;
-	border-radius: 4px;
 	text-align: center;
+	background-image: url(../../img/shop/apply/1195431.jpg);
+	display: inline-block;
 }
 
-.uploadbtn{
-	border: none;
-}
 
-
-
-.photodemo {
+#facedemo {
 	width: 100px;
 	height: 75px;
 }
