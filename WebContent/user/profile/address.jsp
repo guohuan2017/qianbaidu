@@ -137,7 +137,22 @@
 							地址管理
 						</span>
 					</h3>
-					
+					<div class="profile-panelcontent">
+						<div class="desk-top">
+							<div class="desktop-addresslist">
+								<div class="desktop-addressblock">
+									<div class="desktop-addressblock-buttons">
+										<button class="desktop-addressblock-botton" onclick="">
+											修改
+										</button>
+										<button class="desktop-addressblock-botton" onclick="">
+											删除
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>

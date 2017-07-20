@@ -365,11 +365,59 @@ a {
 	padding-left: 10px;
 	border-radius: 2px;
 }
-.formfield-button{
+
+.formfield-button {
 	width: 300px;
 	color: #FFFFFF;
 	background-color: #0089dc;
 	padding: 10px 30px;
-    font-size: 16px;
-    border: none;
+	font-size: 16px;
+	border: none;
+}
+
+.profile-panelcontent {
+	display: inline-block;
+	width: 100%;
+}
+
+.desk-top {
+	padding-top: 15px;
+}
+
+.desktop-addresslist {
+	padding-top: 15px;
+}
+
+.desktop-addressblock {
+	width: 300px;
+	margin-right: 33px;
+	position: relative;
+	display: inline-block;
+	height: 110px;
+	/*padding: 16px 12px 16px 20px;*/
+	margin-bottom: 15px;
+	border: 1px solid #ddd;
+}
+
+.desktop-addressblock:hover {
+	border: 1px solid #0089dc;
+}
+
+.desktop-addressblock-buttons {
+	position: absolute;
+	right: 12px;
+	top: 14px;
+}
+
+.desktop-addressblock-botton {
+	font-size: 12px;
+	color: #bbb;
+	border: 0;
+	background: 0 0;
+	cursor: pointer;
+	width: 30px;
+}
+
+.desktop-addressblock-botton:hover {
+	color: #0089dc;
 }
