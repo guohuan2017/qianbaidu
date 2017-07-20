@@ -114,6 +114,10 @@
 	margin-bottom: 25px;
 }
 
+#as{
+	position: relative;
+}
+
 #facediv {
 	width: 796px;
 	height: 92px;
@@ -157,9 +161,7 @@
 	display: inline-block;
 }
 
-#as{
-	vertical-align: text-top;
-}
+
 
 
 #facedemo {
