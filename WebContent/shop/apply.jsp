@@ -78,16 +78,16 @@
 					<div class="photo">
 						<label class="title"><span class="title-span">*</span>门店照片</label>
 						<div class="box" id="upbox">
-
+							<input type="file" name="facephoto" id="facephote" value="门脸照" accept="image/gif, image/jpeg, image/png, image/bmp" />
 						</div>
 						<div class="box" id="downbox">
-
+							<input type="file" name="instorephoto" id="instorephoto" value="店内照片" accept="image/gif, image/jpeg, image/png, image/bmp" />
 						</div>
 					</div>
 					<div class="photo">
 						<label class="title"><span class="title-span">*</span>门店Logo</label>
 						<div class="box" id="logobox">
-
+							<input type="file" name="shoplogo" value="选择Logo" accept="image/gif, image/jpeg, image/png, image/bmp" />
 						</div>
 					</div>
 					<div id="otherplatform">
