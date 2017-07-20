@@ -34,4 +34,8 @@ public class StoreService {
     public int updatePhotoById(Store store){
     	return dao.updatePhotoById(store);
     }
+    
+    public int deleteByPrimaryKey(Integer id){
+    	return dao.deleteByPrimaryKey(id);
+    }
 }
