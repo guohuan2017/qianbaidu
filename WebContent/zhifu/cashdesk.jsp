@@ -9,11 +9,11 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<title>饿了么收银台</title>
-		<link href="../css/zhifu/cashdesk.css" rel="stylesheet">
+		<link href="/qianbaidu/css/zhifu/cashdesk.css" rel="stylesheet">
 	</head>
 
 	<body>
-		<img src="../img/zhifu/cashdesk/收银台logo.jpg" style="position: absolute;">
+		<img src="/qianbaidu/img/zhifu/cashdesk/收银台logo.jpg" style="position: absolute;">
 		<header id="header"><i class="eleme-icon logo"><h1 class="title"></h1></i></header>
 		<main id="main">
 			<main data-reactid=".0">

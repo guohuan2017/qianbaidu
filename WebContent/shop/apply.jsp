@@ -6,7 +6,7 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<title>开店申请</title>
-		<link rel="stylesheet" href="../css/shop/apply.css" />
+		<link rel="stylesheet" href="/qianbaidu/css/shop/apply.css" />
 	</head>
 
 	<body>
