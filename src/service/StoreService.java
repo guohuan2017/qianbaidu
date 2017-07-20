@@ -30,4 +30,8 @@ public class StoreService {
     public int insertSelective(Store store){
     	return dao.insertSelective(store);
     }
+    
+    public int updatePhotoById(Store store){
+    	return dao.updatePhotoById(store);
+    }
 }
