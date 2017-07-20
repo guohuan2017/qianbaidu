@@ -88,7 +88,7 @@
 
 
 .goods-display{
-	width: 883px;
+	width: 900px;
 	height:500px;
 	background-color: paleturquoise;
 }
@@ -104,20 +104,11 @@
 	height: 100px;
 	padding-right: 10px;
 	border:1px solid #eee;
-	margin-right:18px;
+	margin-right:14px;
 	background-color: black;
 	display: inline-block;
 }
 
-.good-display-right{
-	width:421px;
-	height: 100px;
-	padding-right: 10px;
-	border:1px solid #eee;
-	margin-right:18px;
-	background-color: black;
-	display: inline-block;
-}
 
 P{
 	color: white;
