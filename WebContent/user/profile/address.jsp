@@ -159,7 +159,7 @@
 									<div class="desktop-addressblock-mobile">
 									18201727218
 									</div>
-								</div
+								</div>
 							</div>
 							<button class="desktop-addressblock2" ondblclick="">
 							<i class="icon-plus">
