@@ -1,4 +1,5 @@
 @CHARSET "UTF-8";
+
 * {
 	margin: 0;
 	padding: 0;
@@ -9,7 +10,9 @@
 	height: 60px;
 	background-color: rgb(0, 145, 234);
 	line-height: 60px;
-	font-family: -apple-system, Helvetica Neue, Arial, PingFang SC, lucida grande, lucida sans unicode, lucida, helvetica, Hiragino Sans GB, Microsoft YaHei, WenQuanYi Micro Hei, sans-serif;
+	font-family: -apple-system, Helvetica Neue, Arial, PingFang SC,
+		lucida grande, lucida sans unicode, lucida, helvetica,
+		Hiragino Sans GB, Microsoft YaHei, WenQuanYi Micro Hei, sans-serif;
 	cursor: pointer;
 }
 
@@ -101,13 +104,17 @@ li {
 }
 
 .title-head {
-	font-family: -apple-system, Helvetica Neue, Arial, PingFang SC, lucida grande, lucida sans unicode, lucida, helvetica, Hiragino Sans GB, Microsoft YaHei, WenQuanYi Micro Hei, sans-serif;
+	font-family: -apple-system, Helvetica Neue, Arial, PingFang SC,
+		lucida grande, lucida sans unicode, lucida, helvetica,
+		Hiragino Sans GB, Microsoft YaHei, WenQuanYi Micro Hei, sans-serif;
 	font-size: 16px;
 	color: #333;
 }
 
 .title {
-	font-family: -apple-system, Helvetica Neue, Arial, PingFang SC, lucida grande, lucida sans unicode, lucida, helvetica, Hiragino Sans GB, Microsoft YaHei, WenQuanYi Micro Hei, sans-serif;
+	font-family: -apple-system, Helvetica Neue, Arial, PingFang SC,
+		lucida grande, lucida sans unicode, lucida, helvetica,
+		Hiragino Sans GB, Microsoft YaHei, WenQuanYi Micro Hei, sans-serif;
 	font-size: 14px;
 	color: #333;
 	margin-right: 30px;
@@ -144,14 +151,18 @@ li {
 }
 
 .radiospan {
-	font-family: -apple-system, Helvetica Neue, Arial, PingFang SC, lucida grande, lucida sans unicode, lucida, helvetica, Hiragino Sans GB, Microsoft YaHei, WenQuanYi Micro Hei, sans-serif;
+	font-family: -apple-system, Helvetica Neue, Arial, PingFang SC,
+		lucida grande, lucida sans unicode, lucida, helvetica,
+		Hiragino Sans GB, Microsoft YaHei, WenQuanYi Micro Hei, sans-serif;
 	font-size: 14px;
 	color: #333;
 	margin-right: 15px;
 }
 
 .timespan {
-	font-family: -apple-system, Helvetica Neue, Arial, PingFang SC, lucida grande, lucida sans unicode, lucida, helvetica, Hiragino Sans GB, Microsoft YaHei, WenQuanYi Micro Hei, sans-serif;
+	font-family: -apple-system, Helvetica Neue, Arial, PingFang SC,
+		lucida grande, lucida sans unicode, lucida, helvetica,
+		Hiragino Sans GB, Microsoft YaHei, WenQuanYi Micro Hei, sans-serif;
 	font-size: 14px;
 	color: #333;
 	margin-right: 10px;
@@ -196,8 +207,17 @@ li {
 	margin-bottom: 25px;
 }
 
+#allmap {
+	width:787px;
+	height:500px;
+	margin: 0;
+	overflow: hidden;
+	font-family: "微软雅黑";
+}
+
 .photo {
 	/*vertical-align: middle;*/
+	
 }
 
 .box {

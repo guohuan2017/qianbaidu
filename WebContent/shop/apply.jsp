@@ -7,11 +7,7 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<title>开店申请</title>
 		<link rel="stylesheet" href="/qianbaidu/css/shop/apply.css" />
-		<style type="text/css">
-			body, html,#allmap {width: 100%;height: 100%;overflow: hidden;margin:0;font-family:"微软雅黑";}
-		</style>
 		<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=kUAyHUuiEwHVmWdyfap31YWSUBTWjAnE"></script>
-
 	</head>
 
 	<body>
@@ -108,7 +104,9 @@
 
 					</div>
 
-					<div id="map"></div>
+					<div id="map">
+						<div id="allmap"></div>
+					</div>
 
 					<div class="photo">
 						<label class="title"><span class="title-span">*</span>门店照片</label>
