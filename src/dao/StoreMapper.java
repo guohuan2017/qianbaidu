@@ -52,4 +52,6 @@ public interface StoreMapper {
     int updateByPrimaryKey(Store record);
 
 	Store loginSelect(Store store);
+	
+	int updatePhotoById(Store store);
 }
