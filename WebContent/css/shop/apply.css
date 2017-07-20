@@ -1,0 +1,170 @@
+@CHARSET "UTF-8";
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+#header-bar {
+	width: 100%;
+	height: 60px;
+	background-color: rgb(0, 145, 234);
+}
+
+#guider-bar {
+	width: 100%;
+	height: 60px;
+	background-color: #455a64;
+}
+
+#content {
+	width: 100%;
+	height: 1600px;
+	background-color: rgb(246, 246, 246);
+}
+
+#content-center {
+	margin: 0 auto;
+	padding: 32px 50px;
+	height: 1455px;
+	width: 900px;
+	background-color: white;
+}
+
+.single-line {
+	height: 40px;
+	margin-bottom: 25px;
+}
+
+.title-head {
+	font-family: -apple-system, Helvetica Neue, Arial, PingFang SC, lucida grande, lucida sans unicode, lucida, helvetica, Hiragino Sans GB, Microsoft YaHei, WenQuanYi Micro Hei, sans-serif;
+	font-size: 16px;
+	color: #333;
+}
+
+.title {
+	font-family: -apple-system, Helvetica Neue, Arial, PingFang SC, lucida grande, lucida sans unicode, lucida, helvetica, Hiragino Sans GB, Microsoft YaHei, WenQuanYi Micro Hei, sans-serif;
+	font-size: 14px;
+	color: #333;
+	margin-right: 30px;
+	display: inline-block;
+}
+
+.title-span {
+	color: red;
+	margin-right: 5px;
+}
+
+.input-box {
+	border: 1px solid rgb(204, 204, 204);
+	padding: 6px 12px;
+	border-radius: 4px;
+	height: 20px;
+}
+
+#shopname {
+	width: 316px;
+}
+
+.radiospan {
+	font-family: -apple-system, Helvetica Neue, Arial, PingFang SC, lucida grande, lucida sans unicode, lucida, helvetica, Hiragino Sans GB, Microsoft YaHei, WenQuanYi Micro Hei, sans-serif;
+	font-size: 14px;
+	color: #333;
+	margin-right: 15px;
+}
+
+.timespan {
+	font-family: -apple-system, Helvetica Neue, Arial, PingFang SC, lucida grande, lucida sans unicode, lucida, helvetica, Hiragino Sans GB, Microsoft YaHei, WenQuanYi Micro Hei, sans-serif;
+	font-size: 14px;
+	color: #333;
+	margin-right: 10px;
+}
+
+.time {
+	margin-right: 10px;
+}
+
+.address {
+	width: 160px;
+	height: 33px;
+	border-radius: 4px;
+	margin-right: 10px;
+	padding-left: 10px;
+}
+
+#detailaddress {
+	width: 319px;
+}
+
+#locate {
+	background-color: #0091ea;
+	width: 66px;
+	height: 32px;
+	border: 0;
+	border-radius: 4px;
+	color: white;
+	margin-left: 10px;
+}
+
+#map {
+	width: 800px;
+	height: 500px;
+	border: 1px solid rgb(204, 204, 204);
+	margin-left: 101px;
+	margin-bottom: 25px;
+}
+
+#facediv {
+	width: 796px;
+	height: 92px;
+	border: 1px solid rgb(204, 204, 204);
+	display: inline-block;
+}
+
+#facetitlediv {
+	width: 92px;
+	height: 92px;
+	background-color: rgb(245, 245, 245);
+	line-height: 92px;
+	text-align: center;
+	
+}
+
+
+#facetitlespan {
+	width: 36px;
+	height: 14px;
+	color: #999;
+	font-family: -apple-system, Helvetica Neue, Arial, PingFang SC, lucida grande, lucida sans unicode, lucida, helvetica, Hiragino Sans GB, Microsoft YaHei, WenQuanYi Micro Hei, sans-serif;
+	font-size: 12px;
+	margin: 0 auto;
+	
+}
+
+#uploadface{
+	line-height: 94px;
+	display: inline-block;
+}
+
+#uploaddiv {
+	width: 100px;
+	height: 75px;
+	border-radius: 4px;
+	background-color: #eaeaea;
+	background-size: cover;
+	text-align: center;
+	background-image: url(../../img/shop/apply/1195431.jpg);
+	display: inline-block;
+}
+
+
+#facedemo {
+	width: 100px;
+	height: 75px;
+}
+
+#facedemospan {
+	color: #999;
+	font-family: -apple-system, Helvetica Neue, Arial, PingFang SC, lucida grande, lucida sans unicode, lucida, helvetica, Hiragino Sans GB, Microsoft YaHei, WenQuanYi Micro Hei, sans-serif;
+	font-size: 12px;
+}
