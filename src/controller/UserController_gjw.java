@@ -31,7 +31,7 @@ public class UserController_gjw {
 			return mav;
 		} else {
 			System.out.println("登陆成功");
-			ModelAndView mav = new ModelAndView("home/shoploginwin");
+			ModelAndView mav = new ModelAndView("forward:loginallshopjsp.action");
 			mav.addObject("message", "登陆成功");
 			mav.addObject("user", user2);
 			System.out.println(user2);

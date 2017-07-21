@@ -14,6 +14,27 @@
 	</head>
 
 	<body>
+	
+		<script type="text/javascript">
+			function GetQueryString(name) //这个方法去获得get参数
+			{
+				var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+				var r = window.location.search.substr(1).match(reg);
+				if(r != null) return unescape(r[2]);
+				return null;
+			}
+
+			function load() {
+				document.getElementById((GetQueryString("fl"))).focus();
+			}
+
+			window.onload = function() {
+				load();
+
+			}
+		</script>
+		
+		
 		<div id="shouye">
 			<div id="shouye1">
 				<a href="/qianbaidu/home/shop.jsp" class="logo"> <img class="logo1" src="/qianbaidu/img/home/index/logo.jpg" />
@@ -47,9 +68,9 @@
 						[切换地址] </a>
 				</span>
 				</div>
-				<form action="" method="post">
+				<form action="searchshop.action" method="post">
 					<div id="ss">
-						<input type="text" class="ss1_1" placeholder="搜索商家,美食..." /> <input type="submit" class="ss1" name="" value="" />
+						<input type="text" class="ss1_1" name="info" placeholder="搜索商家,美食..." /> <input type="submit" class="ss1" name="" value="" />
 					</div>
 				</form>
 			</div>
@@ -61,24 +82,24 @@
 			<div id="qbsj">
 				<div id="sjfl">
 					<span class="sjfl_1"> 商家分类: </span>
-					<a href="/qianbaidu/home/shop.jsp" class="sjfl_2"> 全部商家 </a>
-					<a href="#" class="sjfl_2"> 美食 </a>
-					<a href="" class="sjfl_2"> 快餐便当 </a>
-					<a href="" class="sjfl_2">
+					<a href="/qianbaidu/allshopjsp.action?fl=fl1" class="sjfl_2" id="fl1"> 全部商家 </a>
+					<a href="/qianbaidu/subtype.action?type=美食&fl=fl2" class="sjfl_2" id="fl2"> 美食 </a>
+					<a href="/qianbaidu/subtype.action?type=快餐便当&fl=fl3" class="sjfl_2" id="fl3"> 快餐便当 </a>
+					<a href="/qianbaidu/subtype.action?type=特色菜系&fl=fl4" class="sjfl_2" id="fl4">
 						特色菜系 </a>
-					<a href="" class="sjfl_2"> 异国料理 </a>
-					<a href="" class="sjfl_2"> 小吃夜宵 </a>
-					<a href="" class="sjfl_2"> 甜品饮品 </a>
-					<a href="" class="sjfl_2"> 果蔬生菜 </a>
-					<a href="" class="sjfl_2">
+					<a href="/qianbaidu/subtype.action?type=异国料理&fl=fl5" class="sjfl_2" id="fl5"> 异国料理 </a>
+					<a href="/qianbaidu/subtype.action?type=小吃夜宵&fl=fl6" class="sjfl_2" id="fl6"> 小吃夜宵 </a>
+					<a href="/qianbaidu/subtype.action?type=甜品饮品&fl=fl7" class="sjfl_2" id="fl7"> 甜品饮品 </a>
+					<a href="/qianbaidu/subtype.action?type=果蔬生菜&fl=fl8" class="sjfl_2" id="fl8"> 果蔬生菜 </a>
+					<a href="/qianbaidu/subtype.action?type=鲜花蛋糕&fl=fl9" class="sjfl_2" id="fl9">
 						鲜花蛋糕 </a>
-					<a href="" class="sjfl_2"> 商店超市 </a>
-					<a href="" class="sjfl_2"> 早餐 </a>
-					<a href="" class="sjfl_2"> 午餐 </a>
-					<a href="" class="sjfl_2"> 下午茶 </a>
-					<a href="" class="sjfl_2"> 晚餐
+					<a href="/qianbaidu/subtype.action?type=商店超市&fl=fl10" class="sjfl_2" id="fl10"> 商店超市 </a>
+					<a href="/qianbaidu/subtype.action?type=早餐&fl=fl11" class="sjfl_2" id="fl11"> 早餐 </a>
+					<a href="/qianbaidu/subtype.action?type=午餐&fl=fl12" class="sjfl_2" id="fl12"> 午餐 </a>
+					<a href="/qianbaidu/subtype.action?type=下午茶&fl=fl13" class="sjfl_2" id="fl13"> 下午茶 </a>
+					<a href="/qianbaidu/subtype.action?type=晚餐&fl=fl14" class="sjfl_2" id="fl14"> 晚餐
 					</a>
-					<a href="" class="sjfl_2"> 夜宵 </a>
+					<a href="/qianbaidu/subtype.action?type=夜宵&fl=fl15" class="sjfl_2" id="fl15"> 夜宵 </a>
 				</div>
 				<div id="qbdp">
 					<div id="clearfix">
