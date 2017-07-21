@@ -485,3 +485,17 @@ a {
 .icon-plus:hover {
 	color: #0089dc;
 }
+
+.formfield1 {
+	position: absolute;
+	font-size: 12px;
+	line-height: 20px;
+	bottom: 5px;
+	margin-left: 142px;
+	display: none;
+}
+
+.formfield-hint-span {
+	color: #ff464c;
+}
+
