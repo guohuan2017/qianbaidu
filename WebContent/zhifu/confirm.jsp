@@ -5,7 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>确认订单</title>
-		<link rel="stylesheet" href="css/zhifu/confirm.css" />
+		<link rel="stylesheet" href="../css/zhifu/confirm.css" />
 	</head>
 	<body>
 		<div id="head-bar">

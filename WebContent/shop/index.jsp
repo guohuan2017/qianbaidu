@@ -7,11 +7,10 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<title>店铺首页</title>
 		<link rel="stylesheet" type="text/css" href="../css/shop/index.css" />
-		<script type="text/javascript">
+		<!--	<script type="text/javascript">
 			document.write("<script type='text/javascript' src='../js/jquery-3.2.1.js?'" + Math.random() + ">" + "</scr" + "ipt>");
-		</script>
+		</script>-->
 	</head>
-	
 
 	<body>
 		<div id="head-div">
@@ -19,7 +18,7 @@
 				<div id="head-bar-center">
 					<ul>
 						<li id="logo">
-							
+
 						</li>
 						<li>
 							首页
@@ -40,6 +39,12 @@
 				</div>
 			</div>
 			<div id="div-center">
+				<div id="shop-title">
+					<div id= "shop-title-all">
+						<img id="shop-face" src="../img/shop/index/shop-face.png"/>
+						<span id="shop-name">我是一只鸡（漕河泾店）</span>
+					</div>
+				</div>
 				
 			</div>
 		</div>
