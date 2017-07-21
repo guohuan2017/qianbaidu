@@ -130,9 +130,38 @@ public class StoreController {
 	
 	@RequestMapping("/allshopjsp.action")
 	public ModelAndView shopjsp(HttpServletRequest request, HttpServletResponse response) {
-		ModelAndView mav = new ModelAndView("home/shop_whs");
+		ModelAndView mav = new ModelAndView("home/shop");
+		List<Store> storelist = service.selectAll();
+		mav.addObject("storelist", storelist);
+		mav.addObject("fl", request.getParameter("fl"));
+		return mav;
+	}
+	
+	@RequestMapping("/loginallshopjsp.action")
+	public ModelAndView shoploginwinjsp(HttpServletRequest request, HttpServletResponse response) {
+		ModelAndView mav = new ModelAndView("home/shoploginwin");
 		List<Store> storelist = service.selectAll();
 		System.out.println(storelist);
+		mav.addObject("storelist", storelist);
+		mav.addObject("fl", request.getParameter("fl"));
+		return mav;
+	}
+	
+	@RequestMapping("/subtype.action")
+	public ModelAndView searchBySubtype(HttpServletRequest request, HttpServletResponse response){
+		String subtype = request.getParameter("type");
+		ModelAndView mav = new ModelAndView("home/shop");
+		List<Store> storelist = service.SearchBySubtype(subtype);
+		mav.addObject("storelist", storelist);
+		mav.addObject("fl", request.getParameter("fl"));
+		return mav;
+	}
+	
+	@RequestMapping("/searchshop.action")
+	public ModelAndView search(HttpServletRequest request, HttpServletResponse response){
+		String type = "%" + request.getParameter("info") + "%";
+		ModelAndView mav = new ModelAndView("home/shop");
+		List<Store> storelist = service.SearchStore(type);
 		mav.addObject("storelist", storelist);
 		return mav;
 	}
