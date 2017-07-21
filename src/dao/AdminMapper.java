@@ -52,4 +52,6 @@ public interface AdminMapper {
     int updateByPrimaryKey(Admin record);
     
     Admin loginSelect(Admin admin);
+    
+    Admin selectUsername(String username);
 }

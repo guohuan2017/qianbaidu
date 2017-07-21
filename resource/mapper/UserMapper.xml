@@ -145,4 +145,10 @@
     where phone = #{phone,jdbcType=VARCHAR}
     and password = #{password,jdbcType=VARCHAR}
   </select>
+  <select id="selectPhone" resultMap="BaseResultMap" parameterType="java.lang.String" >
+    select 
+    <include refid="Base_Column_List" />
+    from user
+    where phone = #{0,jdbcType=VARCHAR}
+  </select>
 </mapper>
