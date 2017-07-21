@@ -34,7 +34,6 @@
 			}
 		</script>
 		
-		
 		<div id="shouye">
 			<div id="shouye1">
 				<a href="/qianbaidu/home/shop.jsp" class="logo"> <img class="logo1" src="/qianbaidu/img/home/index/logo.jpg" />

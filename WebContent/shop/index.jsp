@@ -81,7 +81,7 @@
 			<div id="content-center">
 				<div id="content-center-right">
 					<div id="shop-notice">
-
+						
 					</div>
 				</div>
 				<div id="content-center-left">
