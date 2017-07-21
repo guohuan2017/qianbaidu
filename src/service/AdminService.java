@@ -45,4 +45,8 @@ public class AdminService {
 	public int updateByPrimaryKey(Admin record){
 		return dao.updateByPrimaryKey(record);
 	}
+	
+	public Admin selectUsername(String username){
+		return dao.selectUsername(username);
+	}
 }

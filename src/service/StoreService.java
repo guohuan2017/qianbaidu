@@ -52,4 +52,7 @@ public class StoreService {
 		return dao.updateByPrimaryKey(record);
 	}
 
+	public Store selectTel(String tel){
+		return dao.selectTel(tel);
+	}
 }

@@ -52,4 +52,7 @@ public class UserService {
 		return dao.getUserByName(username);
 	}
 
+	public User selectPhone(String phone){
+		return dao.selectPhone(phone);
+	}
 }
