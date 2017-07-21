@@ -6,7 +6,7 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<title>确认订单</title>
-		<link rel="stylesheet" href="../css/zhifu/confirm.css" />
+		<link rel="stylesheet" href="/qianbaidu/css/zhifu/confirm.css" />
 		<link rel="stylesheet" type="text/css" href="/qianbaidu/css/Hui-iconfont/1.0.8/iconfont.css" />
 	</head>
 
