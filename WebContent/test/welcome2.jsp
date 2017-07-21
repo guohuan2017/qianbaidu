@@ -27,6 +27,6 @@
 		<input type="file" name="filename"> <input type="submit" value="上传">
 	</form>
 	<br>
-	<img src="${store.photo}">
+	<img src="${user.photo}">
 </body>
 </html>

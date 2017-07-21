@@ -1,5 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 	<link rel="stylesheet" type="text/css" href="/qianbaidu/css/home/qbd.css" />
@@ -79,111 +82,22 @@
 				</div>
 				<div id="qbdp">
 					<div id="clearfix">
+						<c:forEach var="store" items="${storelist}">
 						<a href="" class="sjpp">
 							<div id="rstblock-logo">
-								<img src="/qianbaidu/img/home/index/四海游龙.jpeg" width="70" height="70" alt="四海游龙（古美店）" />
+								<img src="${store.photo}" width="70" height="70"/>
 								<span id="rstblock-span">25分钟</span>
 							</div>
 							<div id="rstblock-content">
-								<div id="rstblock-title">四海游龙（古美店）</div>
+								<div id="rstblock-title">${store.storename}(${store.address})</div>
 								<img src="/qianbaidu/img/home/index/星星.jpg" /> <span id="rstblock-monthsales">
-								月售6508单 </span> <span id="rstblock-cost"> 配送费￥5 </span>
+								${store.info} </span> <span id="rstblock-cost"> 配送费￥0 </span>
 								<div id="rstblock-activity">
 									<i class="rstblock-activity">保</i> <i class="rstblock-activity">票</i>
 								</div>
 							</div>
 						</a>
-						<a href="" class="sjpp">
-							<div id="rstblock-logo">
-								<img src="/qianbaidu/img/home/index/老昌盛汤包馆.JPG" width="70" height="70" /> <span id="rstblock-span">28分钟</span>
-							</div>
-							<div id="rstblock-content">
-								<div id="rstblock-title">老盛昌（柳州店）</div>
-								<img src="/qianbaidu/img/home/index/星星.jpg" /> <span id="rstblock-monthsales">
-								月售2544单 </span> <span id="rstblock-cost"> 配送费￥6 </span>
-								<div id="rstblock-activity">
-									<i class="rstblock-activity">保</i> <i class="rstblock-activity">票</i>
-								</div>
-							</div>
-						</a>
-						<a href="" class="sjpp">
-							<div id="rstblock-logo">
-								<img src="/qianbaidu/img/home/index/周大虾.JPG" width="70" height="70" /> <span id="rstblock-span">31分钟</span>
-							</div>
-							<div id="rstblock-content">
-								<div id="rstblock-title">周大虾龙虾盖浇饭（龙茗路店）</div>
-								<img src="/qianbaidu/img/home/index/星星.jpg" /> <span id="rstblock-monthsales">
-								月售3820单 </span> <span id="rstblock-cost"> 配送费￥6 </span>
-								<div id="rstblock-activity">
-									<i class="rstblock-activity">保</i> <i class="rstblock-activity">票</i>
-								</div>
-							</div>
-						</a>
-						<a href="" class="sjpp">
-							<div id="rstblock-logo">
-								<img src="/qianbaidu/img/home/index/甜蜜蜜.JPG" width="70" height="70" /> <span id="rstblock-span">26分钟</span>
-							</div>
-							<div id="rstblock-content">
-								<div id="rstblock-title">甜蜜蜜港式茶餐厅（东兰路店）</div>
-								<img src="/qianbaidu/img/home/index/星星.jpg" /> <span id="rstblock-monthsales">
-								月售3017单 </span> <span id="rstblock-cost"> 配送费￥5 </span>
-								<div id="rstblock-activity">
-									<i class="rstblock-activity">保</i> <i class="rstblock-activity">票</i>
-								</div>
-							</div>
-						</a>
-						<a href="" class="sjpp">
-							<div id="rstblock-logo">
-								<img src="/qianbaidu/img/home/index/A梦.JPG" width="70" height="70" /> <span id="rstblock-span">40分钟</span>
-							</div>
-							<div id="rstblock-content">
-								<div id="rstblock-title">A梦Eamonns(合川店)</div>
-								<img src="/qianbaidu/img/home/index/星星.jpg" /> <span id="rstblock-monthsales">
-								月售6559单 </span> <span id="rstblock-cost"> 配送费￥1 </span>
-								<div id="rstblock-activity">
-									<i class="rstblock-activity">票</i>
-								</div>
-							</div>
-						</a>
-						<a href="" class="sjpp">
-							<div id="rstblock-logo">
-								<img src="/qianbaidu/img/home/index/丰收日.JPG" width="70" height="70" /> <span id="rstblock-span">35分钟</span>
-							</div>
-							<div id="rstblock-content">
-								<div id="rstblock-title">丰收日(虹桥店)</div>
-								<img src="/qianbaidu/img/home/index/星星.jpg" /> <span id="rstblock-monthsales">
-								月售2704单 </span> <span id="rstblock-cost"> 配送费￥6 </span>
-								<div id="rstblock-activity">
-									<i class="rstblock-activity">保</i> <i class="rstblock-activity">票</i>
-								</div>
-							</div>
-						</a>
-						<a href="" class="sjpp">
-							<div id="rstblock-logo">
-								<img src="/qianbaidu/img/home/index/轰咖喱饭_看图王.jpg" width="70" height="70" /> <span id="rstblock-span">35分钟</span>
-							</div>
-							<div id="rstblock-content">
-								<div id="rstblock-title">轰咖咖喱饭（欧风新天地店）</div>
-								<img src="/qianbaidu/img/home/index/星星.jpg" /> <span id="rstblock-monthsales">
-								月售1470单 </span> <span id="rstblock-cost"> 配送费￥6 </span>
-								<div id="rstblock-activity">
-									<i class="rstblock-activity">保</i> <i class="rstblock-activity">票</i>
-								</div>
-							</div>
-						</a>
-						<a href="" class="sjpp">
-							<div id="rstblock-logo">
-								<img src="/qianbaidu/img/home/index/港岛记.jpg" width="70" height="70" /> <span id="rstblock-span">33分钟</span>
-							</div>
-							<div id="rstblock-content">
-								<div id="rstblock-title">港岛记（上海田尚坊店）</div>
-								<img src="/qianbaidu/img/home/index/星星.jpg" /> <span id="rstblock-monthsales">
-								月售2425单 </span> <span id="rstblock-cost"> 配送费￥6 </span>
-								<div id="rstblock-activity">
-									<i class="rstblock-activity">保</i>
-								</div>
-							</div>
-						</a>
+						</c:forEach>
 					</div>
 				</div>
 			</div>

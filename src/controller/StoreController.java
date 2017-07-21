@@ -3,6 +3,7 @@ package controller;
 import java.io.File;
 import java.io.IOException;
 import java.util.Enumeration;
+import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -82,7 +83,7 @@ public class StoreController {
 	@RequestMapping("/uploadstore.action")
 	public ModelAndView uploadstore(HttpServletRequest request, HttpServletResponse response) throws IOException {
 		HttpSession session = request.getSession();
-		Store store = (Store) session.getAttribute("store");
+		Store store = (Store) session.getAttribute("user");
 		ModelAndView mav = new ModelAndView("test/welcome2");
 
 		String path = request.getServletContext().getRealPath("uploadstore/");
@@ -127,8 +128,12 @@ public class StoreController {
 		return mav;
 	}
 	
-	@RequestMapping("/shopjsp.action")
+	@RequestMapping("/allshopjsp.action")
 	public ModelAndView shopjsp(HttpServletRequest request, HttpServletResponse response) {
-		return null;
+		ModelAndView mav = new ModelAndView("home/shop_whs");
+		List<Store> storelist = service.selectAll();
+		System.out.println(storelist);
+		mav.addObject("storelist", storelist);
+		return mav;
 	}
 }
