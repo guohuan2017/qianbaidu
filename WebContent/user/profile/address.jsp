@@ -33,7 +33,7 @@
 					</a>
 					<div id="dlzc">
 						<span class="dlzc1"> <img src="/qianbaidu/img/home/index//dlzc.jpg" />
-				</span> <span> <a class="dlzc2">欢迎:</a>
+				</span> <span> <a class="dlzc2">欢迎:${user.username}</a>
 				</span>
 					</div>
 				</nav>

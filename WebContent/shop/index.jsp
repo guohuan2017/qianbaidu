@@ -7,21 +7,43 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<title>店铺首页</title>
 		<link rel="stylesheet" type="text/css" href="../css/shop/index.css" />
+		<script type="text/javascript">
+			document.write("<script type='text/javascript' src='../js/jquery-3.2.1.js?'" + Math.random() + ">" + "</scr" + "ipt>");
+		</script>
 	</head>
+	
 
 	<body>
 		<div id="head-div">
 			<div id="head-bar">
 				<div id="head-bar-center">
-					
+					<ul>
+						<li id="logo">
+							
+						</li>
+						<li>
+							首页
+						</li>
+						<li>
+							我的订单
+						</li>
+						<li>
+							加盟合作
+						</li>
+					</ul>
+					<nav>
+						<a>服务中心</a>
+						<a>规则中心</a>
+						<a>手机应用</a>
+						<a id="lr">登录/注册</a>
+					</nav>
 				</div>
 			</div>
-		</div>
-		<div id="tool-bar">
-			<div id="tool-bar-center">
-
+			<div id="div-center">
+				
 			</div>
 		</div>
+
 		<div id="content">
 			<div id="content-center">
 				<div id="content-center-right">
