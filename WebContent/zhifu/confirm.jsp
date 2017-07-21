@@ -6,11 +6,19 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>确认订单</title>
 		<link rel="stylesheet" href="../css/zhifu/confirm.css" />
+		<link rel="stylesheet" type="text/css" href="/qianbaidu/css/Hui-iconfont/1.0.8/iconfont.css"/>
 	</head>
 	<body>
 		<div id="head-bar">
 			<div id="head-menu">
-				
+				<span class="carttopbar-nav-path">
+					当前位置:
+					<a class="carttopbar-nav-path2" href="">徐汇民润大厦(宜山路北50米)</a>
+					<i class="Hui-iconfont">&#xe6d7;</i>
+					<a class="carttopbar-nav-path2" href="">甜蜜蜜港式茶餐厅(东兰路店)</a>
+					<i class="Hui-iconfont">&#xe6d7;</i>
+					订单信息
+				</span>
 			</div>
 		</div>
 		<div id="head-div">
