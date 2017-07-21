@@ -54,12 +54,20 @@ nav{
 	height: 48px;
 	line-height: 48px;
 	float: right;
+	font-size: 14px;
 }
 
 nav a{
 	width: 106px;
 	height:48px;
 	padding: 0 10px;
+	margin: auto 10px;
+	color: rgb(204,204,204);
+}
+
+nav a:hover{
+	color: white;
+	cursor: pointer;
 }
 
 #lr{
@@ -67,17 +75,86 @@ nav a{
 	text-align: right;
 }
 
-#tool-bar{
-	width: 100%;
-	height: 59px;
-}
 
-#tool-bar-center{
+#div-center{
 	margin:0 auto;
 	width: 1180px;
-	height: 59px;
-	background-color: pink;
+	height: 142px;
+	position:relative;
+	
 }
+
+#shop-title{
+	display: inline-block;
+	width: 480px;
+	height: 142px;
+	overflow: hidden;
+	font-family: PingFang SC,Lantinghei SC,Helvetica Neue,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans;
+}
+
+#shop-title-all{
+	width: 480px;
+	height: 288px;
+}
+
+#shop-face{
+	width: 95px;
+	height: 95px;
+	border-radius: 50%;
+	border: 4px solid rgba(0,0,0,0.4);
+	margin-top: 4%;
+}
+
+#shop-introduce{
+	margin-left: 3%;
+	width:220px;
+	height: 71px;
+	display: inline-block;
+	color: white;
+	vertical-align: top;
+	margin-top: 7%;
+}
+
+#shop-name{
+	font-weight: 400;
+	font-size: 20px;
+	max-width: 270px;
+	display: block;
+}
+
+#shop-details{
+	display: block;
+	margin-top: 7%;
+	font-size: 14px;
+	font-weight: normal;
+}
+
+#shop-info{
+	width: 600px;
+	height:142px;
+	position:absolute;
+	top:30%;
+	left:60%;
+	color: white;
+}
+
+.info-title{
+	
+}
+
+.info-content{
+	
+}
+
+#ilike{
+	position: absolute;
+	right:0;
+	top: 0;
+}
+
+
+
+
 
 #content{
 	width:100%;
