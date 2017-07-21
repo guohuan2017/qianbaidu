@@ -20,8 +20,8 @@
 				</svg>
 			</div>
 
-			<h1 id="center">登录</h1>
-			<h1 id="right"><a href="/qianbaidu/user/register.jsp" style="color: white;">注册</a></h1>
+			<h1 id="center">商户登录</h1>
+			<h1 id="right"><a href="/qianbaidu/shop/register.jsp" style="color: white;">商户注册</a></h1>
 
 		</div>
 
