@@ -10,6 +10,7 @@
 		<!--	<script type="text/javascript">
 			document.write("<script type='text/javascript' src='../js/jquery-3.2.1.js?'" + Math.random() + ">" + "</scr" + "ipt>");
 		</script>-->
+		<link rel="stylesheet" type="text/css" href="../css/zhifu/cashdesk.css">
 	</head>
 
 	<body>
@@ -40,12 +41,39 @@
 			</div>
 			<div id="div-center">
 				<div id="shop-title">
-					<div id= "shop-title-all">
-						<img id="shop-face" src="../img/shop/index/shop-face.png"/>
-						<span id="shop-name">我是一只鸡（漕河泾店）</span>
+					<div id="shop-title-all">
+						<img id="shop-face" src="../img/shop/index/shop-face.png" />
+						<div id="shop-introduce">
+							<span id="shop-name">我是一只鸡(漕河泾店)</span>
+							<span id="shop-details">(1515) 月售2307单</span>
+
+						</div>
 					</div>
 				</div>
+				<div id="shop-info">
+					<span class="info-title">
+						起送价
+					</span>
+					<span class="info-title">
+						配送费
+					</span>
+					<span class="info-title">
+						平均送达速度
+					</span>
+					<span class="info-content">
+						20元
+					</span>
+					<span class="info-content">
+						配送费￥5
+					</span>
+					<span class="info-content">
+						34分钟
+					</span>
+					
+				</div>
 				
+				<div id="ilike" class="Hui-iconfont Hui-iconfont-star-o"></div>
+
 			</div>
 		</div>
 
