@@ -10,8 +10,8 @@
 <body>
 <!-- 	<form action="/SpringMVCDemo/index.action?method=login" method="post" id="loginform">
  -->	<form action="javascript：void(0);" method="post" id="loginform">
-			帐号<input type="text" name="username" id="username"
-				placeholder="请输入帐号" value=${param.username}> <span id="usernamespan">用户名不能为空</span><br />
+			帐号<input type="text" name="phone" id="username"
+				placeholder="请输入手机号" value=${param.phone}> <span id="usernamespan">用户名不能为空</span><br />
 			密码<input type="password" name="password" id="password"
 				placeholder="请输入密码" /> <span id="passwordspan">密码不能为空</span> <br />
 			

@@ -125,6 +125,10 @@ public class StoreController {
 			mav.addObject("message", "上传失败");
 		}
 		return mav;
-
+	}
+	
+	@RequestMapping("/shopjsp.action")
+	public ModelAndView shopjsp(HttpServletRequest request, HttpServletResponse response) {
+		return null;
 	}
 }
