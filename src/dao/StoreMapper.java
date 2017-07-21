@@ -54,4 +54,6 @@ public interface StoreMapper {
 	Store loginSelect(Store store);
 	
 	int updatePhotoById(Store store);
+	
+	Store selectTel(String tel);
 }

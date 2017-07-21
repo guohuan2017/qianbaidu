@@ -57,4 +57,6 @@ public interface UserMapper {
 	User getUserByName(String username);
 	
 	User loginSelect(User user);
+	
+	User selectPhone(String phone);
 }
