@@ -192,10 +192,9 @@
     set photo = #{photo,jdbcType=VARCHAR}
     where id = #{id,jdbcType=INTEGER}
   </update>
-  <select id="selectTel" resultMap="BaseResultMap" parameterType="java.lang.String" >
+  <select id="selectAll" resultMap="BaseResultMap" parameterType="java.lang.String" >
     select 
     <include refid="Base_Column_List" />
     from store
-    where tel = #{0,jdbcType=VARCHAR}
   </select>
 </mapper>

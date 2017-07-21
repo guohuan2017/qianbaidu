@@ -1,5 +1,7 @@
 package service;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -54,5 +56,9 @@ public class StoreService {
 
 	public Store selectTel(String tel){
 		return dao.selectTel(tel);
+	}
+	
+	public List<Store> selectAll(){
+		return dao.selectAll();
 	}
 }

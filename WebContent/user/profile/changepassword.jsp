@@ -9,9 +9,11 @@
 		<title>个人中心_更改密码</title>
 		<link rel="stylesheet" type="text/css" href="/qianbaidu/css/profile/qbd.css" />
 		<link rel="stylesheet" type="text/css" href="/qianbaidu/css/profile/qbd1.css" />
+		<script type="text/javascript" src="/qianbaidu/js/jquery-3.2.1.js"></script>
 		<script type="text/javascript" src="/qianbaidu/js/profile/profile.js">
 		</script>
 	</head>
+	
 
 	<body>
 		<div id="shouye">
@@ -125,36 +127,39 @@
 					<span class=""> 设置密码 </span>
 				</h3>
 					<div id="profile-panelcontent">
-						<form class="profile-changewd" action="" method="post">
+						<form class="profile-changewd" id="pwform" action="" method="post">
 							<p class="changewd-tip">饿了么提示你：使用大小写字母、数字与标点符号的组合，可以大幅提升帐号安全！
 							</p>
 							<div class="formfield">
-								<label class="ng-binding"> 原密码 </label> <input type="password" name="" class="formfield-npwd" placeholder="请输入原密码" />
+								<label class="ng-binding"> 原密码 </label> <input type="password" name="password" id="password" class="formfield-npwd" placeholder="请输入原密码" />
 								<div class="formfield1">
-									<span class="formfield-hint-span" id="changepassword"> <img
-									src="/qianbaidu/img/user/profile/大叉.jpg" /> 当前密码错误，请重新输入
+									<span class="formfield-hint-span" id="passwordspan"> <img
+									src="/qianbaidu/img/user/profile/大叉.jpg" /> 原密码不能为空
 								</span>
 								</div>
 							</div>
 							<div class="formfield">
-								<label class="ng-binding"> 新密码 </label> <input type="password" name="" class="formfield-npwd" placeholder="请输入新密码" />
+								<label class="ng-binding"> 新密码 </label> <input type="password" name="newpassword" id="newpassword" class="formfield-npwd" placeholder="请输入新密码" />
 								<div class="formfield1">
-									<span class="formfield-hint-span" id="changepassword"> <img
-									src="/qianbaidu/img/user/profile/大叉.jpg" /> 密码需要是字母或数字，最小6位，最大20位
+									<span class="formfield-hint-span" id="newpasswordspan"> <img
+									src="/qianbaidu/img/user/profile/大叉.jpg" /> 新密码不能为空
 								</span>
 								</div>
 							</div>
 							<div class="formfield">
-								<label class="ng-binding"> 确认密码 </label> <input type="password" name="" class="formfield-npwd" placeholder="请再次输入密码" />
+								<label class="ng-binding"> 确认密码 </label> <input type="password" name="repassword" id="repassword" class="formfield-npwd" placeholder="请再次输入密码" />
 								<div class="formfield1">
-									<span class="formfield-hint-span" id="changepassword"> <img
+									<span class="formfield-hint-span" id="repasswordspan"> <img
 									src="/qianbaidu/img/user/profile/大叉.jpg" /> 请再次输入密码
+								</span>
+								<span class="formfield-hint-span" id="repasswordspan2"> <img
+									src="/qianbaidu/img/user/profile/大叉.jpg" /> 两次密码不同
 								</span>
 								</div>
 							</div>
 							<div class="formfield">
 								<label class="ng-binding"> </label>
-								<button type="submit" class="formfield-button">确认</button>
+								<button type="button" class="formfield-button" id="pwbutton">确认</button>
 							</div>
 						</form>
 					</div>
