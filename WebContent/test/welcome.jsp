@@ -34,5 +34,7 @@
 	<hr>
 	管理员<br>
 	admin.username + admin.password：${admin.username } + ${admin.password }
+	<hr>
+	<a href = "allshopjsp.action">跳转home/shop页面</a><br />
 </body>
 </html>
