@@ -116,4 +116,10 @@
     where username = #{username,jdbcType=VARCHAR}
     and password = #{password,jdbcType=VARCHAR}
   </select>  
+  <select id="selectUsername" resultMap="BaseResultMap" parameterType="java.lang.String" >
+    select 
+    <include refid="Base_Column_List" />
+    from admin
+    where username = #{0,jdbcType=VARCHAR}
+  </select>
 </mapper>

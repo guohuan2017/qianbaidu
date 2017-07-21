@@ -12,13 +12,21 @@
 <body>
 	
 
-	${message}<br>
-	
-	<hr>
-	商家<br>
-	store.storename + store.password+store.tel：${store.storename } + ${store.password }+ ${store.tel }
+	<span style="color:red">${message}</span><br>
+	<%-- 
 	<hr>
 	管理员<br>
-	admin.username + admin.password：${admin.username } + ${admin.password }
+	user.username + user.password：${user.username } + ${user.password }
+	 --%>
+	<hr>
+	商家<br>
+	user.storename + user.password+store.tel：${user.storename } + ${user.password }+ ${user.tel }
+	<hr>
+	
+	<form action="uploadstore.action" method="post" enctype="multipart/form-data">
+		<input type="file" name="filename"> <input type="submit" value="上传">
+	</form>
+	<br>
+	<img src="${store.photo}">
 </body>
 </html>

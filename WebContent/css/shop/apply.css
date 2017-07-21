@@ -1,4 +1,5 @@
 @CHARSET "UTF-8";
+
 * {
 	margin: 0;
 	padding: 0;
@@ -8,24 +9,91 @@
 	width: 100%;
 	height: 60px;
 	background-color: rgb(0, 145, 234);
+	line-height: 60px;
+	font-family: -apple-system, Helvetica Neue, Arial, PingFang SC,
+		lucida grande, lucida sans unicode, lucida, helvetica,
+		Hiragino Sans GB, Microsoft YaHei, WenQuanYi Micro Hei, sans-serif;
+	cursor: pointer;
+}
+
+#header-bar-center {
+	margin: 0 auto;
+	width: 1000px;
+	height: 60px;
+}
+
+.whitecolor {
+	color: white;
+}
+
+#businesscenterspan {
+	font-size: 20px;
+	font-weight: 700;
+}
+
+#integrity-book {
+	font-size: 14px;
+	font-weight: 300;
+	text-decoration: none;
+}
+
+#integrity-book:hover {
+	text-decoration: underline;
+}
+
+#pleasecontact {
+	font-size: 14px;
+	float: right;
 }
 
 #guider-bar {
 	width: 100%;
 	height: 60px;
 	background-color: #455a64;
+	line-height: 60px;
+}
+
+#guider-bar-center {
+	margin: 0 auto;
+	width: 1000px;
+	height: 60px;
+}
+
+ul {
+	width: 100%;
+	list-style: none;
+	color: white;
+}
+
+li {
+	margin-left: 10px;
+	float: left;
+}
+
+.number-this {
+	padding: 1px 7px;
+	border-radius: 4px;
+	background-color: #0091ea;
+	margin-right: 5px;
+}
+
+.number-other {
+	padding: 1px 7px;
+	border-radius: 4px;
+	background-color: #cccccc;
+	margin-right: 5px;
 }
 
 #content {
 	width: 100%;
-	height: 1600px;
+	height: 1800px;
 	background-color: rgb(246, 246, 246);
 }
 
 #content-center {
 	margin: 0 auto;
 	padding: 32px 50px;
-	height: 1455px;
+	height: 1470px;
 	width: 900px;
 	background-color: white;
 }
@@ -36,13 +104,17 @@
 }
 
 .title-head {
-	font-family: -apple-system, Helvetica Neue, Arial, PingFang SC, lucida grande, lucida sans unicode, lucida, helvetica, Hiragino Sans GB, Microsoft YaHei, WenQuanYi Micro Hei, sans-serif;
+	font-family: -apple-system, Helvetica Neue, Arial, PingFang SC,
+		lucida grande, lucida sans unicode, lucida, helvetica,
+		Hiragino Sans GB, Microsoft YaHei, WenQuanYi Micro Hei, sans-serif;
 	font-size: 16px;
 	color: #333;
 }
 
 .title {
-	font-family: -apple-system, Helvetica Neue, Arial, PingFang SC, lucida grande, lucida sans unicode, lucida, helvetica, Hiragino Sans GB, Microsoft YaHei, WenQuanYi Micro Hei, sans-serif;
+	font-family: -apple-system, Helvetica Neue, Arial, PingFang SC,
+		lucida grande, lucida sans unicode, lucida, helvetica,
+		Hiragino Sans GB, Microsoft YaHei, WenQuanYi Micro Hei, sans-serif;
 	font-size: 14px;
 	color: #333;
 	margin-right: 30px;
@@ -63,17 +135,34 @@
 
 #shopname {
 	width: 316px;
+	margin-left: 14px;
+}
+
+#outtel {
+	margin-left: 14px;
+}
+
+#shopcatalog {
+	margin-left: 12px;
+}
+
+#opentime {
+	margin-left: 14px;
 }
 
 .radiospan {
-	font-family: -apple-system, Helvetica Neue, Arial, PingFang SC, lucida grande, lucida sans unicode, lucida, helvetica, Hiragino Sans GB, Microsoft YaHei, WenQuanYi Micro Hei, sans-serif;
+	font-family: -apple-system, Helvetica Neue, Arial, PingFang SC,
+		lucida grande, lucida sans unicode, lucida, helvetica,
+		Hiragino Sans GB, Microsoft YaHei, WenQuanYi Micro Hei, sans-serif;
 	font-size: 14px;
 	color: #333;
 	margin-right: 15px;
 }
 
 .timespan {
-	font-family: -apple-system, Helvetica Neue, Arial, PingFang SC, lucida grande, lucida sans unicode, lucida, helvetica, Hiragino Sans GB, Microsoft YaHei, WenQuanYi Micro Hei, sans-serif;
+	font-family: -apple-system, Helvetica Neue, Arial, PingFang SC,
+		lucida grande, lucida sans unicode, lucida, helvetica,
+		Hiragino Sans GB, Microsoft YaHei, WenQuanYi Micro Hei, sans-serif;
 	font-size: 14px;
 	color: #333;
 	margin-right: 10px;
@@ -91,8 +180,13 @@
 	padding-left: 10px;
 }
 
+#province {
+	margin-left: 35px;
+}
+
 #detailaddress {
 	width: 319px;
+	margin-left: 8px;
 }
 
 #locate {
@@ -106,63 +200,81 @@
 }
 
 #map {
-	width: 800px;
+	width: 787px;
 	height: 500px;
 	border: 1px solid rgb(204, 204, 204);
-	margin-left: 101px;
+	margin-left: 110px;
 	margin-bottom: 25px;
 }
 
-#facediv {
-	width: 798px;
-	height: 92px;
+#allmap {
+	width:787px;
+	height:500px;
+	margin: 0;
+	overflow: hidden;
+	font-family: "微软雅黑";
+}
+
+.photo {
+	/*vertical-align: middle;*/
+	
+}
+
+.box {
+	margin-left: 6px;
+	width: 790px;
+	height: 94px;
 	border: 1px solid rgb(204, 204, 204);
 	display: inline-block;
 }
 
-#facetitlediv {
-	width: 92px;
-	height: 92px;
-	background-color: rgb(245, 245, 245);
-	line-height: 92px;
+#downbox {
+	margin-left: 107px;
 }
 
-
-#facetitlespan {
-	width: 36px;
-	height: 14px;
-	color: #999;
-	font-family: -apple-system, Helvetica Neue, Arial, PingFang SC, lucida grande, lucida sans unicode, lucida, helvetica, Hiragino Sans GB, Microsoft YaHei, WenQuanYi Micro Hei, sans-serif;
-	font-size: 12px;
-	margin: 0 auto;
-	display: block;
-	
+#logobox {
+	width: 320px;
+	margin-left: 2px;
+	margin-top: 25px;
 }
 
-#uploadbtn {
-	width: 100px;
-	height: 75px;
-	border-radius: 2px;
-	background-color: ;
-	background-color: #eaeaea;
-	background-size: cover;
-	border-radius: 4px;
+#otherplatform {
+	width: 900px;
+	height: 80px;
+	background-color: #f5f5f5;
+	line-height: 80px;
+	margin-top: 25px;
+}
+
+#otherlinktitle {
+	height: 80px;
+	margin-left: 40px;
+}
+
+#otherlink {
+	width: 319px;
+}
+
+#btn-group {
+	margin: 35px auto;
+	width: 900px;
 	text-align: center;
 }
 
-.uploadbtn{
-	border: none;
+.stepbtn {
+	height: 50px;
+	border-radius: 4px;
+	border: 1px solid rgb(204, 204, 204);
+	margin-right: 20px;
 }
 
-
-
-.photodemo {
-	width: 100px;
-	height: 75px;
+#stepback {
+	width: 198px;
+	background-color: white;
 }
 
-#facedemospan {
-	color: #999;
-	font-family: -apple-system, Helvetica Neue, Arial, PingFang SC, lucida grande, lucida sans unicode, lucida, helvetica, Hiragino Sans GB, Microsoft YaHei, WenQuanYi Micro Hei, sans-serif;
-	font-size: 12px;
+#stepforward {
+	width: 318px;
+	background-color: #0091ea;
+	color: white;
 }

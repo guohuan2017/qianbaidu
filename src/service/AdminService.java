@@ -29,4 +29,24 @@ public class AdminService {
 	public int insertSelective(Admin admin){
 		return dao.insertSelective(admin);
 	}
+	
+	public int deleteByPrimaryKey(Integer id){
+		return dao.deleteByPrimaryKey(id);
+	}
+
+	public Admin selectByPrimaryKey(Integer id){
+		return dao.selectByPrimaryKey(id);
+	}
+	
+	public int updateByPrimaryKeySelective(Admin record){
+		return dao.updateByPrimaryKeySelective(record);
+	}
+	
+	public int updateByPrimaryKey(Admin record){
+		return dao.updateByPrimaryKey(record);
+	}
+	
+	public Admin selectUsername(String username){
+		return dao.selectUsername(username);
+	}
 }

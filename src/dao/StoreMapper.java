@@ -1,5 +1,7 @@
 package dao;
 
+import java.util.List;
+
 import pojo.Store;
 
 public interface StoreMapper {
@@ -52,4 +54,10 @@ public interface StoreMapper {
     int updateByPrimaryKey(Store record);
 
 	Store loginSelect(Store store);
+	
+	int updatePhotoById(Store store);
+	
+	Store selectTel(String tel);
+	
+	List<Store> selectAll();
 }

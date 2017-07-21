@@ -15,7 +15,7 @@
 			<div id="shouye1">
 				<a href="/qianbaidu/home/shop.jsp" class="logo"> <img class="logo1" src="/qianbaidu/img/home/index/logo.jpg" />
 				</a>
-				<a href="/qianbaidu/home/shop.jsp" class="sy"> 首页 </a>
+				<a href="/qianbaidu/home/shoploginwin.jsp" class="sy"> 首页 </a>
 				<a href="/qianbaidu/user/profile/myorde.jsp" class="wddd">
 					我的订单 </a>
 				<a href="" class="jmhz"> 加盟合作 </a>
@@ -29,7 +29,7 @@
 					</a>
 					<div id="dlzc">
 						<span class="dlzc1"> <img src="/qianbaidu/img/home/index//dlzc.jpg" />
-				</span> <span> <a href="/qianbaidu/user/login.jsp" class="dlzc2">登陆/注册</a>
+				</span> <span> <a class="dlzc2">欢迎:${user.username }</a>
 				</span>
 					</div>
 				</nav>

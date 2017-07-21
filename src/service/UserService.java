@@ -35,4 +35,24 @@ public class UserService {
 	public int insert(User record){
 		return dao.insert(record);
 	}
+
+	public int insertSelective(User record){
+		return dao.insertSelective(record);
+	}
+	
+	public int deleteByPrimaryKey(Integer id){
+		return dao.deleteByPrimaryKey(id);
+	}
+	
+	public User selectByPrimaryKey(Integer id){
+		return dao.selectByPrimaryKey(id);
+	}
+	
+	public	User getUserByName(String username){
+		return dao.getUserByName(username);
+	}
+
+	public User selectPhone(String phone){
+		return dao.selectPhone(phone);
+	}
 }

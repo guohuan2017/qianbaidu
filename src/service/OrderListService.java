@@ -18,4 +18,27 @@ public class OrderListService {
 		this.dao = dao;
 	}
 	
+	public int deleteByPrimaryKey(Integer id){
+		return dao.deleteByPrimaryKey(id);
+	}
+
+	public int insert(OrderList record){
+		return dao.insert(record);
+	}
+
+	public int insertSelective(OrderList record){
+		return dao.insertSelective(record);
+	}
+
+	public OrderList selectByPrimaryKey(Integer id){
+		return dao.selectByPrimaryKey(id);
+	}
+
+	public int updateByPrimaryKeySelective(OrderList record){
+		return dao.updateByPrimaryKeySelective(record);
+	}
+
+	public int updateByPrimaryKey(OrderList record){
+		return dao.updateByPrimaryKey(record);
+	}
 }
