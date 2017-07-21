@@ -1,32 +1,32 @@
 @CHARSET "UTF-8";
-
 * {
 	margin: 0;
 	padding: 0;
 }
 
-#head-div{
+#head-div {
 	width: auto;
 	height: 190px;
 	background-image: url(../../img/shop/index/shop-bg.0391dd.jpg);
 }
 
-#head-bar{
+#head-bar {
 	width: 100%;
 	height: 48px;
-	background-color: rgba(0,0,0,0.4);
+	background-color: rgba(0, 0, 0, 0.4);
 	line-height: 48px;
 }
-#head-bar-center{
-	margin:0 auto;
-	height:48px;
+
+#head-bar-center {
+	margin: 0 auto;
+	height: 48px;
 	width: 1180px;
 	color: white;
-	font-family:"PingFang SC", "Lantinghei SC", "Helvetica Neue", "Microsoft Yahei", "Hiragino Sans GB", "Microsoft Sans Serif", "WenQuanYi Micro Hei", sans;
+	font-family: "PingFang SC", "Lantinghei SC", "Helvetica Neue", "Microsoft Yahei", "Hiragino Sans GB", "Microsoft Sans Serif", "WenQuanYi Micro Hei", sans;
 	font-size: 16px;
 }
 
-#logo{
+#logo {
 	width: 114px;
 	height: 48px;
 	margin-right: 10px;
@@ -34,12 +34,11 @@
 	background-size: cover;
 }
 
-
-ul li{
+ul li {
 	list-style: none;
 }
 
-li{
+li {
 	float: left;
 	width: 112px;
 	height: 48px;
@@ -49,7 +48,7 @@ li{
 	margin-right: 10px;
 }
 
-nav{
+nav {
 	width: 500px;
 	height: 48px;
 	line-height: 48px;
@@ -57,57 +56,55 @@ nav{
 	font-size: 14px;
 }
 
-nav a{
+nav a {
 	width: 106px;
-	height:48px;
+	height: 48px;
 	padding: 0 10px;
 	margin: auto 10px;
-	color: rgb(204,204,204);
+	color: rgb(204, 204, 204);
 }
 
-nav a:hover{
+nav a:hover {
 	color: white;
 	cursor: pointer;
 }
 
-#lr{
+#lr {
 	float: right;
 	text-align: right;
 }
 
-
-#div-center{
-	margin:0 auto;
+#div-center {
+	margin: 0 auto;
 	width: 1180px;
 	height: 142px;
-	position:relative;
-	
+	position: relative;
 }
 
-#shop-title{
+#shop-title {
 	display: inline-block;
 	width: 480px;
 	height: 142px;
 	overflow: hidden;
-	font-family: PingFang SC,Lantinghei SC,Helvetica Neue,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans;
+	font-family: PingFang SC, Lantinghei SC, Helvetica Neue, Microsoft Yahei, Hiragino Sans GB, Microsoft Sans Serif, WenQuanYi Micro Hei, sans;
 }
 
-#shop-title-all{
+#shop-title-all {
 	width: 480px;
 	height: 288px;
 }
 
-#shop-face{
+#shop-face {
 	width: 95px;
 	height: 95px;
 	border-radius: 50%;
-	border: 4px solid rgba(0,0,0,0.4);
+	border: 4px solid rgba(0, 0, 0, 0.4);
 	margin-top: 4%;
 }
 
-#shop-introduce{
+#shop-introduce {
 	margin-left: 3%;
-	width:220px;
+	width: 220px;
 	height: 71px;
 	display: inline-block;
 	color: white;
@@ -115,120 +112,124 @@ nav a:hover{
 	margin-top: 7%;
 }
 
-#shop-name{
+#shop-name {
 	font-weight: 400;
 	font-size: 20px;
 	max-width: 270px;
 	display: block;
 }
 
-#shop-details{
+#shop-details {
 	display: block;
 	margin-top: 7%;
 	font-size: 14px;
 	font-weight: normal;
 }
 
-#shop-info{
-	width: 600px;
-	height:142px;
-	position:absolute;
-	top:30%;
-	left:60%;
+#shop-info {
+	width: 470px;
+	height: 90px;
+	position: absolute;
+	top: 30%;
+	left: 60%;
 	color: white;
 }
 
-.info-title{
-	
+.info-title {
+	margin-right: 20px;
+	font-size: 14px;
+	margin-right: 105px;
 }
 
-.info-content{
-	
+.info-content {
+	display: inline-block;
+	margin-top: 15px;
+	margin-right: 90px;
+	font-size: 18px;
 }
 
-#ilike{
+#ilike {
 	position: absolute;
-	right:0;
+	right: 0;
 	top: 0;
+	font-size: 40px;
+	color: white;
+	cursor: pointer;
 }
 
-
-
-
-
-#content{
-	width:100%;
-	height:2000px;
+#ilike:hover {
+	color: yellow;
+	cursor: pointer;
 }
 
-#content-center{
+#content {
+	width: 100%;
+	height: 2000px;
+}
+
+#content-center {
 	margin: 0 auto;
-	width:1180px;
-	height:2000px;
-	background-color:aliceblue;
-	position:relative;
+	width: 1180px;
+	height: 2000px;
+	background-color: aliceblue;
+	position: relative;
 }
 
-#content-center-right{
-	position:absolute;
+#content-center-right {
+	position: absolute;
 	right: 0;
 	background-color: #a1a1a1;
 }
 
-#content-center-left{
-	position:absolute;
+#content-center-left {
+	position: absolute;
 	left: 0;
-	width:883px;
+	width: 883px;
 	height: 2000px;
 	background-color: aliceblue;
 }
 
-
-
-#shop-notice{
+#shop-notice {
 	width: 280px;
-	height:400px;
+	height: 400px;
 	background-color: pink;
 	display: inline-block;
 	position: absolute;
 	right: 0;
-	top:20px;
+	top: 20px;
 }
 
-
-#head-catalog{
+#head-catalog {
 	width: 851px;
 	height: 74px;
-	padding:10px 15px 5px 15px;
-	border:1px solid #eee;
+	padding: 10px 15px 5px 15px;
+	border: 1px solid #eee;
 	margin-top: 20px;
 	background-color: pink;
 }
 
-
-.goods-display{
+.goods-display {
 	width: 900px;
-	height:500px;
+	height: 500px;
 	background-color: paleturquoise;
 }
 
-.title{
+.title {
 	background-color: blue;
 	height: 30px;
 	padding: 20px 15px 10px 15px;
 }
 
-.good-display{
-	width:421px;
+.good-display {
+	width: 421px;
 	height: 100px;
 	padding-right: 10px;
-	border:1px solid #eee;
-	margin-right:14px;
+	border: 1px solid #eee;
+	margin-right: 14px;
 	background-color: black;
 	display: inline-block;
 }
 
-
-P{
+P {
 	color: white;
 }

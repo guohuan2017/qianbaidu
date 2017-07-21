@@ -10,7 +10,7 @@
 		<!--	<script type="text/javascript">
 			document.write("<script type='text/javascript' src='../js/jquery-3.2.1.js?'" + Math.random() + ">" + "</scr" + "ipt>");
 		</script>-->
-		<link rel="stylesheet" type="text/css" href="../css/zhifu/cashdesk.css">
+		<link rel="stylesheet" type="text/css" href="../css/Hui-iconfont/1.0.8/iconfont.css">
 	</head>
 
 	<body>
@@ -72,7 +72,7 @@
 					
 				</div>
 				
-				<div id="ilike" class="Hui-iconfont Hui-iconfont-star-o"></div>
+				<i id="ilike" class="Hui-iconfont Hui-iconfont-star-o"></i>
 
 			</div>
 		</div>
