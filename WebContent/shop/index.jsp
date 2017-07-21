@@ -69,11 +69,25 @@
 					<span class="info-content">
 						34分钟
 					</span>
-					
+
 				</div>
-				
+
 				<i id="ilike" class="Hui-iconfont Hui-iconfont-star-o"></i>
 
+			</div>
+
+		</div>
+		<div id="sort-bar">
+			<div id="sort-bar-center">
+				<div id="sort-bar-left"></div>
+				<div id="search-bar">
+					<input type="text" id="search-box" placeholder="搜索美食..." />
+					<input type="submit" id="search-btn" value="" >
+						<i class="Hui-iconfont Hui-iconfont-search1" onclick="alert('hello')"> </i>
+						
+					</input>
+				</div>
+				
 			</div>
 		</div>
 
@@ -81,7 +95,7 @@
 			<div id="content-center">
 				<div id="content-center-right">
 					<div id="shop-notice">
-						
+
 					</div>
 				</div>
 				<div id="content-center-left">
