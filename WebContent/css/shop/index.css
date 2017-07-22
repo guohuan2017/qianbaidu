@@ -34,7 +34,7 @@
 	background-size: cover;
 }
 
-ul li {
+#head-bar-ul li {
 	list-style: none;
 }
 
@@ -74,6 +74,10 @@ nav a:hover {
 	text-align: right;
 }
 
+#shgop-title-ul li{
+
+}
+
 #div-center {
 	margin: 0 auto;
 	width: 1180px;
@@ -88,6 +92,13 @@ nav a:hover {
 	overflow: hidden;
 	font-family: PingFang SC, Lantinghei SC, Helvetica Neue, Microsoft Yahei, Hiragino Sans GB, Microsoft Sans Serif, WenQuanYi Micro Hei, sans;
 }
+
+#shop-title:hover{
+	overflow: visible;
+	z-index: 10;
+}
+
+
 
 #shop-title-all {
 	width: 480px;
@@ -171,25 +182,47 @@ nav a:hover {
 #sort-bar-center{
 	width: 1180px;
 	height: 59px;
+	margin: 0 auto;
+	position: relative;
 }
 
 #sort-bar-left{
 	width: 885px;
 	height: 59px;
+	border: 1px solid #333333;
+	display: inline-block;
 }
 
 #search-bar{
-	margin: 10px;
+	position:absolute;
+	top:20%;
+	right: 0;
+	display: inline-block;
 	width: 262px;
-	height:30px;
+	height:32px;
+	border: 1px solid #ccc;
+}
+
+#search-box{
+	width: 216px;
+	height:24px;
+	margin:auto 8px;
+	border: 0;
 }
 
 #search-btn{
-	width: 30px;
-	height: 24px;
+	width: 22px;
+	height: 22px;
+	font-size: 22px;
+	position: relative;
+	top: 4px;
+	left:-5px;
+	
 }
 
-
+#shop-title-ul li{
+	list-style: none;
+}
 
 
 #content {

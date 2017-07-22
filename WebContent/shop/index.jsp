@@ -17,7 +17,7 @@
 		<div id="head-div">
 			<div id="head-bar">
 				<div id="head-bar-center">
-					<ul>
+					<ul id="head-bar-ul">
 						<li id="logo">
 
 						</li>
@@ -46,8 +46,29 @@
 						<div id="shop-introduce">
 							<span id="shop-name">我是一只鸡(漕河泾店)</span>
 							<span id="shop-details">(1515) 月售2307单</span>
-
 						</div>
+						<div>
+							<ul id="shop-title-ul">
+								<li>
+									<div>
+										<h1>4.6</h1> 综合评价 高于周边商家 52.0%
+									</div>
+									<div>
+										服务态度 4.7分 菜品评价 4.4分
+									</div>
+								</li>
+								<li>
+									分店“挺多”，有时嘴馋了就会去坐坐。菜单里粥粉面饭和甜品“各占一半”，主食味道“挺不错”，甜品还“不错”。双皮奶“每次必点”，奶香“浓郁”，”；招牌西米露倒是“蛮清爽”，值得一试。”，价格“挺便宜”。
+								</li>
+								<li>
+									商家地址： 上海市闵行区东兰路288号4号楼4-123室 营业时间： 10:00-20:30
+								</li>
+								<li>
+									由甜蜜蜜港式茶餐厅（东兰路店）提供配送服务								
+								</li>
+							</ul>
+						</div>
+
 					</div>
 				</div>
 				<div id="shop-info">
@@ -69,25 +90,17 @@
 					<span class="info-content">
 						34分钟
 					</span>
-
 				</div>
-
 				<i id="ilike" class="Hui-iconfont Hui-iconfont-star-o"></i>
-
 			</div>
-
 		</div>
 		<div id="sort-bar">
 			<div id="sort-bar-center">
 				<div id="sort-bar-left"></div>
 				<div id="search-bar">
 					<input type="text" id="search-box" placeholder="搜索美食..." />
-					<input type="submit" id="search-btn" value="" >
-						<i class="Hui-iconfont Hui-iconfont-search1" onclick="alert('hello')"> </i>
-						
-					</input>
+					<i id="search-btn" class="Hui-iconfont Hui-iconfont-search1" onclick="alert('hello')"> </i>
 				</div>
-				
 			</div>
 		</div>
 
