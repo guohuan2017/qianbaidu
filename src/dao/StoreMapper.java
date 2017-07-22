@@ -60,4 +60,9 @@ public interface StoreMapper {
 	Store selectTel(String tel);
 	
 	List<Store> selectAll();
+	
+	List<Store> SearchBySubtype(String subtype);
+	
+	List<Store> SearchStore(String type);
+
 }

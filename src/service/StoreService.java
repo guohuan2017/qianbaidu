@@ -61,4 +61,12 @@ public class StoreService {
 	public List<Store> selectAll(){
 		return dao.selectAll();
 	}
+	
+	public List<Store> SearchBySubtype(String subtype){
+		return dao.SearchBySubtype(subtype);
+	}
+	
+	public List<Store> SearchStore(String type){
+		return dao.SearchStore(type);
+	}
 }
