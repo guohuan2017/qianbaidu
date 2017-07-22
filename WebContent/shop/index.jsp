@@ -11,6 +11,8 @@
 			document.write("<script type='text/javascript' src='../js/jquery-3.2.1.js?'" + Math.random() + ">" + "</scr" + "ipt>");
 		</script>-->
 		<link rel="stylesheet" type="text/css" href="../css/Hui-iconfont/1.0.8/iconfont.css">
+		<script type="text/javascript" src="../js/jquery-3.2.1.js"></script>
+		<script type="text/javascript" src="../js/shop/index.js"></script>
 	</head>
 
 	<body>
@@ -38,6 +40,34 @@
 						<a id="lr">登录/注册</a>
 					</nav>
 				</div>
+			</div>
+			<div id="nav-left">
+				<ul>
+					<li>
+						<a href="#">热销</a>
+					</li>
+					<li>
+						<a href="#">优惠</a>
+					</li>
+					<li>
+						<a href="#">免费领红包</a>
+					</li>
+					<li>
+						<a href="#">免费领红包</a>
+					</li>
+					<li>
+						<a href="#">一折特价菜</a>
+					</li>
+					<li>
+						<a href="#">热销商品5折</a>
+					</li>
+					<li>
+						<a href="#">下午茶半价</a>
+					</li>
+					<li>
+						<a href="#">满额赠饮</a>
+					</li>
+				</ul>
 			</div>
 			<div id="div-center">
 				<div id="shop-title">
@@ -95,7 +125,7 @@
 					<i id="ilikestar" class="Hui-iconfont Hui-iconfont-star-o"></i>
 					<span id="ilikespan">收藏</span>
 				</a>
-				
+
 			</div>
 		</div>
 		<div id="sort-bar">
