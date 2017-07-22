@@ -64,7 +64,7 @@
 									商家地址： 上海市闵行区东兰路288号4号楼4-123室 营业时间： 10:00-20:30
 								</li>
 								<li>
-									由甜蜜蜜港式茶餐厅（东兰路店）提供配送服务								
+									由甜蜜蜜港式茶餐厅（东兰路店）提供配送服务
 								</li>
 							</ul>
 						</div>
@@ -91,7 +91,11 @@
 						34分钟
 					</span>
 				</div>
-				<i id="ilike" class="Hui-iconfont Hui-iconfont-star-o"></i>
+				<a href="#" id="ilike">
+					<i id="ilikestar" class="Hui-iconfont Hui-iconfont-star-o"></i>
+					<span id="ilikespan">收藏</span>
+				</a>
+				
 			</div>
 		</div>
 		<div id="sort-bar">
@@ -99,18 +103,18 @@
 				<div id="sort-bar-left">
 					<a class="nav-bar-a" href="#">所有商品</a>
 					<span class="nav-bar-span">|</span>
-					<a class="nav-bar-a"  href="#">评价</a>
+					<a class="nav-bar-a" href="#">评价</a>
 					<span class="nav-bar-span">|</span>
-					<a class="nav-bar-a"  href="#">商家资质</a>
+					<a class="nav-bar-a" href="#">商家资质</a>
 				</div>
 				<div id="sort-bar-right">
 					<a class="nav-bar-b" href="#">默认排序</a>
 					<span class="nav-bar-span">|</span>
-					<a class="nav-bar-b"  href="#">评分 &nbsp;<i class="Hui-iconfont Hui-iconfont-arrow1-bottom"></i></a>
+					<a class="nav-bar-b" href="#">评分 &nbsp;<i class="Hui-iconfont Hui-iconfont-arrow1-bottom"></i></a>
 					<span class="nav-bar-span">|</span>
-					<a class="nav-bar-b"  href="#">销量 &nbsp;<i class="Hui-iconfont Hui-iconfont-arrow1-bottom"></i></a>
+					<a class="nav-bar-b" href="#">销量 &nbsp;<i class="Hui-iconfont Hui-iconfont-arrow1-bottom"></i></a>
 					<span class="nav-bar-span">|</span>
-					<a class="nav-bar-b"  href="#">价格 &nbsp;<i class="Hui-iconfont Hui-iconfont-arrow1-bottom"></i></a>
+					<a class="nav-bar-b" href="#">价格 &nbsp;<i class="Hui-iconfont Hui-iconfont-arrow1-bottom"></i></a>
 				</div>
 				<div id="search-bar">
 					<input type="text" id="search-box" placeholder="搜索美食..." />
@@ -123,8 +127,19 @@
 			<div id="content-center">
 				<div id="content-center-right">
 					<div id="shop-notice">
-
+						<h3 id="notice-title">商家公告</h3>
+						<div id="notice-content">
+							感谢亲选择蜀地冒菜，本店属于公司旗下品牌直营店 为了确保亲能够及时收到餐品 请您务必在高峰时段提前下单 并尽可能地完善您的送餐地址及联系方式！高峰时间段建议提前订餐，遇到暴雨大雪等恶劣天气送餐有所延误请亲耐心等候！感谢亲的理解与支持！祝您用餐愉快^-^
+						</div>
+						<div id="deliver-say">
+							<label id="deliver-say-title">配送说明：</label>
+							<label id="deliver-say-content">配送费￥4</label>
+						</div>
+						<div id="file-a-complaint">
+							<a href="#">举报商家</a>
+						</div>
 					</div>
+
 				</div>
 				<div id="content-center-left">
 					<div id="head-catalog">
@@ -133,6 +148,8 @@
 						<a href="#" class="catalog">免费领红包</a>
 						<a href="#" class="catalog">一折特价菜</a>
 						<a href="#" class="catalog">热销商品5折</a>
+						<a href="#" class="catalog">下午茶半价</a>
+						<a href="#" class="catalog">满额赠饮</a>
 					</div>
 					<div class="goods-display">
 						<div class="title">
@@ -140,11 +157,33 @@
 							<span class="catalog-introduce">大家喜欢吃，才叫真好吃。</span>
 						</div>
 						<div class="good-display">
-							<img class="food-img" src="../img/shop/index/food.jpeg"/>
-							<P>good-display-left</P>
+							<img class="food-img" src="../img/shop/index/food.jpeg" />
+							<h3 class="food-name">港式菠萝油</h3>
+							<span class="food-introduce"> (197) 月售922份</span>
+							<span class="food-price">￥8</span>
+							<button class="add-to-cart">加入购物车</button>
 						</div>
 						<div class="good-display">
-							<P>good-display-right</P>
+							<img class="food-img" src="../img/shop/index/food.jpeg" />
+							<h3 class="food-name">港式菠萝油</h3>
+							<span class="food-introduce"> (197) 月售922份</span>
+							<span class="food-price">￥8</span>
+							<button class="add-to-cart">加入购物车</button>
+						</div>
+
+						<div class="good-display">
+							<img class="food-img" src="../img/shop/index/food.jpeg" />
+							<h3 class="food-name">港式菠萝油</h3>
+							<span class="food-introduce"> (197) 月售922份</span>
+							<span class="food-price">￥8</span>
+							<button class="add-to-cart">加入购物车</button>
+						</div>
+						<div class="good-display">
+							<img class="food-img" src="../img/shop/index/food.jpeg" />
+							<h3 class="food-name">港式菠萝油</h3>
+							<span class="food-introduce"> (197) 月售922份</span>
+							<span class="food-price">￥8</span>
+							<button class="add-to-cart">加入购物车</button>
 						</div>
 					</div>
 				</div>

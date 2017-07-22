@@ -143,30 +143,47 @@ nav a:hover {
 }
 
 .info-title {
-	margin-right: 20px;
 	font-size: 14px;
-	margin-right: 105px;
+	margin-right: 100px;
 }
 
 .info-content {
 	display: inline-block;
 	margin-top: 15px;
-	margin-right: 90px;
+	margin-right: 87px;
 	font-size: 18px;
 }
 
-#ilike {
+#ilike{
 	position: absolute;
 	right: 0;
 	top: 0;
-	font-size: 40px;
+	width: 80px;
+	height: 65px;
+	text-align: center;
+	background-color: rgba(255,255,255,0.1);
+	border-radius: 0 0 5px 5px;
+}
+
+#ilikestar {
+	display: block;
+	font-size: 21px;
 	color: white;
+	cursor: pointer;
+	margin-top: 10px;
+}
+
+#ilikestar:hover {
+	color: yellow;
 	cursor: pointer;
 }
 
-#ilike:hover {
-	color: yellow;
-	cursor: pointer;
+#ilikespan{
+	display: block;
+	margin-top: 5px;
+	color: rgb(238,238,238);
+	font-size: 14px;
+	
 }
 
 #sort-bar {
@@ -199,11 +216,12 @@ nav a:hover {
 	text-decoration: none;
 }
 
-.nav-bar-a:hover{
-	color: rgb(0,137,220);
+.nav-bar-a:hover {
+	color: rgb(0, 137, 220);
 	border-bottom: 5px solid #0089dc;
 }
-.nav-bar-a:active{
+
+.nav-bar-a:active {
 	color: #0089dc;
 }
 
@@ -215,7 +233,7 @@ nav a:hover {
 	font-family: "PingFang SC", "Lantinghei SC", "Helvetica Neue", "Microsoft Yahei", "Hiragino Sans GB", "Microsoft Sans Serif", "WenQuanYi Micro Hei", sans;
 	font-size: 14px;
 	line-height: 57px;
-	width:70px;
+	width: 70px;
 	height: 57px;
 	display: inline-block;
 	text-align: center;
@@ -223,7 +241,7 @@ nav a:hover {
 	text-decoration: none;
 }
 
-#sort-bar-right{
+#sort-bar-right {
 	width: 400px;
 	height: 57px;
 	display: inline-block;
@@ -231,10 +249,11 @@ nav a:hover {
 	right: 200px;
 }
 
-.nav-bar-b:hover{
+.nav-bar-b:hover {
 	color: #0089dc;
 }
-.nav-bar-b:active{
+
+.nav-bar-b:active {
 	color: #0089dc;
 }
 
@@ -284,7 +303,6 @@ nav a:hover {
 #content-center-right {
 	position: absolute;
 	right: 0;
-	background-color: #a1a1a1;
 }
 
 #content-center-left {
@@ -296,8 +314,6 @@ nav a:hover {
 
 #shop-notice {
 	width: 280px;
-	height: 400px;
-	background-color: pink;
 	display: inline-block;
 	position: absolute;
 	right: 0;
@@ -313,7 +329,7 @@ nav a:hover {
 	background-color: white;
 }
 
-.catalog{
+.catalog {
 	width: 16%;
 	display: inline-block;
 	text-decoration: none;
@@ -321,10 +337,12 @@ nav a:hover {
 	text-overflow: ellipsis;
 	overflow: hidden;
 	padding: 3px 10px;
+	font-size: 15px;
+	margin-bottom: 10px;
 }
 
-.catalog:hover{
-	background-color: rgb(238,238,238);
+.catalog:hover {
+	background-color: rgb(238, 238, 238);
 }
 
 .goods-display {
@@ -335,35 +353,119 @@ nav a:hover {
 .title {
 	height: 30px;
 	padding: 20px 15px 10px 15px;
-	color: rgb(51,51,51);
+	color: rgb(51, 51, 51);
 }
 
-h3{
+.title>h3 {
 	display: inline-block;
 	font-weight: normal;
-	color: rgb(51,51,51);
+	color: rgb(51, 51, 51);
 }
 
-.catalog-introduce{
+.catalog-introduce {
 	margin-left: 3px;
 	font-size: 12px;
-	color: rgb(153,153,153);
+	color: rgb(153, 153, 153);
 }
 
 .good-display {
+	font-family: PingFang SC, Lantinghei SC, Helvetica Neue, Microsoft Yahei, Hiragino Sans GB, Microsoft Sans Serif, WenQuanYi Micro Hei, sans;
 	width: 421px;
 	height: 100px;
 	padding-right: 10px;
 	border: 1px solid #eee;
 	margin-right: 14px;
-	background-color: black;
 	display: inline-block;
+	background-color: white;
+	position: relative;
 }
 
-.food-img{
-	
+.food-img {}
+
+.food-name {
+	color: rgb(51, 51, 51);
+	font-size: 14px;
+	font-weight: 700;
+	position: absolute;
+	top: 10px;
+	left: 114px;
 }
 
-P {
+.food-introduce {
+	display: block;
+	color: #999;
+	font-size: 12px;
+	position: absolute;
+	left: 180px;
+	top: 30px;
+}
+
+.food-price {
+	position: absolute;
+	top: 75px;
+	left: 110px;
+	color: red;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.add-to-cart {
+	width: 90px;
+	height: 26px;
+	position: absolute;
+	top: 60px;
+	left: 330px;
+	font-size: 12px;
+	background-color: #0089DC;
+	border: none;
+	border-radius: 20px;
 	color: white;
+}
+
+#shop-notice>h3 {
+	font-family: PingFang SC, Lantinghei SC, Helvetica Neue, Microsoft Yahei, Hiragino Sans GB, Microsoft Sans Serif, WenQuanYi Micro Hei, sans;
+	font-size: 1em;
+	color: white;
+	background-color: rgb(0, 137, 220);
+	height: 45px;
+	font-weight: normal;
+	line-height: 45px;
+	padding-left: 20px;
+}
+
+#notice-content {
+	font-size: 14px;
+	padding: 10px 15px;
+	line-height: 30px;
+	background-color: white;
+}
+
+#deliver-say {
+	height: 38px;
+	padding: 10px 15px;
+
+}
+
+#deliver-say-title{
+	font-size: 14px;
+	font-weight: bold;
+	display: block;
+}
+
+#deliver-say-content{
+	font-size: 14px;
+}
+
+#file-a-complaint {
+	height: 55px;
+	background-color: white;
+	line-height: 55px;
+		text-align: center;
+}
+
+#file-a-complaint>a {
+	text-decoration: none;
+	color: rgb(102, 102, 102);
+	font-size: 18px;
+
 }
