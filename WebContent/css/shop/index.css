@@ -74,9 +74,7 @@ nav a:hover {
 	text-align: right;
 }
 
-#shgop-title-ul li{
-
-}
+#shgop-title-ul li {}
 
 #div-center {
 	margin: 0 auto;
@@ -93,12 +91,10 @@ nav a:hover {
 	font-family: PingFang SC, Lantinghei SC, Helvetica Neue, Microsoft Yahei, Hiragino Sans GB, Microsoft Sans Serif, WenQuanYi Micro Hei, sans;
 }
 
-#shop-title:hover{
+#shop-title:hover {
 	overflow: visible;
 	z-index: 10;
 }
-
-
 
 #shop-title-all {
 	width: 480px;
@@ -173,68 +169,115 @@ nav a:hover {
 	cursor: pointer;
 }
 
-	
-#sort-bar{
+#sort-bar {
 	width: 100%;
 	height: 59px;
 }
 
-#sort-bar-center{
+#sort-bar-center {
 	width: 1180px;
 	height: 59px;
 	margin: 0 auto;
 	position: relative;
 }
 
-#sort-bar-left{
-	width: 885px;
-	height: 59px;
-	border: 1px solid #333333;
+#sort-bar-left {
+	width: 400px;
+	height: 57px;
 	display: inline-block;
 }
 
-#search-bar{
-	position:absolute;
-	top:20%;
+.nav-bar-a {
+	font-family: "PingFang SC", "Lantinghei SC", "Helvetica Neue", "Microsoft Yahei", "Hiragino Sans GB", "Microsoft Sans Serif", "WenQuanYi Micro Hei", sans;
+	font-size: 16px;
+	line-height: 57px;
+	width: 110px;
+	height: 57px;
+	display: inline-block;
+	text-align: center;
+	color: #333333;
+	text-decoration: none;
+}
+
+.nav-bar-a:hover{
+	color: rgb(0,137,220);
+	border-bottom: 5px solid #0089dc;
+}
+.nav-bar-a:active{
+	color: #0089dc;
+}
+
+.nav-bar-span {
+	color: #C1C1C1;
+}
+
+.nav-bar-b {
+	font-family: "PingFang SC", "Lantinghei SC", "Helvetica Neue", "Microsoft Yahei", "Hiragino Sans GB", "Microsoft Sans Serif", "WenQuanYi Micro Hei", sans;
+	font-size: 14px;
+	line-height: 57px;
+	width:70px;
+	height: 57px;
+	display: inline-block;
+	text-align: center;
+	color: #333333;
+	text-decoration: none;
+}
+
+#sort-bar-right{
+	width: 400px;
+	height: 57px;
+	display: inline-block;
+	position: absolute;
+	right: 200px;
+}
+
+.nav-bar-b:hover{
+	color: #0089dc;
+}
+.nav-bar-b:active{
+	color: #0089dc;
+}
+
+#search-bar {
+	position: absolute;
+	top: 20%;
 	right: 0;
 	display: inline-block;
 	width: 262px;
-	height:32px;
+	height: 32px;
 	border: 1px solid #ccc;
 }
 
-#search-box{
+#search-box {
 	width: 216px;
-	height:24px;
-	margin:auto 8px;
+	height: 24px;
+	margin: auto 8px;
 	border: 0;
 }
 
-#search-btn{
+#search-btn {
 	width: 22px;
 	height: 22px;
 	font-size: 22px;
 	position: relative;
 	top: 4px;
-	left:-5px;
-	
+	left: -5px;
 }
 
-#shop-title-ul li{
+#shop-title-ul li {
 	list-style: none;
 }
-
 
 #content {
 	width: 100%;
 	height: 2000px;
+	background-color: #f7f7f7;
 }
 
 #content-center {
 	margin: 0 auto;
 	width: 1180px;
 	height: 2000px;
-	background-color: aliceblue;
 	position: relative;
 }
 
@@ -249,7 +292,6 @@ nav a:hover {
 	left: 0;
 	width: 883px;
 	height: 2000px;
-	background-color: aliceblue;
 }
 
 #shop-notice {
@@ -268,19 +310,44 @@ nav a:hover {
 	padding: 10px 15px 5px 15px;
 	border: 1px solid #eee;
 	margin-top: 20px;
-	background-color: pink;
+	background-color: white;
+}
+
+.catalog{
+	width: 16%;
+	display: inline-block;
+	text-decoration: none;
+	color: #666;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	padding: 3px 10px;
+}
+
+.catalog:hover{
+	background-color: rgb(238,238,238);
 }
 
 .goods-display {
 	width: 900px;
 	height: 500px;
-	background-color: paleturquoise;
 }
 
 .title {
-	background-color: blue;
 	height: 30px;
 	padding: 20px 15px 10px 15px;
+	color: rgb(51,51,51);
+}
+
+h3{
+	display: inline-block;
+	font-weight: normal;
+	color: rgb(51,51,51);
+}
+
+.catalog-introduce{
+	margin-left: 3px;
+	font-size: 12px;
+	color: rgb(153,153,153);
 }
 
 .good-display {
@@ -291,6 +358,10 @@ nav a:hover {
 	margin-right: 14px;
 	background-color: black;
 	display: inline-block;
+}
+
+.food-img{
+	
 }
 
 P {

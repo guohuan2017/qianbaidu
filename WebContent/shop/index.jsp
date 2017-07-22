@@ -96,7 +96,22 @@
 		</div>
 		<div id="sort-bar">
 			<div id="sort-bar-center">
-				<div id="sort-bar-left"></div>
+				<div id="sort-bar-left">
+					<a class="nav-bar-a" href="#">所有商品</a>
+					<span class="nav-bar-span">|</span>
+					<a class="nav-bar-a"  href="#">评价</a>
+					<span class="nav-bar-span">|</span>
+					<a class="nav-bar-a"  href="#">商家资质</a>
+				</div>
+				<div id="sort-bar-right">
+					<a class="nav-bar-b" href="#">默认排序</a>
+					<span class="nav-bar-span">|</span>
+					<a class="nav-bar-b"  href="#">评分 &nbsp;<i class="Hui-iconfont Hui-iconfont-arrow1-bottom"></i></a>
+					<span class="nav-bar-span">|</span>
+					<a class="nav-bar-b"  href="#">销量 &nbsp;<i class="Hui-iconfont Hui-iconfont-arrow1-bottom"></i></a>
+					<span class="nav-bar-span">|</span>
+					<a class="nav-bar-b"  href="#">价格 &nbsp;<i class="Hui-iconfont Hui-iconfont-arrow1-bottom"></i></a>
+				</div>
 				<div id="search-bar">
 					<input type="text" id="search-box" placeholder="搜索美食..." />
 					<i id="search-btn" class="Hui-iconfont Hui-iconfont-search1" onclick="alert('hello')"> </i>
@@ -113,11 +128,19 @@
 				</div>
 				<div id="content-center-left">
 					<div id="head-catalog">
-
+						<a href="#" class="catalog">热销</a>
+						<a href="#" class="catalog">优惠</a>
+						<a href="#" class="catalog">免费领红包</a>
+						<a href="#" class="catalog">一折特价菜</a>
+						<a href="#" class="catalog">热销商品5折</a>
 					</div>
 					<div class="goods-display">
-						<div class="title"></div>
+						<div class="title">
+							<h3>热销</h3>
+							<span class="catalog-introduce">大家喜欢吃，才叫真好吃。</span>
+						</div>
 						<div class="good-display">
+							<img class="food-img" src="../img/shop/index/food.jpeg"/>
 							<P>good-display-left</P>
 						</div>
 						<div class="good-display">
