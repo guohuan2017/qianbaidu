@@ -104,12 +104,10 @@
 				<div id="qbdp">
 					<div id="clearfix">
 						<c:forEach var="store" items="${storelist}">
-<<<<<<< HEAD
 							<a href="" class="sjpp">
 								<div id="rstblock-logo">
 									<img src="${store.photo}" width="70" height="70" />
 									<span id="rstblock-span">25分钟</span>
-=======
 						<a href=""/qianbaidu/shopfood.action?id=${store.id}" class="sjpp">
 							<div id="rstblock-logo">
 								<img src="${store.photo}" width="70" height="70"/>
@@ -121,7 +119,6 @@
 								${store.info} </span> <span id="rstblock-cost"> 配送费￥0 </span>
 								<div id="rstblock-activity">
 									<i class="rstblock-activity">保</i> <i class="rstblock-activity">票</i>
->>>>>>> branch 'dev' of https://github.com/guohuan2017/qianbaidu.git
 								</div>
 								<div id="rstblock-content">
 									<div id="rstblock-title">${store.storename}(${store.address})</div>
@@ -138,7 +135,12 @@
 			</div>
 		</div>
 		<div id="side-bar">
-			<div id="side-menu"></div>
+			<div id="side-menu">
+				<a id="go-to-order" href="#"><i class="Hui-iconfont">&#xe627;</i></a>
+				<a id="go-to-cart" href="#"><i style="display: block;font-size: 22px;" class="Hui-iconfont">&#xe6b9;</i>购<br>物<br>车</a>
+				<a id="go-to-mail" href="#"><i class="Hui-iconfont">&#xe63b;</i></a>
+				<a id="appqr"><i class="Hui-iconfont">&#xe6cb;</i></a>
+			</div>
 			<div id="title">
 				<a href="#">购物车</a>
 				<a style="position: absolute; right: 10px;" href="#"><i class="Hui-iconfont">&#xe6d7;</i></a>
@@ -170,7 +172,37 @@
 					</dd>
 				</dl>
 			</div>
+			
+			<div class="cart">
+				<dl class="cart-dl">
+					<dt class="cart-dt">
+						<span>1号购物车</span>
+						<a href="#">[清空]</a>
+					</dt>
+					<dd class="cart-dd">
+						<span class="food-name">农家小炒肉</span>
+						<div id="nubmer-btn-group">
+							<button style="position:relative;left: 5px;" class="number-btn" ondblclick="reduce(foodid)">-</button>
+							<input type="number" id="foodid-number" class="food-number"/>
+							<button style="position:relative;left: -5px;" class="number-btn" ondblclick="add(foodid)">+</button>
+						</div>
+						<span class="price-sum">100</span>
+					</dd>
+					<dd class="cart-dd">
+						<span class="food-name">农家小炒肉</span>
+						<div id="nubmer-btn-group">
+							<button style="position:relative;left: 5px;" class="number-btn" ondblclick="reduce(foodid)">-</button>
+							<input type="number" id="foodid-number" class="food-number"/>
+							<button style="position:relative;left: -5px;" class="number-btn" ondblclick="add(foodid)">+</button>
+						</div>
+						<span class="price-sum">100</span>
+					</dd>
+				</dl>
+			</div>
+			<div id="go-to-confirm-div">
+				<p>共&nbsp;<span>5</span>&nbsp;份，总计&nbsp;<span>140</span></p>
+				<button id="go-to-confirm-btn">去结算</button>
+			</div>
 		</div>
 	</body>
-
 </html>
