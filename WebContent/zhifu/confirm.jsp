@@ -137,7 +137,7 @@
 						</h2>
 					<ul>
 						<li class="checkout-tjdz-bk">
-							<i class="Hui-iconfont" style="width: 63px;height: 42px; display: table-cell; border-right: 1px solid #eee;font-size: 30px;text-align: center;color: #999999;">&#xe6c9;</i>
+							<i class="Hui-iconfont" style="vertical-align: middle;width: 63px;height: 42px; display: table-cell; border-right: 1px solid #eee;font-size: 30px;text-align: center;color: #999999;">&#xe6c9;</i>
 							<div class="checkout-tjdz-address">
 								<p> 顾家文 先生 18201727218</p>
 								<p>民润大厦宜山路13881楼中软国际</p>
@@ -179,7 +179,9 @@
 					</h2>
 					<p class="xzyh-ng-binding">
 						<span class="xzyh-ng-span">配送方式</span>
-						<span>本订单由 [蜂鸟专送] 提供配送</span>
+						<span>本订单由 
+						<a style="color:#0089dc;font-style: normal">[蜂鸟专送]</a>
+						 提供配送</span>
 					</p>
 					<p class="xzyh-ng-binding">
 						<span class="xzyh-ng-span">送达时间</span>

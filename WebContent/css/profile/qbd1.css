@@ -326,6 +326,7 @@ a {
 	padding: 0 20px 11px;
 	font-size: 18px;
 	font-weight: 700;
+	margin-bottom: 50px;
 }
 
 .profile-changewd {
@@ -492,7 +493,6 @@ a {
 	line-height: 20px;
 	bottom: 5px;
 	margin-left: 142px;
-
 }
 
 .formfield-hint-span {
@@ -500,3 +500,116 @@ a {
 	display: none;
 }
 
+.profile-order-list {
+	width: 100%;
+	color: #333333;
+	border-spacing: 0;
+}
+
+.profile-order-list thead {
+	background-color: #eee;
+	line-height: 30px;
+}
+
+.profile-order-list thead th {
+	text-align: center;
+	font-size: 12px;
+	font-weight: 400;
+}
+
+.profile-order-list tbody tr:first-child {
+	height: 10px;
+}
+
+.ordertimeline-time {
+	text-align: right;
+	padding-right: 22px;
+	font-size: 12px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	position: relative;
+	width: 10%;
+	color: #999;
+	border-right: 1px #eee solid;
+}
+
+.ordertimeline-time p:first-child {
+	font-size: 16px;
+}
+
+.ordertimeline-title {
+	margin-bottom: 5px;
+	font-weight: 700;
+	color: #333;
+	font-size: 14px;
+}
+
+.ordertimeline-avatar {
+	padding-left: 37px;
+	padding-right: 16px;
+	width: 70px;
+}
+
+.ordertimeline-avatar img {
+	border-radius: 50%;
+}
+
+.ordertimeline-info {
+	text-align: left;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	border-bottom: 1px #eee dashed;
+}
+
+.ordertimeline-info .ordertimeline-title {
+	margin-bottom: 10px;
+}
+
+.ordertimeline-info a {
+	color: inherit;
+}
+
+.ordertimeline-info-food {
+	font-size: 12px;
+	color: #999999;
+}
+
+.ordertimeline-info-productnum {
+	font-weight: 700;
+	color: #666;
+}
+
+.ordertimeline-amount {
+	text-align: center;
+	font-size: 12px;
+	border-bottom: 1px #eee dashed;
+}
+
+.ordertimeline-status {
+	text-align: center;
+	font-size: 12px;
+	border-bottom: 1px #eee dashed;
+}
+
+.ordertimeline-status h3 {
+	color: #999999;
+	font-weight: 400;
+}
+
+.ordertimeline-handle {
+	text-align: center;
+	font-size: 12px;
+	border-bottom: 1px #eee dashed;
+}
+
+.ordertimeline-handle a {
+	display: inline-block;
+	width: 78px;
+	line-height: 24px;
+	margin: 5px 0;
+	color: #333;
+}
+
+.ordertimeline-handle-detail {
+	border: 1px solid #eee;
+}
