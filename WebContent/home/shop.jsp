@@ -104,10 +104,24 @@
 				<div id="qbdp">
 					<div id="clearfix">
 						<c:forEach var="store" items="${storelist}">
+<<<<<<< HEAD
 							<a href="" class="sjpp">
 								<div id="rstblock-logo">
 									<img src="${store.photo}" width="70" height="70" />
 									<span id="rstblock-span">25分钟</span>
+=======
+						<a href=""/qianbaidu/shopfood.action?id=${store.id}" class="sjpp">
+							<div id="rstblock-logo">
+								<img src="${store.photo}" width="70" height="70"/>
+								<span id="rstblock-span">25分钟</span>
+							</div>
+							<div id="rstblock-content">
+								<div id="rstblock-title">${store.storename}(${store.address})</div>
+								<img src="/qianbaidu/img/home/index/星星.jpg" /> <span id="rstblock-monthsales">
+								${store.info} </span> <span id="rstblock-cost"> 配送费￥0 </span>
+								<div id="rstblock-activity">
+									<i class="rstblock-activity">保</i> <i class="rstblock-activity">票</i>
+>>>>>>> branch 'dev' of https://github.com/guohuan2017/qianbaidu.git
 								</div>
 								<div id="rstblock-content">
 									<div id="rstblock-title">${store.storename}(${store.address})</div>

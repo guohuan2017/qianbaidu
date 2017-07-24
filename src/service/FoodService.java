@@ -1,5 +1,7 @@
 package service;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -40,5 +42,9 @@ public class FoodService {
 
 	public int updateByPrimaryKey(Food record){
 		return dao.updateByPrimaryKey(record);
+	}
+	
+	public List<Food> selectByStoreId(Integer id){
+		return dao.selectByStoreId(id);
 	}
 }

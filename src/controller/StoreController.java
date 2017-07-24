@@ -150,7 +150,7 @@ public class StoreController {
 	@RequestMapping("/subtype.action")
 	public ModelAndView searchBySubtype(HttpServletRequest request, HttpServletResponse response){
 		String subtype = request.getParameter("type");
-		ModelAndView mav = new ModelAndView("home/shop");
+		ModelAndView mav = new ModelAndView("home/shoploginwin");
 		List<Store> storelist = service.SearchBySubtype(subtype);
 		mav.addObject("storelist", storelist);
 		mav.addObject("fl", request.getParameter("fl"));
@@ -160,7 +160,7 @@ public class StoreController {
 	@RequestMapping("/searchshop.action")
 	public ModelAndView search(HttpServletRequest request, HttpServletResponse response){
 		String type = "%" + request.getParameter("info") + "%";
-		ModelAndView mav = new ModelAndView("home/shop");
+		ModelAndView mav = new ModelAndView("home/shoploginwin");
 		List<Store> storelist = service.SearchStore(type);
 		mav.addObject("storelist", storelist);
 		return mav;
