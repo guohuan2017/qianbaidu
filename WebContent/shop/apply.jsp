@@ -5,7 +5,7 @@
 
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>开店申请</title>
+<title>商铺中心-开店申请</title>
 <link rel="stylesheet" href="/qianbaidu/css/shop/apply.css" />
 <script type="text/javascript"
 	src="http://api.map.baidu.com/api?v=2.0&ak=kUAyHUuiEwHVmWdyfap31YWSUBTWjAnE"></script>
@@ -14,7 +14,7 @@
 <body>
 	<div id="header-bar">
 		<div id="header-bar-center">
-			<span class="whitecolor" id="businesscenterspan">饿了么商户中心 </span> <a
+			<span class="whitecolor" id="businesscenterspan">饿了么商铺中心 </span> <a
 				href="#" class="whitecolor" id="integrity-book">点击查看《廉正告知书》</a> <a
 				class="whitecolor" id="pleasecontact">如开店过程遇到问题，可以拨打客服电话：xxx-xxxxxxx</a>
 		</div>

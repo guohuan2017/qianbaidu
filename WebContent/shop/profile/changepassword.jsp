@@ -6,9 +6,9 @@
 
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<title>个人中心_更改密码</title>
-		<link rel="stylesheet" type="text/css" href="/qianbaidu/css/user/profile/qbd.css" />
-		<link rel="stylesheet" type="text/css" href="/qianbaidu/css/user/profile/qbd1.css" />
+		<title>商户中心_更改密码</title>
+		<link rel="stylesheet" type="text/css" href="/qianbaidu/css/shop/profile/qbd.css" />
+		<link rel="stylesheet" type="text/css" href="/qianbaidu/css/shop/profile/qbd1.css" />
 		<script type="text/javascript" src="/qianbaidu/js/jquery-3.2.1.js"></script>
 		<script type="text/javascript" src="/qianbaidu/js/profile/profile.js">
 		</script>

@@ -6,10 +6,10 @@
 
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<title>个人中心-我的订单</title>
+		<title>商户中心-我的订单</title>
 
-		<link rel="stylesheet" type="text/css" href="/qianbaidu/css/user/profile/qbd.css" />
-		<link rel="stylesheet" type="text/css" href="/qianbaidu/css/user/profile/qbd1.css" />
+		<link rel="stylesheet" type="text/css" href="/qianbaidu/css/shop/profile/qbd.css" />
+		<link rel="stylesheet" type="text/css" href="/qianbaidu/css/shop/profile/qbd1.css" />
 		<link rel="stylesheet" type="text/css" href="/qianbaidu/css/Hui-iconfont/1.0.8/iconfont.css"/>
 	</head>
 

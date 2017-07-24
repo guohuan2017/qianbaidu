@@ -6,8 +6,8 @@
 </script>
 
 <html>
-	<link rel="stylesheet" type="text/css" href="/qianbaidu/css/profile/qbd.css" />
-	<link rel="stylesheet" type="text/css" href="/qianbaidu/css/profile/qbd1.css" />
+	<link rel="stylesheet" type="text/css" href="/qianbaidu/css/user/profile/qbd.css" />
+	<link rel="stylesheet" type="text/css" href="/qianbaidu/css/user/profile/qbd1.css" />
 
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
