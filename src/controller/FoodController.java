@@ -21,7 +21,7 @@ public class FoodController {
 	
 	@RequestMapping("/shopfood.action")
 	public ModelAndView shopjsp(HttpServletRequest request, HttpServletResponse response) {
-		ModelAndView mav = new ModelAndView("shop/index");
+		ModelAndView mav = new ModelAndView("shop/index_whs");
 		List<Food> foodlist = service.selectByStoreId(Integer.parseInt(request.getParameter("id")));
 		mav.addObject("foodlist", foodlist);
 		return mav;
