@@ -9,9 +9,9 @@
     -->
     <id column="id" property="id" jdbcType="INTEGER" />
     <result column="content" property="content" jdbcType="VARCHAR" />
-    <result column="food_id" property="foodId" jdbcType="INTEGER" />
-    <result column="user_id" property="userId" jdbcType="INTEGER" />
-    <result column="order_id" property="orderId" jdbcType="INTEGER" />
+    <result column="food_id" property="food_id" jdbcType="INTEGER" />
+    <result column="user_id" property="user_id" jdbcType="INTEGER" />
+    <result column="order_id" property="order_id" jdbcType="INTEGER" />
     <result column="stars" property="stars" jdbcType="INTEGER" />
     <result column="time" property="time" jdbcType="TIMESTAMP" />
   </resultMap>
