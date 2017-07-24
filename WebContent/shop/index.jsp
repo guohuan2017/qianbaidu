@@ -21,7 +21,8 @@
 				<div id="head-bar-center">
 					<ul id="head-bar-ul">
 						<li id="logo">
-
+							<img id="img-logo" src="../img/logo/千百度logo_图片.png" />
+							<span id="font-logo">千百度</span>
 						</li>
 						<li>
 							首页
@@ -34,10 +35,10 @@
 						</li>
 					</ul>
 					<nav>
-						<a>服务中心</a>
+						<a><i style="font-size: 20px; margin-right: 2px" class="Hui-iconfont Hui-iconfont-kefu"></i>服务中心</a>
 						<a>规则中心</a>
-						<a>手机应用</a>
-						<a id="lr">登录/注册</a>
+						<a><i style="font-size: 21px; margin-right: 2px;" class="Hui-iconfont Hui-iconfont-phone"></i>手机应用</a>
+						<a style="margin-right: 0; color: white;" id="lr"><i style="font-size: 21px; margin-right: 10px;color: white;" class="Hui-iconfont Hui-iconfont-user"></i>登录/注册</a>
 					</nav>
 				</div>
 			</div>
@@ -218,6 +219,14 @@
 					</div>
 				</div>
 
+			</div>
+		</div>
+		<div id="cart">
+			<div id="bottom-bar">
+				<i id="img-cart" class="Hui-iconfont Hui-iconfont-cart-kong"> </i>
+				<span id="rmb">￥</span>
+				<span id="total-price">20</span>
+				<span id="deliver-price">|&nbsp;&nbsp;配送费￥5</span>
 			</div>
 		</div>
 
