@@ -607,7 +607,7 @@ input::-webkit-inner-spin-button {
 	margin: 0;
 }
 
-#foodid-number {
+.food-number {
 	width: 30px;
 	height: 20px;
 	text-align: center;
@@ -649,3 +649,23 @@ input::-webkit-inner-spin-button {
 	line-height: 15px;
 	
 }
+
+#go-to-confirm-div{
+	background-color: #51d862;
+	width: 120px;
+	height: 46px;
+	position: absolute;
+	right: 0;
+	border: none;
+	text-align: center;
+	line-height: 46px;
+}
+
+#confirm-btn{
+	font-size: 14px;
+	font-weight: 700;
+	color: white;
+	text-decoration: none;
+}
+
+
