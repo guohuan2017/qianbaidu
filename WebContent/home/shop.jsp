@@ -138,10 +138,20 @@
 					</dt>
 					<dd class="cart-dd">
 						<span class="food-name">农家小炒肉</span>
+						<div id="nubmer-btn-group">
+							<button style="position:relative;left: 5px;" class="number-btn" ondblclick="reduce(foodid)">-</button>
+							<input type="number" id="foodid-number" class="food-number"/>
+							<button style="position:relative;left: -5px;" class="number-btn" ondblclick="add(foodid)">+</button>
+						</div>
 						<span class="price-sum">100</span>
 					</dd>
 					<dd class="cart-dd">
 						<span class="food-name">农家小炒肉</span>
+						<div id="nubmer-btn-group">
+							<button style="position:relative;left: 5px;" class="number-btn" ondblclick="reduce(foodid)">-</button>
+							<input type="number" id="foodid-number" class="food-number"/>
+							<button style="position:relative;left: -5px;" class="number-btn" ondblclick="add(foodid)">+</button>
+						</div>
 						<span class="price-sum">100</span>
 					</dd>
 				</dl>

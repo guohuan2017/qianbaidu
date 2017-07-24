@@ -244,7 +244,7 @@
 						<span>苏州汤包</span>
 						<div id="nubmer-btn-group">
 							<button style="position:relative;left: 5px;" class="number-btn" ondblclick="reduce(foodid)">-</button>
-							<input type="number" id="foodid-number" />
+							<input type="number" id="foodid-number" class="food-number"/>
 							<button style="position:relative;left: -5px;" class="number-btn" ondblclick="add(foodid)">+</button>
 						</div>
 						<span style="color: #f17530;position:absolute; right: 15px;">¥14</span>

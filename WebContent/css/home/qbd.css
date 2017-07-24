@@ -254,3 +254,25 @@
 	color: #f17530;
 	font-weight: bold;
 }
+
+
+.food-number {
+	width: 30px;
+	height: 20px;
+	text-align: center;
+	border: 1px solid rgb(221, 221, 221);
+}
+
+.number-btn {
+	background-color: white;
+	width: 18px;
+	height: 20px;
+	border: 1px solid rgb(221, 221, 221);
+	text-align: center;
+}
+
+#nubmer-btn-group{
+	display: inline-block;
+	position: absolute;
+	left: 150px;
+}
