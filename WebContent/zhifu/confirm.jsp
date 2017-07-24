@@ -137,7 +137,7 @@
 						</h2>
 					<ul>
 						<li class="checkout-tjdz-bk">
-							<i class="Hui-iconfont" style="width: 63px;height: 42px; display: table-cell; border-right: 1px solid #eee;font-size: 30px;text-align: center;">&#xe671;</i>
+							<i class="Hui-iconfont" style="width: 63px;height: 42px; display: table-cell; border-right: 1px solid #eee;font-size: 30px;text-align: center;color: #999999;">&#xe6c9;</i>
 							<div class="checkout-tjdz-address">
 								<p> 顾家文 先生 18201727218</p>
 								<p>民润大厦宜山路13881楼中软国际</p>
