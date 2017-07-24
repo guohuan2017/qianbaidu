@@ -1,5 +1,7 @@
 package dao;
 
+import java.util.List;
+
 import pojo.Food;
 
 public interface FoodMapper {
@@ -50,4 +52,6 @@ public interface FoodMapper {
      * @mbggenerated Tue Jul 18 15:34:39 CST 2017
      */
     int updateByPrimaryKey(Food record);
+    
+    List<Food> selectByStoreId(Integer id);
 }

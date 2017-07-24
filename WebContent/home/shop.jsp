@@ -103,7 +103,7 @@
 				<div id="qbdp">
 					<div id="clearfix">
 						<c:forEach var="store" items="${storelist}">
-						<a href="" class="sjpp">
+						<a href=""/qianbaidu/shopfood.action?id=${store.id}" class="sjpp">
 							<div id="rstblock-logo">
 								<img src="${store.photo}" width="70" height="70"/>
 								<span id="rstblock-span">25分钟</span>
