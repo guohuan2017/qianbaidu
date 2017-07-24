@@ -226,6 +226,8 @@
 				<span id="rmb">￥</span>
 				<span id="total-price">20</span>
 				<span id="deliver-price">|&nbsp;&nbsp;配送费￥5</span>
+				<div id="go-to-confirm-div"><a href="#" id="confirm-btn">去结算></a></div>
+				
 			</div>
 			<div id="cart-content">
 				<ul id="cart-content-ul">
@@ -251,7 +253,7 @@
 						<span>肯德基汉堡</span>
 						<div id="nubmer-btn-group">
 							<button style="position:relative;left: 5px;" class="number-btn" ondblclick="reduce(foodid)">-</button>
-							<input type="number" id="foodid-number" />
+							<input type="number" id="foodid-number" class="food-number"/>
 							<button style="position:relative;left: -5px;" class="number-btn" ondblclick="add(foodid)">+</button>
 						</div>
 						<span style="color: #f17530;position:absolute; right: 15px;">¥14</span>
@@ -259,9 +261,7 @@
 				</ul>
 				<div class="clearfloat"></div>
 			</div>
-
 		</div>
-
 	</body>
 
 </html>

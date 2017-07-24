@@ -5,16 +5,17 @@
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
-	<link rel="stylesheet" type="text/css" href="/qianbaidu/css/home/qbd.css" />
-	<link rel="stylesheet" type="text/css" href="/qianbaidu/css/home/qbd1.css" />
 
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<title>饿了么网上订餐</title>
+		<link rel="stylesheet" type="text/css" href="../css/home/qbd.css" />
+		<link rel="stylesheet" type="text/css" href="../css/home/qbd1.css" />
+		<link rel="stylesheet" type="text/css" href="../css/Hui-iconfont/1.0.8/iconfont.css" />
 	</head>
 
 	<body>
-	
+
 		<script type="text/javascript">
 			function GetQueryString(name) //这个方法去获得get参数
 			{
@@ -33,7 +34,7 @@
 
 			}
 		</script>
-		
+
 		<div id="shouye">
 			<div id="shouye1">
 				<a href="/qianbaidu/home/shop.jsp" class="logo"> <img class="logo1" src="/qianbaidu/img/home/index/logo.jpg" />
@@ -103,23 +104,47 @@
 				<div id="qbdp">
 					<div id="clearfix">
 						<c:forEach var="store" items="${storelist}">
-						<a href="" class="sjpp">
-							<div id="rstblock-logo">
-								<img src="${store.photo}" width="70" height="70"/>
-								<span id="rstblock-span">25分钟</span>
-							</div>
-							<div id="rstblock-content">
-								<div id="rstblock-title">${store.storename}(${store.address})</div>
-								<img src="/qianbaidu/img/home/index/星星.jpg" /> <span id="rstblock-monthsales">
-								${store.info} </span> <span id="rstblock-cost"> 配送费￥0 </span>
-								<div id="rstblock-activity">
-									<i class="rstblock-activity">保</i> <i class="rstblock-activity">票</i>
+							<a href="" class="sjpp">
+								<div id="rstblock-logo">
+									<img src="${store.photo}" width="70" height="70" />
+									<span id="rstblock-span">25分钟</span>
 								</div>
-							</div>
-						</a>
+								<div id="rstblock-content">
+									<div id="rstblock-title">${store.storename}(${store.address})</div>
+									<img src="/qianbaidu/img/home/index/星星.jpg" /> <span id="rstblock-monthsales">
+								${store.info} </span> <span id="rstblock-cost"> 配送费￥0 </span>
+									<div id="rstblock-activity">
+										<i class="rstblock-activity">保</i> <i class="rstblock-activity">票</i>
+									</div>
+								</div>
+							</a>
 						</c:forEach>
 					</div>
 				</div>
+			</div>
+		</div>
+		<div id="side-bar">
+			<div id="side-menu"></div>
+			<div id="title">
+				<a href="#">购物车</a>
+				<a style="position: absolute; right: 10px;" href="#"><i class="Hui-iconfont">&#xe6d7;</i></a>
+			</div>
+
+			<div class="cart">
+				<dl class="cart-dl">
+					<dt class="cart-dt">
+						<span>1号购物车</span>
+						<a href="#">[清空]</a>
+					</dt>
+					<dd class="cart-dd">
+						<span class="food-name">农家小炒肉</span>
+						<span class="price-sum">100</span>
+					</dd>
+					<dd class="cart-dd">
+						<span class="food-name">农家小炒肉</span>
+						<span class="price-sum">100</span>
+					</dd>
+				</dl>
 			</div>
 		</div>
 	</body>
