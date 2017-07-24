@@ -218,7 +218,6 @@
 						</div>
 					</div>
 				</div>
-
 			</div>
 		</div>
 		<div id="cart">
@@ -228,6 +227,39 @@
 				<span id="total-price">20</span>
 				<span id="deliver-price">|&nbsp;&nbsp;配送费￥5</span>
 			</div>
+			<div id="cart-content">
+				<ul id="cart-content-ul">
+					<li class="cart-content-li" id="cart-content-title">
+						<span>购物车</span>
+						<a id="clearall" href="#">[清空]</a>
+						<a id="add-cart" href="#">
+							<i id="add-cart" class="Hui-iconfont Hui-iconfont-cart-kong">
+							</i>
+							<span class="Hui-iconfont Hui-iconfont-add"></span>
+						</a>
+					</li>
+					<li class="cart-content-li" id="cart-content-li-">
+						<span>苏州汤包</span>
+						<div id="nubmer-btn-group">
+							<button style="position:relative;left: 5px;" class="number-btn" ondblclick="reduce(foodid)">-</button>
+							<input type="number" id="foodid-number" />
+							<button style="position:relative;left: -5px;" class="number-btn" ondblclick="add(foodid)">+</button>
+						</div>
+						<span style="color: #f17530;position:absolute; right: 15px;">¥14</span>
+					</li>
+					<li class="cart-content-li">
+						<span>肯德基汉堡</span>
+						<div id="nubmer-btn-group">
+							<button style="position:relative;left: 5px;" class="number-btn" ondblclick="reduce(foodid)">-</button>
+							<input type="number" id="foodid-number" />
+							<button style="position:relative;left: -5px;" class="number-btn" ondblclick="add(foodid)">+</button>
+						</div>
+						<span style="color: #f17530;position:absolute; right: 15px;">¥14</span>
+					</li>
+				</ul>
+				<div class="clearfloat"></div>
+			</div>
+
 		</div>
 
 	</body>

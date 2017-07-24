@@ -69,7 +69,7 @@ nav {
 	line-height: 48px;
 	float: right;
 	font-size: 14px;
-	position:relative;
+	position: relative;
 }
 
 nav a {
@@ -514,16 +514,17 @@ nav a:hover {
 }
 
 #cart {
-	width: 320px;
-	height: 200px;
-	background-color: white;
 	position: fixed;
+	width: 320px;
+	height: 181px;
+	background-color: white;
 	right: 0;
 	bottom: 0;
-	font-family: PingFang SC,Lantinghei SC,Helvetica Neue,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans;
+	font-family: PingFang SC, Lantinghei SC, Helvetica Neue, Microsoft Yahei, Hiragino Sans GB, Microsoft Sans Serif, WenQuanYi Micro Hei, sans;
+	box-shadow: 0 1px 15px #ccc;
 }
 
-#bottom-bar{
+#bottom-bar {
 	position: absolute;
 	bottom: 0;
 	left: 0;
@@ -533,22 +534,23 @@ nav a:hover {
 	box-shadow: #2c2c2c;
 }
 
-#img-cart{
+#img-cart {
 	font-size: 21px;
 	position: absolute;
 	top: 12px;
 	left: 8px;
 	color: white;
+	font-weight: 500;
 }
 
-#bottom-bar > #rmb{
+#bottom-bar>#rmb {
 	position: absolute;
 	top: 15px;
 	left: 36px;
 	color: white;
 }
 
-#total-price{
+#total-price {
 	position: absolute;
 	top: 7px;
 	left: 49px;
@@ -556,10 +558,94 @@ nav a:hover {
 	color: white;
 }
 
-#deliver-price{
+#deliver-price {
 	position: absolute;
 	top: 19px;
 	left: 87px;
 	font-size: 9px;
 	color: #999;
+}
+
+#cart-content {
+	width: 100%;
+	position: absolute;
+	bottom: 45px;
+	background-color: white;
+}
+
+#cart-content-ul {
+	display: block;
+}
+
+.cart-content-li {
+	height: 45px;
+	list-style: none;
+	margin: auto 10px;
+	line-height: 45px;
+	border-bottom: 1px solid #eee;
+	font-family: "PingFang SC", "Lantinghei SC", "Helvetica Neue", "Microsoft Yahei", "Hiragino Sans GB", "Microsoft Sans Serif", "WenQuanYi Micro Hei", sans;
+	font-size: 14px;
+	color: #666;
+	font-weight: 500;
+}
+
+.cart-content-li > a{
+	color: #0089dc;
+	text-decoration: none;
+}
+
+.clearfloat {
+	clear: both;
+	height: 0;
+	font-size: 1px;
+	line-height: 0px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none !important;
+	margin: 0;
+}
+
+#foodid-number {
+	width: 30px;
+	height: 20px;
+	text-align: center;
+	border: 1px solid rgb(221, 221, 221);
+}
+
+.number-btn {
+	background-color: white;
+	width: 18px;
+	height: 20px;
+	border: 1px solid rgb(221, 221, 221);
+	text-align: center;
+}
+
+#nubmer-btn-group{
+	display: inline-block;
+	position: absolute;
+	left: 150px;
+}
+
+#add-cart > i{
+	font-size: 21px; 
+	position: absolute; 
+	right: 20px; 
+	font-weight: 500;
+}
+
+#add-cart > span{
+	position: absolute;
+	left: 292px;
+	top: 11px;
+	color: white;
+	background-color: #0089DC;
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	font-size: 13px;
+	text-align: center;
+	line-height: 15px;
+	
 }
