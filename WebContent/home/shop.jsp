@@ -72,7 +72,8 @@
 				</div>
 				<form action="searchshop.action" method="post">
 					<div id="ss">
-						<input type="text" class="ss1_1" name="info" placeholder="搜索商家,美食..." /> <input type="submit" class="ss1" name="" value="" />
+						<input type="text" class="ss1_1" name="info" placeholder="搜索商家,美食..." />
+						<input type="submit" class="ss1" name="" value="" />
 					</div>
 				</form>
 			</div>
