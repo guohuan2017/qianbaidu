@@ -27,11 +27,26 @@
 }
 
 #logo {
-	width: 114px;
+	width: 124px;
 	height: 48px;
-	margin-right: 10px;
-	background-image: url(../../img/logo/千百度logo.png);
-	background-size: cover;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-align-items: center;
+	align-items: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+}
+
+#img-logo {
+	margin-top: -4px;
+	height: 33px;
+}
+
+#font-logo {
+	font-family: "幼圆";
+	font-size: 20px;
+	font-weight: bold;
+	height: 48px;
 }
 
 #head-bar-ul li {
@@ -49,18 +64,24 @@
 }
 
 nav {
-	width: 500px;
+	width: 490px;
 	height: 48px;
 	line-height: 48px;
 	float: right;
 	font-size: 14px;
+	position: relative;
 }
 
 nav a {
 	width: 106px;
 	height: 48px;
-	padding: 0 10px;
-	margin: auto 10px;
+	line-height: 48px;
+	margin-right: 40px;
+	/*display: inline-flex;
+	-webkit-align-items: center;
+	align-items: center;
+	-webkit-justify-content: center;
+	justify-content: center;*/
 	color: rgb(204, 204, 204);
 }
 
@@ -74,17 +95,16 @@ nav a:hover {
 	text-align: right;
 }
 
-#nav-left{
+#nav-left {
 	position: fixed;
 	top: 4px;
-	left:190px;
+	left: 190px;
 	width: 150px;
 	overflow: auto;
 	display: none;
-	
 }
 
-#nav-left ul li{
+#nav-left ul li {
 	margin-top: 10px;
 	text-overflow: ellipsis;
 	line-height: 40px;
@@ -92,16 +112,14 @@ nav a:hover {
 	text-align: right;
 }
 
-#nav-left ul li:hover{
-	color: #0089DC;	
+#nav-left ul li:hover {
+	color: #0089DC;
 }
 
-#nav-left ul li a{
+#nav-left ul li a {
 	color: #666;
 	text-decoration: none;
 }
-
-
 
 #div-center {
 	margin: 0 auto;
@@ -181,14 +199,14 @@ nav a:hover {
 	font-size: 18px;
 }
 
-#ilike{
+#ilike {
 	position: absolute;
 	right: 0;
 	top: 0;
 	width: 80px;
 	height: 65px;
 	text-align: center;
-	background-color: rgba(255,255,255,0.1);
+	background-color: rgba(255, 255, 255, 0.1);
 	border-radius: 0 0 5px 5px;
 }
 
@@ -205,12 +223,11 @@ nav a:hover {
 	cursor: pointer;
 }
 
-#ilikespan{
+#ilikespan {
 	display: block;
 	margin-top: 5px;
-	color: rgb(238,238,238);
+	color: rgb(238, 238, 238);
 	font-size: 14px;
-	
 }
 
 #sort-bar {
@@ -471,16 +488,15 @@ nav a:hover {
 #deliver-say {
 	height: 38px;
 	padding: 10px 15px;
-
 }
 
-#deliver-say-title{
+#deliver-say-title {
 	font-size: 14px;
 	font-weight: bold;
 	display: block;
 }
 
-#deliver-say-content{
+#deliver-say-content {
 	font-size: 14px;
 }
 
@@ -488,12 +504,168 @@ nav a:hover {
 	height: 55px;
 	background-color: white;
 	line-height: 55px;
-		text-align: center;
+	text-align: center;
 }
 
 #file-a-complaint>a {
 	text-decoration: none;
 	color: rgb(102, 102, 102);
 	font-size: 18px;
-
 }
+
+#cart {
+	position: fixed;
+	width: 320px;
+	height: 181px;
+	background-color: white;
+	right: 0;
+	bottom: 0;
+	font-family: PingFang SC, Lantinghei SC, Helvetica Neue, Microsoft Yahei, Hiragino Sans GB, Microsoft Sans Serif, WenQuanYi Micro Hei, sans;
+	box-shadow: 0 1px 15px #ccc;
+}
+
+#bottom-bar {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 46px;
+	background-color: #2c2c2c;
+	box-shadow: #2c2c2c;
+}
+
+#img-cart {
+	font-size: 21px;
+	position: absolute;
+	top: 12px;
+	left: 8px;
+	color: white;
+	font-weight: 500;
+}
+
+#bottom-bar>#rmb {
+	position: absolute;
+	top: 15px;
+	left: 36px;
+	color: white;
+}
+
+#total-price {
+	position: absolute;
+	top: 7px;
+	left: 49px;
+	font-size: 24px;
+	color: white;
+}
+
+#deliver-price {
+	position: absolute;
+	top: 19px;
+	left: 87px;
+	font-size: 9px;
+	color: #999;
+}
+
+#cart-content {
+	width: 100%;
+	position: absolute;
+	bottom: 45px;
+	background-color: white;
+}
+
+#cart-content-ul {
+	display: block;
+}
+
+.cart-content-li {
+	height: 45px;
+	list-style: none;
+	margin: auto 10px;
+	line-height: 45px;
+	border-bottom: 1px solid #eee;
+	font-family: "PingFang SC", "Lantinghei SC", "Helvetica Neue", "Microsoft Yahei", "Hiragino Sans GB", "Microsoft Sans Serif", "WenQuanYi Micro Hei", sans;
+	font-size: 14px;
+	color: #666;
+	font-weight: 500;
+}
+
+.cart-content-li > a{
+	color: #0089dc;
+	text-decoration: none;
+}
+
+.clearfloat {
+	clear: both;
+	height: 0;
+	font-size: 1px;
+	line-height: 0px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+.food-number {
+	width: 30px;
+	height: 18px;
+	text-align: center;
+	border: 1px solid rgb(221, 221, 221);
+}
+
+.number-btn {
+	background-color: white;
+	width: 18px;
+	height: 20px;
+	border: 1px solid rgb(221, 221, 221);
+	text-align: center;
+}
+
+#nubmer-btn-group{
+	display: inline-block;
+	position: absolute;
+	left: 150px;
+}
+
+#add-cart > i{
+	font-size: 21px; 
+	position: absolute; 
+	right: 20px; 
+	font-weight: 500;
+}
+
+#add-cart > span{
+	position: absolute;
+	left: 292px;
+	top: 11px;
+	color: white;
+	background-color: #0089DC;
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	font-size: 13px;
+	text-align: center;
+	line-height: 15px;
+	
+}
+
+#go-to-confirm-div{
+	background-color: #51d862;
+	width: 120px;
+	height: 46px;
+	position: absolute;
+	right: 0;
+	border: none;
+	text-align: center;
+	line-height: 46px;
+}
+
+#confirm-btn{
+	font-size: 14px;
+	font-weight: 700;
+	color: white;
+	text-decoration: none;
+}
+
+

@@ -106,7 +106,7 @@
 	padding: 10px 10px 10px 7em;
 	background-color: #fff;
 	position: relative;
-	border-bottom-color:#e6e6e6;
+	border-bottom-color: #e6e6e6;
 }
 
 #qbdp {
@@ -173,4 +173,217 @@
 #rstblock-activity {
 	margin-top: 9px;
 	display: block;
+}
+
+#side-bar {
+	background-color: #e6e6e6;
+	width: 330px;
+	height: 100%;
+	position: fixed;
+	right: -295px;
+	top: 0;
+	z-index: 10;
+}
+
+#side-bar:hover{
+	right: 0;
+	transition: right 1s;
+}
+
+#side-menu {
+	position: absolute;
+	left: 0;
+	width: 35px;
+	height: 100%;
+	background-color: #504d53;
+}
+
+#side-menu>a {
+	display: block;
+	text-align: center;
+	color: rgb(204, 204, 204);
+	margin: 0 auto;
+}
+
+#go-to-order {
+	position: absolute;
+	top: 250px;
+	width: 35px;
+	height: 40px;
+	line-height: 40px;
+	font-size: 20px;
+}
+
+#go-to-cart {
+	position: absolute;
+	top: 300px;
+	width: 35px;
+	height: 90px;
+	font-size: 15px;
+	padding-top: 7px;
+}
+
+#go-to-cart>span {
+	font-size: 16px;
+}
+
+#go-to-mail {
+	position: absolute;
+	top: 400px;
+	width: 35px;
+	height: 40px;
+	line-height: 40px;
+	font-size: 20px;
+}
+
+#appqr {
+	position: absolute;
+	bottom: 50px;
+	width: 35px;
+	height: 38px;
+	font-size: 22px;
+	line-height: 38px;
+}
+
+#appqr:hover {
+	color: white;
+}
+
+#side-menu>a:hover {
+	background-color: #26a2ff;
+	color: white;
+}
+
+#side-bar>#title {
+	width: 295px;
+	height: 35px;
+	background-color: white;
+	margin-left: 35px;
+	line-height: 35px;
+}
+
+#title>a {
+	text-decoration: none;
+	font-size: 16px;
+	color: #333;
+	margin-left: 10px;
+}
+
+#title>a:hover {
+	text-decoration: underline;
+}
+
+.cart {
+	width: 295px;
+	margin-left: 35px;
+	margin-top: 12px;
+	padding: 15px;
+	background-color: white;
+	position: relative;
+}
+
+.cart-dl {
+	width: 275px;
+	color: #666;
+}
+
+.cart-dt {
+	height: 23px;
+	border-bottom: 1px solid rgb(221, 221, 221);
+}
+
+.cart-dt>span {
+	font-size: 12px;
+}
+
+.cart-dt>a {
+	position: absolute;
+	right: 40px;
+	font-size: 12px;
+	color: #0089dc;
+}
+
+.cart-dd {
+	font-size: 12px;
+	margin-top: 10px;
+	margin-left: 5px;
+	margin-bottom: 20px;
+	line-height: 18px;
+}
+
+.price-sum {
+	position: absolute;
+	right: 45px;
+	color: #f17530;
+	font-weight: bold;
+}
+
+.food-number {
+	width: 26px;
+	height: 18px;
+	text-align: center;
+	padding:0;
+	border: 1px solid rgb(221, 221, 221);
+}
+
+.number-btn {
+	background-color: white;
+	width: 18px;
+	height: 20px;
+	border: 1px solid rgb(221, 221, 221);
+	text-align: center;
+}
+
+#nubmer-btn-group {
+	display: -webkit-inline-flex;
+	display: inline-flex;
+	-webkit-align-items: center;
+	align-items: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	position: relative;
+	left: 50px;
+}
+
+#go-to-confirm-div {
+	width: 275px;
+	height: 64px;
+	background-color: white;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	padding: 20px 10px;
+}
+
+#go-to-confirm-div>p {
+	width: 275px;
+	height: 21px;
+	font-size: 14px;
+	color: #333;
+	text-align: right;
+	margin: 0 auto;
+	position: absolute;
+}
+
+#go-to-confirm-div span {
+	color: #F74342;
+}
+
+#go-to-confirm-btn {
+	display: block;
+	width: 275px;
+	height: 32px;
+	background-color: #fa5858;
+	border: none;
+	margin: 0 auto;
+	font-size: 16px;
+	color: white;
+	position: absolute;
+	bottom: 20px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
 }

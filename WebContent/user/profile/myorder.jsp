@@ -2,16 +2,15 @@
     pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 
-<script type="text/javascript" src="/qianbaidu/js/profile/Abiaoqian.js">
-</script>
-
 <html>
-	<link rel="stylesheet" type="text/css" href="/qianbaidu/css/profile/qbd.css" />
-	<link rel="stylesheet" type="text/css" href="/qianbaidu/css/profile/qbd1.css" />
 
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<title>饿了么-网上订餐_外卖</title>
+		<title>个人中心-我的订单</title>
+
+		<link rel="stylesheet" type="text/css" href="/qianbaidu/css/user/profile/qbd.css" />
+		<link rel="stylesheet" type="text/css" href="/qianbaidu/css/user/profile/qbd1.css" />
+		<link rel="stylesheet" type="text/css" href="/qianbaidu/css/Hui-iconfont/1.0.8/iconfont.css"/>
 	</head>
 
 	<body>
@@ -132,11 +131,65 @@
 					<li class="profile-sidebar"></li>
 				</ul>
 				<div id="profile-panel">
-				<h3 class="profile-paneltitle-ng-scope">
+					<h3 class="profile-paneltitle-ng-scope">
 						<span class="">
 							近三个月订单
 						</span>
 					</h3>
+					<table class="profile-order-list">
+						<thead>
+							<tr>
+								<th>下单时间</th>
+								<th style="text-align: left;padding-left: 26px;">订单内容</th>
+								<th style="width: 373px;"></th>
+								<th style="width: 100px;">支付金额(元)</th>
+								<th style="width: 146px;">状态</th>
+								<th>操作</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr></tr>
+							<tr>
+								<td class="ordertimeline-time">
+									<p class="ordertimeline-title">07-24</p>
+									<p>11:32</p>
+									<i style="font-size: 12px;color: #ccc;right: -7px;position: absolute;line-height: 22px;background-color: #fff;top: 39%;" class="Hui-iconfont">&#xe601;</i>
+								</td>
+								<td class="ordertimeline-avatar">
+									<a href="">
+										<img src="/qianbaidu/img/home/index/周大虾.JPG"/>
+									</a>
+								</td>
+								<td class="ordertimeline-info">
+									<h3 class="ordertimeline-title">
+										<a href="">阿三生煎（东兰路）</a>
+									</h3>
+									<p class="ordertimeline-info-food">
+										<a href="">
+											<span>牛肉粉丝汤2份</span>
+											<span class="ordertimeline-info-productnum">2</span>
+											<span>个菜品</span>
+										</a>
+									</p>
+									<p class="ordertimeline-info-food">
+										订单号:
+										<a href="">3009359670719533300</a>
+									</p>
+								</td>
+								<td class="ordertimeline-amount">
+									<h3 class="ordertimeline-title">37.00</h3>
+									<p>在线支付</p>
+								</td>
+								<td class="ordertimeline-status">
+									<h3 class="ordertimeline-title">订单已完成</h3>
+								</td>
+								<td class="ordertimeline-handle">
+									<a class="ordertimeline-handle-detail" href="">订单详情</a>
+									<a href="">再来一单</a>
+								</td>
+							</tr>
+						</tbody>
+					</table>
 				</div>
 			</div>
 		</div>

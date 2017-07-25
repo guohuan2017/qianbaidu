@@ -1,18 +1,21 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<title>店铺首页</title>
-		<link rel="stylesheet" type="text/css" href="../css/shop/index.css" />
+		<link rel="stylesheet" type="text/css" href="/qianbaidu/css/shop/index.css" />
+		<link rel="stylesheet" type="text/css" href="/qianbaidu/css/shop/shoppingcart.css" />
 		<!--	<script type="text/javascript">
-			document.write("<script type='text/javascript' src='../js/jquery-3.2.1.js?'" + Math.random() + ">" + "</scr" + "ipt>");
+			document.write("<script type='text/javascript' src='/qianbaidu/js/jquery-3.2.1.js?'" + Math.random() + ">" + "</scr" + "ipt>");
 		</script>-->
-		<link rel="stylesheet" type="text/css" href="../css/Hui-iconfont/1.0.8/iconfont.css">
-		<script type="text/javascript" src="../js/jquery-3.2.1.js"></script>
-		<script type="text/javascript" src="../js/shop/index.js"></script>
+		<link rel="stylesheet" type="text/css" href="/qianbaidu/css/Hui-iconfont/1.0.8/iconfont.css">
+		<script type="text/javascript" src="/qianbaidu/js/jquery-3.2.1.js"></script>
+		<script type="text/javascript" src="/qianbaidu/js/shop/index.js"></script>
+		<script type="text/javascript" src="/qianbaidu/js/shop/shoppingcart.js"></script>
 	</head>
 
 	<body>
@@ -73,7 +76,7 @@
 			<div id="div-center">
 				<div id="shop-title">
 					<div id="shop-title-all">
-						<img id="shop-face" src="../img/shop/index/shop-face.png" />
+						<img id="shop-face" src="/qianbaidu/img/shop/index/shop-face.png" />
 						<div id="shop-introduce">
 							<span id="shop-name">我是一只鸡(漕河泾店)</span>
 							<span id="shop-details">(1515) 月售2307单</span>
@@ -182,40 +185,49 @@
 						<a href="#" class="catalog">下午茶半价</a>
 						<a href="#" class="catalog">满额赠饮</a>
 					</div>
-					<div class="goods-display">
-						<div class="title">
-							<h3>热销</h3>
-							<span class="catalog-introduce">大家喜欢吃，才叫真好吃。</span>
-						</div>
-						<div class="good-display">
-							<img class="food-img" src="../img/shop/index/food.jpeg" />
-							<h3 class="food-name">港式菠萝油</h3>
-							<span class="food-introduce"> (197) 月售922份</span>
-							<span class="food-price">￥8</span>
-							<button class="add-to-cart">加入购物车</button>
-						</div>
-						<div class="good-display">
-							<img class="food-img" src="../img/shop/index/food.jpeg" />
-							<h3 class="food-name">港式菠萝油</h3>
-							<span class="food-introduce"> (197) 月售922份</span>
-							<span class="food-price">￥8</span>
-							<button class="add-to-cart">加入购物车</button>
+					<div class="catbox">
+
+						<table id="cartTable">
+							<thead>
+								<tr>
+									<th><label><input class="check-all check" type="checkbox"/>&nbsp;全选</label></th>
+									<th>商品</th>
+									<th>单价</th>
+									<th>数量</th>
+									<th>小计</th>
+									<th style="display: none;">操作</th>
+								</tr>
+							</thead>
+							<tbody>
+								<c:forEach var="food" items="${foodlist}">
+								<tr>
+									<td class="checkbox"><input class="check-one check" type="checkbox" /></td>
+									<td class="goods"><img src="${food.photo}"/><span>${food.foodname}<br/>${food.foodinfo}</span></td>
+									<td class="price">${food.price}</td>
+									<td class="count"><span class="reduce"></span><input class="count-input" type="text" value="0" /><span class="add">+</span></td>
+									<td class="subtotal">0.00</td>
+									<td class="operation" style="display: none;"><span class="delete">删除</span></td>
+									<td class="foodid" style="display: none;">${food.id}</td>
+									<td class="storeid" style="display: none;">${food.store_id}</td>								
+								</tr>
+								</c:forEach>
+							</tbody>
+						</table>
+
+						<div class="foot" id="foot">
+							<label class="fl select-all"><input type="checkbox" class="check-all check"/>&nbsp;全选</label>
+							<a class="fl delete" id="deleteAll" href="javascript:;" style="display: none;">删除</a>
+							<div class="fr closing" id="buy">结 算</div>
+							<div class="fr total">合计：￥<span id="priceTotal">0.00</span></div>
+							<div class="fr selected" id="selected">已选商品<span id="selectedTotal">0</span>件<span class="arrow up">︽</span><span class="arrow down">︾</span></div>
+							<div class="selected-view">
+								<div id="selectedViewList" class="clearfix">
+									<div><img src="images/1.jpg"><span>取消选择</span></div>
+								</div>
+								<span class="arrow">◆<span>◆</span></span>
+							</div>
 						</div>
 
-						<div class="good-display">
-							<img class="food-img" src="../img/shop/index/food.jpeg" />
-							<h3 class="food-name">港式菠萝油</h3>
-							<span class="food-introduce"> (197) 月售922份</span>
-							<span class="food-price">￥8</span>
-							<button class="add-to-cart">加入购物车</button>
-						</div>
-						<div class="good-display">
-							<img class="food-img" src="../img/shop/index/food.jpeg" />
-							<h3 class="food-name">港式菠萝油</h3>
-							<span class="food-introduce"> (197) 月售922份</span>
-							<span class="food-price">￥8</span>
-							<button class="add-to-cart">加入购物车</button>
-						</div>
 					</div>
 				</div>
 			</div>
@@ -226,8 +238,6 @@
 				<span id="rmb">￥</span>
 				<span id="total-price">20</span>
 				<span id="deliver-price">|&nbsp;&nbsp;配送费￥5</span>
-				<div id="go-to-confirm-div"><a href="#" id="confirm-btn">去结算></a></div>
-				
 			</div>
 			<div id="cart-content">
 				<ul id="cart-content-ul">
@@ -244,7 +254,7 @@
 						<span>苏州汤包</span>
 						<div id="nubmer-btn-group">
 							<button style="position:relative;left: 5px;" class="number-btn" ondblclick="reduce(foodid)">-</button>
-							<input type="number" id="foodid-number" class="food-number"/>
+							<input type="number" id="foodid-number" />
 							<button style="position:relative;left: -5px;" class="number-btn" ondblclick="add(foodid)">+</button>
 						</div>
 						<span style="color: #f17530;position:absolute; right: 15px;">¥14</span>
@@ -253,7 +263,7 @@
 						<span>肯德基汉堡</span>
 						<div id="nubmer-btn-group">
 							<button style="position:relative;left: 5px;" class="number-btn" ondblclick="reduce(foodid)">-</button>
-							<input type="number" id="foodid-number" class="food-number"/>
+							<input type="number" id="foodid-number" />
 							<button style="position:relative;left: -5px;" class="number-btn" ondblclick="add(foodid)">+</button>
 						</div>
 						<span style="color: #f17530;position:absolute; right: 15px;">¥14</span>
@@ -261,7 +271,9 @@
 				</ul>
 				<div class="clearfloat"></div>
 			</div>
+
 		</div>
+
 	</body>
 
 </html>

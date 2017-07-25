@@ -6,11 +6,11 @@
 
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<title>个人中心_更改密码</title>
-		<link rel="stylesheet" type="text/css" href="/qianbaidu/css/user/profile/qbd.css" />
-		<link rel="stylesheet" type="text/css" href="/qianbaidu/css/user/profile/qbd1.css" />
+		<title>我的商铺_管理菜品</title>
+		<link rel="stylesheet" type="text/css" href="/qianbaidu/css/shop/profile/qbd.css" />
+		<link rel="stylesheet" type="text/css" href="/qianbaidu/css/shop/profile/qbd1.css" />
 		<script type="text/javascript" src="/qianbaidu/js/jquery-3.2.1.js"></script>
-		<script type="text/javascript" src="/qianbaidu/js/user/profile/profile.js">
+		<script type="text/javascript" src="/qianbaidu/js/profile/profile.js">
 		</script>
 	</head>
 	
@@ -71,7 +71,7 @@
 					</h2>
 						<ul class="profile-sidebar-section-ul">
 							<li class="profile-sidebar-section-ul-li">
-								<a class="profile-sidebar-a" href="myorde.jsp">近三个月订单</a>
+								<a class="profile-sidebar-a" href="/qianbaidu/shop/profile/myorder.jsp">近三个月订单</a>
 							</li>
 							<li class="profile-sidebar-section-ul-li">
 								<a class="profile-sidebar-a" href="">待评价订单</a>
@@ -85,17 +85,14 @@
 						<h2 class="profile-sidebar-sectiontitle">
 						<i class="icon-line-home"> <img
 							src="/qianbaidu/img/user/profile/我的的资产.jpg" />
-						</i> <a style="color: inherit;">我的资产</a>
+						</i> <a style="color: inherit;">我的商铺</a>
 					</h2>
 						<ul class="profile-sidebar-section-ul">
 							<li class="profile-sidebar-section-ul-li">
-								<a class="profile-sidebar-a" href="">我的红包</a>
+								<a class="profile-sidebar-a" href="/qianbaidu/shop/profile/newfood.jsp">新增菜品</a>
 							</li>
 							<li class="profile-sidebar-section-ul-li">
-								<a class="profile-sidebar-a" href="">账户余额</a>
-							</li>
-							<li class="profile-sidebar-section-ul-li">
-								<a class="profile-sidebar-a" href="">我的积分</a>
+								<a class="profile-sidebar-a" style="color: #0089dc;" href="/qianbaidu/shop/profile/managefood.jsp">管理菜品</a>
 							</li>
 						</ul>
 					</li>
@@ -116,7 +113,7 @@
 								<a class="profile-sidebar-a" href="">安全中心</a>
 							</li>
 							<li class="profile-sidebar-section-ul-li">
-								<a class="profile-sidebar-a" style="color: #0089dc;" href="changepassword.jsp">修改密码</a>
+								<a class="profile-sidebar-a" href="changepassword.jsp">修改密码</a>
 							</li>
 						</ul>
 					</li>
@@ -124,45 +121,90 @@
 				</ul>
 				<div id="profile-panel">
 					<h3 class="profile-paneltitle-ng-scope">
-					<span class=""> 设置密码 </span>
-				</h3>
-					<div id="profile-panelcontent">
-						<form class="profile-changewd" id="pwform" action="" method="post">
-							<p class="changewd-tip">饿了么提示你：使用大小写字母、数字与标点符号的组合，可以大幅提升帐号安全！
-							</p>
-							<div class="formfield">
-								<label class="ng-binding"> 原密码 </label> <input type="password" name="password" id="password" class="formfield-npwd" placeholder="请输入原密码" />
-								<div class="formfield1">
-									<span class="formfield-hint-span" id="passwordspan"> <img
-									src="/qianbaidu/img/user/profile/大叉.jpg" /> 原密码不能为空
-								</span>
-								</div>
-							</div>
-							<div class="formfield">
-								<label class="ng-binding"> 新密码 </label> <input type="password" name="newpassword" id="newpassword" class="formfield-npwd" placeholder="请输入新密码" />
-								<div class="formfield1">
-									<span class="formfield-hint-span" id="newpasswordspan"> <img
-									src="/qianbaidu/img/user/profile/大叉.jpg" /> 新密码不能为空
-								</span>
-								</div>
-							</div>
-							<div class="formfield">
-								<label class="ng-binding"> 确认密码 </label> <input type="password" name="repassword" id="repassword" class="formfield-npwd" placeholder="请再次输入密码" />
-								<div class="formfield1">
-									<span class="formfield-hint-span" id="repasswordspan"> <img
-									src="/qianbaidu/img/user/profile/大叉.jpg" /> 请再次输入密码
-								</span>
-								<span class="formfield-hint-span" id="repasswordspan2"> <img
-									src="/qianbaidu/img/user/profile/大叉.jpg" /> 两次密码不同
-								</span>
-								</div>
-							</div>
-							<div class="formfield">
-								<label class="ng-binding"> </label>
-								<button type="button" class="formfield-button" id="pwbutton">确认</button>
-							</div>
-						</form>
-					</div>
+						<span class="">
+							菜品列表
+						</span>
+					</h3>
+					<table class="profile-order-list">
+						<thead>
+							<tr>
+								<th>添加时间</th>
+								<th style="text-align: left;padding-left: 26px;">菜品内容</th>
+								<th style="width: 373px;"></th>
+								<th style="width: 100px;">单价(元)</th>
+								<th style="width: 146px;">销量(份)</th>
+								<th>操作</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr></tr>
+							<tr>
+								<td class="ordertimeline-time">
+									<p class="ordertimeline-title">07-24</p>
+									<p>11:32</p>
+									<i style="font-size: 12px;color: #ccc;right: -7px;position: absolute;line-height: 22px;background-color: #fff;top: 39%;" class="Hui-iconfont">&#xe601;</i>
+								</td>
+								<td class="ordertimeline-avatar">
+									<a href="">
+										<img src="/qianbaidu/img/home/index/周大虾.JPG"/>
+									</a>
+								</td>
+								<td class="ordertimeline-info">
+									<h3 class="ordertimeline-title">
+										<a href="">阿三生煎（东兰路）</a>
+									</h3>
+									<p class="ordertimeline-info-food">
+										<a href="">
+											<span>240g，骨肉松软，口感筋道，既脆又软，香辣入味，</span>
+										</a>
+									</p>
+								</td>
+								<td class="ordertimeline-amount">
+									<h3 class="ordertimeline-title">37.00</h3>
+								</td>
+								<td class="ordertimeline-status">
+									<h3 class="ordertimeline-title">500</h3>
+								</td>
+								<td class="ordertimeline-handle">
+									<a class="ordertimeline-handle-detail" href="">修改菜品</a>
+									<a class="deletefood" href="">删除菜品</a>
+								</td>
+							</tr>
+							
+							<tr>
+								<td class="ordertimeline-time">
+									<p class="ordertimeline-title">07-24</p>
+									<p>11:32</p>
+									<i style="font-size: 12px;color: #ccc;right: -7px;position: absolute;line-height: 22px;background-color: #fff;top: 39%;" class="Hui-iconfont">&#xe601;</i>
+								</td>
+								<td class="ordertimeline-avatar">
+									<a href="">
+										<img src="/qianbaidu/img/home/index/周大虾.JPG"/>
+									</a>
+								</td>
+								<td class="ordertimeline-info">
+									<h3 class="ordertimeline-title">
+										<a href="">阿三生煎（东兰路）</a>
+									</h3>
+									<p class="ordertimeline-info-food">
+										<a href="">
+											<span>240g，骨肉松软，口感筋道，既脆又软，香辣入味，</span>
+										</a>
+									</p>
+								</td>
+								<td class="ordertimeline-amount">
+									<h3 class="ordertimeline-title">37.00</h3>
+								</td>
+								<td class="ordertimeline-status">
+									<h3 class="ordertimeline-title">500</h3>
+								</td>
+								<td class="ordertimeline-handle">
+									<a class="ordertimeline-handle-detail" href="">修改菜品</a>
+									<a class="deletefood" href="">删除菜品</a>
+								</td>
+							</tr>
+						</tbody>
+					</table>
 				</div>
 			</div>
 		</div>

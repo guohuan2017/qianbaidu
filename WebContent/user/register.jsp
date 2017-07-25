@@ -21,7 +21,7 @@
 			</div>
 
 			<h1 id="center">注册</h1>
-			<h1 id="right"><a href="/qianbaidu/user/login.jsp" style="color: white;">登陆</a></h1>
+			<h1 id="right"><a href="/qianbaidu/user/login.jsp" style="color: white;">登录</a></h1>
 
 		</div>
 

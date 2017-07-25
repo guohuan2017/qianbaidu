@@ -9,9 +9,9 @@
     -->
     <id column="id" property="id" jdbcType="INTEGER" />
     <result column="content" property="content" jdbcType="VARCHAR" />
-    <result column="food_id" property="foodId" jdbcType="INTEGER" />
-    <result column="user_id" property="userId" jdbcType="INTEGER" />
-    <result column="order_id" property="orderId" jdbcType="INTEGER" />
+    <result column="food_id" property="food_id" jdbcType="INTEGER" />
+    <result column="user_id" property="user_id" jdbcType="INTEGER" />
+    <result column="order_id" property="order_id" jdbcType="INTEGER" />
     <result column="stars" property="stars" jdbcType="INTEGER" />
     <result column="time" property="time" jdbcType="TIMESTAMP" />
   </resultMap>
@@ -52,8 +52,8 @@
     insert into comment (id, content, food_id, 
       user_id, order_id, stars, 
       time)
-    values (#{id,jdbcType=INTEGER}, #{content,jdbcType=VARCHAR}, #{foodId,jdbcType=INTEGER}, 
-      #{userId,jdbcType=INTEGER}, #{orderId,jdbcType=INTEGER}, #{stars,jdbcType=INTEGER}, 
+    values (#{id,jdbcType=INTEGER}, #{content,jdbcType=VARCHAR}, #{food_id,jdbcType=INTEGER}, 
+      #{user_id,jdbcType=INTEGER}, #{order_id,jdbcType=INTEGER}, #{stars,jdbcType=INTEGER}, 
       #{time,jdbcType=TIMESTAMP})
   </insert>
   <insert id="insertSelective" parameterType="pojo.Comment" >
@@ -70,13 +70,13 @@
       <if test="content != null" >
         content,
       </if>
-      <if test="foodId != null" >
+      <if test="food_id != null" >
         food_id,
       </if>
-      <if test="userId != null" >
+      <if test="user_id != null" >
         user_id,
       </if>
-      <if test="orderId != null" >
+      <if test="order_id != null" >
         order_id,
       </if>
       <if test="stars != null" >
@@ -93,14 +93,14 @@
       <if test="content != null" >
         #{content,jdbcType=VARCHAR},
       </if>
-      <if test="foodId != null" >
-        #{foodId,jdbcType=INTEGER},
+      <if test="food_id != null" >
+        #{food_id,jdbcType=INTEGER},
       </if>
-      <if test="userId != null" >
-        #{userId,jdbcType=INTEGER},
+      <if test="user_id != null" >
+        #{user_id,jdbcType=INTEGER},
       </if>
-      <if test="orderId != null" >
-        #{orderId,jdbcType=INTEGER},
+      <if test="order_id != null" >
+        #{order_id,jdbcType=INTEGER},
       </if>
       <if test="stars != null" >
         #{stars,jdbcType=INTEGER},
@@ -121,14 +121,14 @@
       <if test="content != null" >
         content = #{content,jdbcType=VARCHAR},
       </if>
-      <if test="foodId != null" >
-        food_id = #{foodId,jdbcType=INTEGER},
+      <if test="food_id != null" >
+        food_id = #{food_id,jdbcType=INTEGER},
       </if>
-      <if test="userId != null" >
-        user_id = #{userId,jdbcType=INTEGER},
+      <if test="user_id != null" >
+        user_id = #{user_id,jdbcType=INTEGER},
       </if>
-      <if test="orderId != null" >
-        order_id = #{orderId,jdbcType=INTEGER},
+      <if test="order_id != null" >
+        order_id = #{order_id,jdbcType=INTEGER},
       </if>
       <if test="stars != null" >
         stars = #{stars,jdbcType=INTEGER},
@@ -147,9 +147,9 @@
     -->
     update comment
     set content = #{content,jdbcType=VARCHAR},
-      food_id = #{foodId,jdbcType=INTEGER},
-      user_id = #{userId,jdbcType=INTEGER},
-      order_id = #{orderId,jdbcType=INTEGER},
+      food_id = #{food_id,jdbcType=INTEGER},
+      user_id = #{user_id,jdbcType=INTEGER},
+      order_id = #{order_id,jdbcType=INTEGER},
       stars = #{stars,jdbcType=INTEGER},
       time = #{time,jdbcType=TIMESTAMP}
     where id = #{id,jdbcType=INTEGER}

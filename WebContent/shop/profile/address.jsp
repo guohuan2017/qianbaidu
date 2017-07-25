@@ -6,12 +6,12 @@
 </script>
 
 <html>
-	<link rel="stylesheet" type="text/css" href="/qianbaidu/css/user/profile/qbd.css" />
-	<link rel="stylesheet" type="text/css" href="/qianbaidu/css/user/profile/qbd1.css" />
+	<link rel="stylesheet" type="text/css" href="/qianbaidu/css/shop/profile/qbd.css" />
+	<link rel="stylesheet" type="text/css" href="/qianbaidu/css/shop/profile/qbd1.css" />
 
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<title>个人中心_地址管理</title>
+		<title>商户中心_地址管理</title>
 	</head>
 
 	<body>
@@ -78,7 +78,7 @@
 						</h2>
 						<ul class="profile-sidebar-section-ul">
 							<li class="profile-sidebar-section-ul-li">
-								<a class="profile-sidebar-a" href="myorde.jsp">近三个月订单</a>
+								<a class="profile-sidebar-a" href="/qianbaidu/shop/profile/myorder.jsp">近三个月订单</a>
 							</li>
 							<li class="profile-sidebar-section-ul-li">
 								<a class="profile-sidebar-a" href="">待评价订单</a>
@@ -93,17 +93,14 @@
 							<i class="icon-line-home">
 								<img src="/qianbaidu/img/user/profile/我的的资产.jpg"/>
 							</i>
-							<a  style=" color: inherit;;">我的资产</a>
+							<a  style=" color: inherit;;">我的商铺</a>
 						</h2>
 						<ul class="profile-sidebar-section-ul">
 							<li class="profile-sidebar-section-ul-li">
-								<a class="profile-sidebar-a" href="">我的红包</a>
+								<a class="profile-sidebar-a" href="/qianbaidu/shop/profile/newfood.jsp">新增菜品</a>
 							</li>
 							<li class="profile-sidebar-section-ul-li">
-								<a class="profile-sidebar-a" href="">账户余额</a>
-							</li>
-							<li class="profile-sidebar-section-ul-li">
-								<a class="profile-sidebar-a" href="">我的积分</a>
+								<a class="profile-sidebar-a" href="/qianbaidu/shop/profile/managefood.jsp">管理菜品</a>
 							</li>
 						</ul>
 					</li>

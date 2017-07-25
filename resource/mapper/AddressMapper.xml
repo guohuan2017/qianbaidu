@@ -8,7 +8,7 @@
       This element was generated on Tue Jul 18 15:34:39 CST 2017.
     -->
     <id column="id" property="id" jdbcType="INTEGER" />
-    <result column="user_id" property="userId" jdbcType="INTEGER" />
+    <result column="user_id" property="user_id" jdbcType="INTEGER" />
     <result column="address" property="address" jdbcType="VARCHAR" />
   </resultMap>
   <sql id="Base_Column_List" >
@@ -47,7 +47,7 @@
     -->
     insert into address (id, user_id, address
       )
-    values (#{id,jdbcType=INTEGER}, #{userId,jdbcType=INTEGER}, #{address,jdbcType=VARCHAR}
+    values (#{id,jdbcType=INTEGER}, #{user_id,jdbcType=INTEGER}, #{address,jdbcType=VARCHAR}
       )
   </insert>
   <insert id="insertSelective" parameterType="pojo.Address" >
@@ -61,7 +61,7 @@
       <if test="id != null" >
         id,
       </if>
-      <if test="userId != null" >
+      <if test="user_id != null" >
         user_id,
       </if>
       <if test="address != null" >
@@ -72,8 +72,8 @@
       <if test="id != null" >
         #{id,jdbcType=INTEGER},
       </if>
-      <if test="userId != null" >
-        #{userId,jdbcType=INTEGER},
+      <if test="user_id != null" >
+        #{user_id,jdbcType=INTEGER},
       </if>
       <if test="address != null" >
         #{address,jdbcType=VARCHAR},
@@ -88,8 +88,8 @@
     -->
     update address
     <set >
-      <if test="userId != null" >
-        user_id = #{userId,jdbcType=INTEGER},
+      <if test="user_id != null" >
+        user_id = #{user_id,jdbcType=INTEGER},
       </if>
       <if test="address != null" >
         address = #{address,jdbcType=VARCHAR},
@@ -104,7 +104,7 @@
       This element was generated on Tue Jul 18 15:34:39 CST 2017.
     -->
     update address
-    set user_id = #{userId,jdbcType=INTEGER},
+    set user_id = #{user_id,jdbcType=INTEGER},
       address = #{address,jdbcType=VARCHAR}
     where id = #{id,jdbcType=INTEGER}
   </update>
