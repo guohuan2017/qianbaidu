@@ -603,13 +603,13 @@ nav a:hover {
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-	-webkit-appearance: none !important;
+	-webkit-appearance: none;
 	margin: 0;
 }
 
 .food-number {
 	width: 30px;
-	height: 20px;
+	height: 18px;
 	text-align: center;
 	border: 1px solid rgb(221, 221, 221);
 }

@@ -180,8 +180,14 @@
 	width: 330px;
 	height: 100%;
 	position: fixed;
-	right: 0;
+	right: -295px;
 	top: 0;
+	z-index: 10;
+}
+
+#side-bar:hover{
+	right: 0;
+	transition: right 1s;
 }
 
 #side-menu {
@@ -239,10 +245,9 @@
 	line-height: 38px;
 }
 
-#appqr:hover{
+#appqr:hover {
 	color: white;
 }
-
 
 #side-menu>a:hover {
 	background-color: #26a2ff;
@@ -274,6 +279,7 @@
 	margin-top: 12px;
 	padding: 15px;
 	background-color: white;
+	position: relative;
 }
 
 .cart-dl {
@@ -292,7 +298,7 @@
 
 .cart-dt>a {
 	position: absolute;
-	right: 10px;
+	right: 40px;
 	font-size: 12px;
 	color: #0089dc;
 }
@@ -302,19 +308,21 @@
 	margin-top: 10px;
 	margin-left: 5px;
 	margin-bottom: 20px;
+	line-height: 18px;
 }
 
 .price-sum {
 	position: absolute;
-	right: 15px;
+	right: 45px;
 	color: #f17530;
 	font-weight: bold;
 }
 
 .food-number {
-	width: 30px;
-	height: 20px;
+	width: 26px;
+	height: 18px;
 	text-align: center;
+	padding:0;
 	border: 1px solid rgb(221, 221, 221);
 }
 
@@ -327,9 +335,14 @@
 }
 
 #nubmer-btn-group {
-	display: inline-block;
-	position: absolute;
-	left: 170px;
+	display: -webkit-inline-flex;
+	display: inline-flex;
+	-webkit-align-items: center;
+	align-items: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	position: relative;
+	left: 50px;
 }
 
 #go-to-confirm-div {
@@ -367,4 +380,10 @@
 	color: white;
 	position: absolute;
 	bottom: 20px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
 }
