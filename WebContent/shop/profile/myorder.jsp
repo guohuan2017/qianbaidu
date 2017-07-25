@@ -77,7 +77,7 @@
 						</h2>
 						<ul class="profile-sidebar-section-ul">
 							<li class="profile-sidebar-section-ul-li">
-								<a class="profile-sidebar-a" style="color: #0089dc;" href="myorde.jsp">近三个月订单</a>
+								<a class="profile-sidebar-a" style="color: #0089dc;" href="/qianbaidu/shop/profile/myorder.jsp">近三个月订单</a>
 							</li>
 							<li class="profile-sidebar-section-ul-li">
 								<a class="profile-sidebar-a" href="">待评价订单</a>
@@ -92,17 +92,14 @@
 							<i class="icon-line-home">
 								<img src="/qianbaidu/img/user/profile/我的的资产.jpg"/>
 							</i>
-							<a  style=" color: inherit;;">我的资产</a>
+							<a  style=" color: inherit;;">我的商铺</a>
 						</h2>
 						<ul class="profile-sidebar-section-ul">
 							<li class="profile-sidebar-section-ul-li">
-								<a class="profile-sidebar-a" href="">我的红包</a>
+								<a class="profile-sidebar-a" href="newfood.jsp">新增菜品</a>
 							</li>
 							<li class="profile-sidebar-section-ul-li">
-								<a class="profile-sidebar-a" href="">账户余额</a>
-							</li>
-							<li class="profile-sidebar-section-ul-li">
-								<a class="profile-sidebar-a" href="">我的积分</a>
+								<a class="profile-sidebar-a" href="/qianbaidu/shop/profile/managefood.jsp">管理菜品</a>
 							</li>
 						</ul>
 					</li>
@@ -124,7 +121,7 @@
 								<a class="profile-sidebar-a" href="">安全中心</a>
 							</li>
 							<li class="profile-sidebar-section-ul-li">
-								<a class="profile-sidebar-a" href="changepassword.jsp">修改密码</a>
+								<a class="profile-sidebar-a" href="/qianbaidu/shop/profile/changepassword.jsp">修改密码</a>
 							</li>
 						</ul>
 					</li>
