@@ -126,7 +126,7 @@
 					<div id="profile-panelcontent">
 						<form class="profile-changewd" id="pwform" action="" method="post">
 							<div class="formfield">
-								<label class="ng-binding">菜品名称</label> <input value="" type="text" name="foodname" id="foodname" class="formfield-npwd" placeholder="请输入菜品名称" />
+								<label class="ng-binding">菜品名称</label> <input readonly="readonly" value="" type="text" name="foodname" id="foodname" class="formfield-npwd" placeholder="请输入菜品名称" />
 								<div class="formfield1">
 									<span class="formfield-hint-span" id="passwordspan"> <img
 									src="/qianbaidu/img/user/profile/大叉.jpg" />菜品名称不能为空
@@ -137,8 +137,8 @@
 								<label class="ng-binding">菜品单价</label> <input readonly="readonly" value="" type="number" step="0.01" name="foodprice" id="foodprice" class="formfield-npwd" placeholder="请输入菜品单价" />
 							</div>
 							<div class="formfield">
-								<label class="ng-binding">选择菜品种类</label>
-								<select unselectable="on" id="foodtype" name="foodtype" style="width:120px; height: 40px;padding: 5px;">
+								<label class="ng-binding">菜品种类</label>
+								<select disabled="disabled" id="foodtype" name="foodtype" style="width:120px; height: 40px;padding: 5px;">
 									<option value="快餐">快餐</option>
 									<option value="小吃" selected="selected">小吃</option>
 									<option value="饮料">饮料</option>
@@ -150,11 +150,11 @@
 							</div>
 							<div class="formfield">
 								<label class="ng-binding">菜品照片</label>
-								<img id="foodphoto" style="height: 130px; width: 130px; position: absolute; left: 510px; top: -81px;" src="../../img/home/index/轰咖喱饭_看图王.jpg"/>
+								<img id="foodphoto" style="height: 130px; width: 130px; position: absolute; left: 223px; top: -18px;" src="../../img/home/index/轰咖喱饭_看图王.jpg"/>
 							</div>
 							<div class="formfield">
 								<label class="ng-binding"> </label>
-								<button type="button" class="formfield-button" id="pwbutton">确认删除</button>
+								<button style="margin-top: 110px;" type="button" class="formfield-button" id="pwbutton">确认删除</button>
 							</div>
 							
 						</form>
