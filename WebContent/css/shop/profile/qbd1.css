@@ -591,7 +591,7 @@ a {
 	border-bottom: 1px #eee dashed;
 }
 
-.ordertimeline-status h3 {
+.ordertimeline-title h3 {
 	color: #999999;
 	font-weight: 400;
 }
@@ -612,4 +612,9 @@ a {
 
 .ordertimeline-handle-detail {
 	border: 1px solid #eee;
+}
+
+.ordertimeline-handle-detail:hover{
+	color: blue;
+	border: 1px solid blue;
 }

@@ -214,3 +214,8 @@ ul {
 	color: #666;
 	font-size: 14px;
 }
+
+.deletefood:hover{
+	color: red;
+	text-decoration: underline;
+}
