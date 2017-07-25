@@ -41,11 +41,11 @@
 				</div>
 				<div class="single-line">
 					<label class="title"><span class="title-span">*</span>门店名称</label>
-					<input type="text" name="storename" id="shopname" class="input-box" value="${user.storename}" readonly="readonly"/>
+					<input type="text" name="storename" id="shopname" class="input-box" value="${user.storename}" readonly="readonly" style="background-color:#ffff66"/>
 				</div>
 				<div class="single-line">
 					<label class="title"><span class="title-span">*</span>外卖电话</label>
-					<input type="text" name="tel" id="outtel" class="input-box" value="${user.tel}" readonly="readonly"/>
+					<input type="text" name="tel" id="outtel" class="input-box" value="${user.tel}" readonly="readonly" style="background-color:#ffff66"/>
 				</div>
 				<div class="single-line">
 					<label class="title"><span class="title-span">*</span>联系人姓名</label>
@@ -55,7 +55,7 @@
 
 				<div class="single-line">
 					<label class="title"><span class="title-span">*</span>门店分类</label>
-					<input type="text" name="type" id="shopcatalog"
+					<input type="text" name="type" value="${user.type}" id="shopcatalog"
 						class="input-box" />
 				</div>
 
@@ -85,7 +85,7 @@
 
 				<div class="single-line">
 					<label class="title"><span class="title-span">*</span>详细地址</label>
-					<input type="text" name="address" id="detailaddress"
+					<input type="text" name="address" value="${user.address}" id="detailaddress"
 						class="input-box" />
 					<button type="button" class="" id="locate">去定位</button>
 
