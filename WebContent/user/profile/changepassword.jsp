@@ -10,7 +10,7 @@
 		<link rel="stylesheet" type="text/css" href="/qianbaidu/css/user/profile/qbd.css" />
 		<link rel="stylesheet" type="text/css" href="/qianbaidu/css/user/profile/qbd1.css" />
 		<script type="text/javascript" src="/qianbaidu/js/jquery-3.2.1.js"></script>
-		<script type="text/javascript" src="/qianbaidu/js/profile/profile.js">
+		<script type="text/javascript" src="/qianbaidu/js/user/profile/profile.js">
 		</script>
 	</head>
 	
