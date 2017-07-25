@@ -6,7 +6,7 @@
 
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<title>商户中心_更改密码</title>
+		<title>我的商铺_管理菜品</title>
 		<link rel="stylesheet" type="text/css" href="/qianbaidu/css/shop/profile/qbd.css" />
 		<link rel="stylesheet" type="text/css" href="/qianbaidu/css/shop/profile/qbd1.css" />
 		<script type="text/javascript" src="/qianbaidu/js/jquery-3.2.1.js"></script>
@@ -92,7 +92,7 @@
 								<a class="profile-sidebar-a" href="/qianbaidu/shop/profile/newfood.jsp">新增菜品</a>
 							</li>
 							<li class="profile-sidebar-section-ul-li">
-								<a class="profile-sidebar-a" href="/qianbaidu/shop/profile/managefood.jsp">管理菜品</a>
+								<a class="profile-sidebar-a" style="color: #0089dc;" href="/qianbaidu/shop/profile/managefood.jsp">管理菜品</a>
 							</li>
 						</ul>
 					</li>
@@ -113,7 +113,7 @@
 								<a class="profile-sidebar-a" href="">安全中心</a>
 							</li>
 							<li class="profile-sidebar-section-ul-li">
-								<a class="profile-sidebar-a" style="color: #0089dc;" href="changepassword.jsp">修改密码</a>
+								<a class="profile-sidebar-a" href="changepassword.jsp">修改密码</a>
 							</li>
 						</ul>
 					</li>
