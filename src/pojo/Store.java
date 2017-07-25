@@ -15,7 +15,9 @@ public class Store {
     private String type;
     private String subtype;
     private String photo;
-    
+    private String photoout;
+    private String photoin;
+	
 	public Integer getId() {
 		return id;
 	}
@@ -37,17 +39,9 @@ public class Store {
 	public String getPassword() {
 		return password;
 	}
-	
-	
-	
 	public void setPassword(String password) {
-		try {
-			this.password = new MD5().jiami(password);
-		} catch (UnsupportedEncodingException e) {
-			e.printStackTrace();
-		}
+		this.password = password;
 	}
-	
 	public String getAddress() {
 		return address;
 	}
@@ -66,18 +60,31 @@ public class Store {
 	public void setType(String type) {
 		this.type = type;
 	}
-	public String getPhoto() {
-		return photo;
-	}
-	public void setPhoto(String photo) {
-		this.photo = photo;
-	}
 	public String getSubtype() {
 		return subtype;
 	}
 	public void setSubtype(String subtype) {
 		this.subtype = subtype;
 	}
+	public String getPhoto() {
+		return photo;
+	}
+	public void setPhoto(String photo) {
+		this.photo = photo;
+	}
+	public String getPhotoout() {
+		return photoout;
+	}
+	public void setPhotoout(String photoout) {
+		this.photoout = photoout;
+	}
+	public String getPhotoin() {
+		return photoin;
+	}
+	public void setPhotoin(String photoin) {
+		this.photoin = photoin;
+	}
+	
 	@Override
 	public int hashCode() {
 		final int prime = 31;
@@ -87,6 +94,8 @@ public class Store {
 		result = prime * result + ((info == null) ? 0 : info.hashCode());
 		result = prime * result + ((password == null) ? 0 : password.hashCode());
 		result = prime * result + ((photo == null) ? 0 : photo.hashCode());
+		result = prime * result + ((photoin == null) ? 0 : photoin.hashCode());
+		result = prime * result + ((photoout == null) ? 0 : photoout.hashCode());
 		result = prime * result + ((storename == null) ? 0 : storename.hashCode());
 		result = prime * result + ((subtype == null) ? 0 : subtype.hashCode());
 		result = prime * result + ((tel == null) ? 0 : tel.hashCode());
@@ -127,6 +136,16 @@ public class Store {
 				return false;
 		} else if (!photo.equals(other.photo))
 			return false;
+		if (photoin == null) {
+			if (other.photoin != null)
+				return false;
+		} else if (!photoin.equals(other.photoin))
+			return false;
+		if (photoout == null) {
+			if (other.photoout != null)
+				return false;
+		} else if (!photoout.equals(other.photoout))
+			return false;
 		if (storename == null) {
 			if (other.storename != null)
 				return false;
@@ -149,12 +168,14 @@ public class Store {
 			return false;
 		return true;
 	}
+	
 	@Override
 	public String toString() {
 		return "Store [id=" + id + ", storename=" + storename + ", tel=" + tel + ", password=" + password + ", address="
-				+ address + ", info=" + info + ", type=" + type + ", subtype=" + subtype + ", photo=" + photo + "]";
+				+ address + ", info=" + info + ", type=" + type + ", subtype=" + subtype + ", photo=" + photo
+				+ ", photoout=" + photoout + ", photoin=" + photoin + "]";
 	}
-	
+	//构造方法
 	public Store() {
 	}
 	public Store(String tel, String password) {
@@ -265,6 +286,22 @@ public class Store {
 		this.type = type;
 		this.subtype = subtype;
 		this.photo = photo;
+	}
+	
+	
+	public Store(Integer id, String storename, String tel, String password, String address, String info, String type,
+			String subtype, String photo, String photoout, String photoin) {
+		this.id = id;
+		this.storename = storename;
+		this.tel = tel;
+		this.password = password;
+		this.address = address;
+		this.info = info;
+		this.type = type;
+		this.subtype = subtype;
+		this.photo = photo;
+		this.photoout = photoout;
+		this.photoin = photoin;
 	}
     
     

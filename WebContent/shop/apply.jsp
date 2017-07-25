@@ -33,19 +33,19 @@
 		</div>
 
 	</div>
-	<form action="" method="post" enctype="multipart/form-data">
+	<form action="/qianbaidu/registstore.action" method="post" enctype="multipart/form-data">
 		<div id="content">
 			<div id="content-center">
 				<div class="single-line">
-					<label class="title-head">门店绑定手机号:${user.phone}</label>
+					<label class="title-head">门店绑定手机号:${user.tel}</label>
 				</div>
 				<div class="single-line">
 					<label class="title"><span class="title-span">*</span>门店名称</label>
-					<input type="text" name="shopname" id="shopname" class="input-box" />
+					<input type="text" name="storename" id="shopname" class="input-box" value="${user.storename}" readonly="readonly"/>
 				</div>
 				<div class="single-line">
 					<label class="title"><span class="title-span">*</span>外卖电话</label>
-					<input type="text" name="outtel" id="outtel" class="input-box" />
+					<input type="text" name="tel" id="outtel" class="input-box" value="${user.tel}" readonly="readonly"/>
 				</div>
 				<div class="single-line">
 					<label class="title"><span class="title-span">*</span>联系人姓名</label>
@@ -55,7 +55,7 @@
 
 				<div class="single-line">
 					<label class="title"><span class="title-span">*</span>门店分类</label>
-					<input type="text" name="shopcatalog" id="shopcatalog"
+					<input type="text" name="type" id="shopcatalog"
 						class="input-box" />
 				</div>
 
@@ -85,7 +85,7 @@
 
 				<div class="single-line">
 					<label class="title"><span class="title-span">*</span>详细地址</label>
-					<input type="text" name="detailaddress" id="detailaddress"
+					<input type="text" name="address" id="detailaddress"
 						class="input-box" />
 					<button type="button" class="" id="locate">去定位</button>
 
@@ -98,18 +98,18 @@
 				<div class="photo">
 					<label class="title"><span class="title-span">*</span>门店照片</label>
 					<div class="box" id="upbox">
-						<span class="title">门脸照片</span><input type="file" name="facephoto" id="facephote" 
+						<span class="title">门脸照片</span><input type="file" name="photoout" id="facephote" 
 							accept="image/gif, image/jpeg, image/png, image/bmp" />
 					</div>
 					<div class="box" id="downbox">
-						<span class="title">店内照片</span><input type="file" name="instorephoto" id="instorephoto"
+						<span class="title">店内照片</span><input type="file" name="photoin" id="instorephoto"
 							accept="image/gif, image/jpeg, image/png, image/bmp" />
 					</div>
 				</div>
 				<div class="photo">
 					<label class="title"><span class="title-span">*</span>门店Logo</label>
 					<div class="box" id="logobox">
-						<input type="file" name="shoplogo" value="选择Logo"
+						<input type="file" name="photo" value="选择Logo"
 							accept="image/gif, image/jpeg, image/png, image/bmp" />
 					</div>
 				</div>
@@ -120,7 +120,7 @@
 			</div>
 			<div id="btn-group">
 				<input type="button" id="stepback" class="stepbtn" value="返回上一步" />
-				<input type="button" id="stepforward" class="stepbtn"
+				<input type="submit" id="stepforward" class="stepbtn"
 					value="提交并进入下一步" />
 			</div>
 
