@@ -23,10 +23,6 @@ public class ShoppingCartController {
 		ModelAndView mav = new ModelAndView("shop/index_whs");
 		String buy = request.getParameter("shoppingcart");
 		
-		System.out.println("start!");
-		System.out.println(buy);
-		System.out.println("finish!");
-		
 		User user = (User) request.getSession().getAttribute("user");
 		String[] price = buy.split(",");
 //		System.out.println(price[0]);
