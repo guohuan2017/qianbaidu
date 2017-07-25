@@ -207,6 +207,8 @@
 									<td class="count"><span class="reduce"></span><input class="count-input" type="text" value="0" /><span class="add">+</span></td>
 									<td class="subtotal">0.00</td>
 									<td class="operation" style="display: none;"><span class="delete">删除</span></td>
+									<td class="foodid" style="display: none;">${food.id}</td>
+									<td class="storeid" style="display: none;">${food.store_id}</td>								
 								</tr>
 								</c:forEach>
 							</tbody>
@@ -215,7 +217,7 @@
 						<div class="foot" id="foot">
 							<label class="fl select-all"><input type="checkbox" class="check-all check"/>&nbsp;全选</label>
 							<a class="fl delete" id="deleteAll" href="javascript:;" style="display: none;">删除</a>
-							<div class="fr closing">结 算</div>
+							<div class="fr closing" id="buy">结 算</div>
 							<div class="fr total">合计：￥<span id="priceTotal">0.00</span></div>
 							<div class="fr selected" id="selected">已选商品<span id="selectedTotal">0</span>件<span class="arrow up">︽</span><span class="arrow down">︾</span></div>
 							<div class="selected-view">

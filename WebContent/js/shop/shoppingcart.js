@@ -203,4 +203,46 @@ window.onload = function() {
 	// 默认全选
 	//  checkAllInputs[0].checked = true;
 	//  checkAllInputs[0].onclick();
+	
+	var foodids = document.getElementsByClassName('foodid');
+	var butbtn = document.getElementById("buy");
+	
+	var storeid = document.getElementsByClassName('storeid');
+	
+	butbtn.onclick = function() {
+		var seleted = 0;
+		var price = 0;
+
+		var shoppingcart ="";
+//		var shoppingcart = null;
+		
+//		var seleted = 0;
+		var price = 0;
+		for(var i = 0; i < tr.length; i++) {
+			if(tr[i].getElementsByTagName('input')[0].checked) {
+				tr[i].className = 'on';
+//				seleted += parseInt(tr[i].getElementsByTagName('input')[1].value);
+				price += parseFloat(tr[i].cells[4].innerHTML);
+				
+				shoppingcart =shoppingcart+foodids[i].innerHTML+"_"+countInputs[i].value+";";
+				
+			} else {
+				tr[i].className = '';
+			}
+		}
+		shoppingcart =price.toFixed(2)+","+storeid[0].innerHTML+","+shoppingcart;
+		
+		var f=document.createElement('form');
+        f.style.display='none';
+//      f.action='qianbaidu/buy.action?shoppingcart='+shoppingcart;
+		f.action='buy.action';
+        f.method='post';
+        f.innerHTML='<input type="hidden" name="shoppingcart" value='+shoppingcart+'>';
+        document.body.appendChild(f);
+        f.submit();
+        
+        
+//		window.location.href='qianbaidu/buy.action?shoppingcart='+shoppingcart;
+	}
+	
 }

@@ -55,9 +55,9 @@
       store_id, deliver_id, order_id, 
       total_price, status, time
       )
-    values (#{id,jdbcType=INTEGER}, #{userId,jdbcType=INTEGER}, #{addressId,jdbcType=INTEGER}, 
-      #{storeId,jdbcType=INTEGER}, #{deliverId,jdbcType=INTEGER}, #{orderId,jdbcType=INTEGER}, 
-      #{totalPrice,jdbcType=DOUBLE}, #{status,jdbcType=INTEGER}, #{time,jdbcType=TIMESTAMP}
+    values (#{id,jdbcType=INTEGER}, #{user_id,jdbcType=INTEGER}, #{address_id,jdbcType=INTEGER}, 
+      #{store_id,jdbcType=INTEGER}, #{deliver_id,jdbcType=INTEGER}, #{order_id,jdbcType=INTEGER}, 
+      #{total_price,jdbcType=DOUBLE}, #{status,jdbcType=INTEGER}, #{time,jdbcType=TIMESTAMP}
       )
   </insert>
   <insert id="insertSelective" parameterType="pojo.OrderList" >
@@ -71,22 +71,22 @@
       <if test="id != null" >
         id,
       </if>
-      <if test="userId != null" >
+      <if test="user_id != null" >
         user_id,
       </if>
-      <if test="addressId != null" >
+      <if test="address_id != null" >
         address_id,
       </if>
-      <if test="storeId != null" >
+      <if test="store_id != null" >
         store_id,
       </if>
-      <if test="deliverId != null" >
+      <if test="deliver_id != null" >
         deliver_id,
       </if>
-      <if test="orderId != null" >
+      <if test="order_id != null" >
         order_id,
       </if>
-      <if test="totalPrice != null" >
+      <if test="total_price != null" >
         total_price,
       </if>
       <if test="status != null" >
@@ -100,23 +100,23 @@
       <if test="id != null" >
         #{id,jdbcType=INTEGER},
       </if>
-      <if test="userId != null" >
-        #{userId,jdbcType=INTEGER},
+      <if test="user_id != null" >
+        #{user_id,jdbcType=INTEGER},
       </if>
-      <if test="addressId != null" >
-        #{addressId,jdbcType=INTEGER},
+      <if test="address_id != null" >
+        #{address_id,jdbcType=INTEGER},
       </if>
-      <if test="storeId != null" >
-        #{storeId,jdbcType=INTEGER},
+      <if test="store_id != null" >
+        #{store_id,jdbcType=INTEGER},
       </if>
-      <if test="deliverId != null" >
-        #{deliverId,jdbcType=INTEGER},
+      <if test="deliver_id != null" >
+        #{deliver_id,jdbcType=INTEGER},
       </if>
-      <if test="orderId != null" >
-        #{orderId,jdbcType=INTEGER},
+      <if test="order_id != null" >
+        #{order_id,jdbcType=INTEGER},
       </if>
-      <if test="totalPrice != null" >
-        #{totalPrice,jdbcType=DOUBLE},
+      <if test="total_price != null" >
+        #{total_price,jdbcType=DOUBLE},
       </if>
       <if test="status != null" >
         #{status,jdbcType=INTEGER},
@@ -134,23 +134,23 @@
     -->
     update orderlist
     <set >
-      <if test="userId != null" >
-        user_id = #{userId,jdbcType=INTEGER},
+      <if test="user_id != null" >
+        user_id = #{user_id,jdbcType=INTEGER},
       </if>
-      <if test="addressId != null" >
-        address_id = #{addressId,jdbcType=INTEGER},
+      <if test="address_id != null" >
+        address_id = #{address_id,jdbcType=INTEGER},
       </if>
-      <if test="storeId != null" >
-        store_id = #{storeId,jdbcType=INTEGER},
+      <if test="store_id != null" >
+        store_id = #{store_id,jdbcType=INTEGER},
       </if>
-      <if test="deliverId != null" >
-        deliver_id = #{deliverId,jdbcType=INTEGER},
+      <if test="deliver_id != null" >
+        deliver_id = #{deliver_id,jdbcType=INTEGER},
       </if>
-      <if test="orderId != null" >
-        order_id = #{orderId,jdbcType=INTEGER},
+      <if test="order_id != null" >
+        order_id = #{order_id,jdbcType=INTEGER},
       </if>
-      <if test="totalPrice != null" >
-        total_price = #{totalPrice,jdbcType=DOUBLE},
+      <if test="total_price != null" >
+        total_price = #{total_price,jdbcType=DOUBLE},
       </if>
       <if test="status != null" >
         status = #{status,jdbcType=INTEGER},
@@ -168,12 +168,12 @@
       This element was generated on Tue Jul 18 15:34:39 CST 2017.
     -->
     update orderlist
-    set user_id = #{userId,jdbcType=INTEGER},
-      address_id = #{addressId,jdbcType=INTEGER},
-      store_id = #{storeId,jdbcType=INTEGER},
-      deliver_id = #{deliverId,jdbcType=INTEGER},
-      order_id = #{orderId,jdbcType=INTEGER},
-      total_price = #{totalPrice,jdbcType=DOUBLE},
+    set user_id = #{user_id,jdbcType=INTEGER},
+      address_id = #{address_id,jdbcType=INTEGER},
+      store_id = #{store_id,jdbcType=INTEGER},
+      deliver_id = #{deliver_id,jdbcType=INTEGER},
+      order_id = #{order_id,jdbcType=INTEGER},
+      total_price = #{total_price,jdbcType=DOUBLE},
       status = #{status,jdbcType=INTEGER},
       time = #{time,jdbcType=TIMESTAMP}
     where id = #{id,jdbcType=INTEGER}
