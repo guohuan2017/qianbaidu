@@ -6,7 +6,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>商铺中心-开店申请</title>
-<link rel="stylesheet" href="/qianbaidu/css/shop/apply.css" />
+<link rel="stylesheet" href="../css/shop/apply.css" />
 <script type="text/javascript"
 	src="http://api.map.baidu.com/api?v=2.0&ak=kUAyHUuiEwHVmWdyfap31YWSUBTWjAnE"></script>
 </head>
@@ -23,7 +23,6 @@
 		<div id="guider-bar-center">
 			<ul>
 				<li><i class="number-this">1</i> 门店信息 -----</li>
-
 				<li><i class="number-other">2</i> 资质信息 -----</li>
 				<li><i class="number-other">3</i> 合作方案 -----</li>
 				<li><i class="number-other">4</i> 配送方案 -----</li>
@@ -129,7 +128,6 @@
 	</form>
 
 </body>
-</html>
 <script type="text/javascript">
 	// 百度地图API功能
 	var map = new BMap.Map("allmap"); // 创建Map实例
@@ -138,3 +136,4 @@
 	map.setCurrentCity("上海"); // 设置地图显示的城市 此项是必须设置的
 	map.enableScrollWheelZoom(true); //开启鼠标滚轮缩放
 </script>
+</html>
