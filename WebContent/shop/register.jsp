@@ -28,10 +28,10 @@
 		<form action="/qianbaidu/commercialuser/register.action" method="post">
 			<div id="loginparent">
 				<div class="logincontentdiv">
-					<input type="text" class="logincontent" name="name" placeholder="请输入用户名" />
+					<input type="text" class="logincontent" name="username" placeholder="请输入用户名" />
 				</div>
 				<div class="logincontentdiv">
-					<input type="text" class="logincontent" name="tel" placeholder="请输入手机号" />
+					<input type="text" class="logincontent" name="phone" placeholder="请输入手机号" />
 				</div>
 				<div class="logincontentdiv" style="border-bottom: 1px solid; border-color: rgb(221, 221, 221);">
 					<input type="password" class="logincontent" name="password" placeholder="请输入密码" />

@@ -3,10 +3,10 @@
 <mapper namespace="dao.CommercialUserMapper" >
 
 	<insert id="insertSelective" parameterType="pojo.CommercialUser">
-		insert into commercial_user(id,name,password,tel) values(#{id},#{name},#{password},#{tel})
+		insert into commercial_user(id,username,password,phone) values(#{id},#{username},#{password},#{phone})
 	</insert>
 	
 	<select id="selectBytelPassword" parameterType="pojo.CommercialUser" resultType="pojo.CommercialUser">
-		select * from commercial_user where tel = #{tel} and password = #{password}
+		select * from commercial_user where phone = #{phone} and password = #{password}
 	</select>
 </mapper>

@@ -7,13 +7,13 @@ public class CommercialUser {
 
 	private String id;
 	@NotEmpty
-	private String name;
+	private String username;
 	@NotEmpty
 	private String password;
 	private int storeid;
 	private String power;
 	@NotEmpty
-	private String tel;
+	private String phone;
 
 	private Store store;
 
@@ -35,12 +35,12 @@ public class CommercialUser {
 		this.id = id;
 	}
 
-	public String getName() {
-		return name;
+	public String getUsername() {
+		return username;
 	}
 
-	public void setName(String name) {
-		this.name = name;
+	public void setUsername(String name) {
+		this.username = name;
 	}
 
 	public String getPassword() {
@@ -68,12 +68,12 @@ public class CommercialUser {
 		this.power = power;
 	}
 
-	public String getTel() {
-		return tel;
+	public String getPhone() {
+		return phone;
 	}
 
-	public void setTel(String tel) {
-		this.tel = tel;
+	public void setPhone(String phone) {
+		this.phone = phone;
 	}
 
 	public Store getStore() {

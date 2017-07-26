@@ -62,13 +62,20 @@ public class CommercialUserController {
 	@RequestMapping("/login.action")
 	public ModelAndView login(CommercialUser commercialUser ,HttpServletRequest request ,HttpServletResponse response){
 		ModelAndView modelAndView = new ModelAndView();
-		
+		try {
+			commercialUser.setPassword(MD5.jiami(commercialUser.getPassword()));
+		} catch (UnsupportedEncodingException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		CommercialUser commericalUser2 = commercialUserService.login(commercialUser); 
-		
-		
-		
-		
-		
+		if(null != commericalUser2){
+			modelAndView.setViewName("shop/profile/managefood");
+			modelAndView.addObject("user",commericalUser2);
+		}else{
+			modelAndView.addObject("message","登录失败！");
+			modelAndView.setViewName("shop/login");
+		}
 		return modelAndView;
 	}
 	
