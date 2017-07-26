@@ -205,11 +205,11 @@ window.onload = function() {
 	//  checkAllInputs[0].onclick();
 	
 	var foodids = document.getElementsByClassName('foodid');
-	var butbtn = document.getElementById("buy");
+	var buybtn = document.getElementById("buy");
 	
 	var storeid = document.getElementsByClassName('storeid');
 	
-	butbtn.onclick = function() {
+	buybtn.onclick = function() {
 		var seleted = 0;
 		var price = 0;
 
