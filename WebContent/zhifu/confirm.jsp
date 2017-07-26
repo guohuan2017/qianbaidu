@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>    
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 
@@ -17,25 +19,25 @@
 					当前位置:
 					<a class="carttopbar-nav-path2" href="">徐汇民润大厦(宜山路北50米)</a>
 					<i class="Hui-iconfont">&#xe6d7;</i>
-					<a class="carttopbar-nav-path2" href="">甜蜜蜜港式茶餐厅(东兰路店)</a>
+					<a class="carttopbar-nav-path2" href="">${store.storename}</a>
 					<i class="Hui-iconfont">&#xe6d7;</i>
 					订单信息
 				</span>
 				<div id="dlzc">
 					<span class="dlzc1"> 
-				</span> <span> <a class="dlzc2">欢迎:</a>
+				</span> <span> <a class="dlzc2">欢迎:${user.username}</a>
 				</span>
 				</div>
 			</div>
 		</div>
 		<div id="head-div">
 			<div id="head-info">
-				<img class="checkout" src="../img/home/index/logo.jpg" />
+				<img class="checkout" src="/qianbaidu/img/home/index/logo.jpg" />
 				<span class="checkoutguide">
 					| &nbsp;订单信息
 				</span>
 				<div class="checkoutpt">
-					<img src="../img/zhifu/confirm/deskout.jpg" />
+					<img src="/qianbaidu/img/zhifu/confirm/deskout.jpg" />
 				</div>
 			</div>
 
@@ -62,36 +64,84 @@
 					</div>
 					<dl>
 						<dt class="checkoutcart-grouptitle-binding">
-							1号购物车
+							购物车
 							</dt>
-
+						<c:forEach var="food" items="${foodlist}">
 						<dd>
 							<div class="checkoutcart-tablerow">
 								<div class="cell-binding">
-									超级大鸡排-甘梅味
+									${food.foodname}
 								</div>
 								<div class="cell-itemquantity">
-
+									<!--  -->
+									<%-- <button style="position: relative; left: 5px;" class="number-btn" id="minusbtn${food.id}"
+										ondblclick="reduce(foodid) ">-</button> --%>
+									<button style="position: relative; left: 5px;" class="number-btn" id="minusbtn${food.id}">-</button>	
+									<input type="text" id="foodidnumber${food.id}" class="food-number" style="width:40px" value="${food.number}" readonly="readonly"/>
+									<button style="position: relative; left: -5px; " class="number-btn" id="addbtn${food.id}">+</button>
+									<%-- <button style="position: relative; left: -5px; " class="number-btn" id="addbtn${food.id}"
+										ondblclick="add(foodid)">+</button> --%>
+									<!--  -->
 								</div>
-								<div class="cell-binding1">
-									¥16.80
+								<div class="cell-binding1" id="price${food.id}">
+									
 								</div>
+								<span style="display:none" id="foodprice${food.id}">${food.price}</span>
 							</div>
 						</dd>
-						<dd>
-							<div class="checkoutcart-tablerow">
-								<div class="cell-binding">
-									藤椒鸡小块-魔力鸡小块
-								</div>
-								<div class="cell-itemquantity">
-
-								</div>
-								<div class="cell-binding1">
-									¥12.00
-								</div>
-							</div>
-						</dd>
+						<script type="text/javascript">
+						 	var minus = document.getElementById('minusbtn${food.id}');
+						 	var add = document.getElementById('addbtn${food.id}');
+						 	
+							minus.onclick = function() {
+								var num = document.getElementById('foodidnumber${food.id}');
+								var value = parseInt(num.value);
+					
+								if(value>0){
+									num.value = value - 1;
+								}
+								
+								var lineprice = document.getElementById('price${food.id}');
+								
+								var price = document.getElementById('foodprice${food.id}');
+								var pricevalue = parseFloat(price.innerHTML);
+								
+								var cheng = pricevalue * num.value;
+								lineprice.innerHTML = cheng;
+							}
+							add.onclick = function() {
+								var num = document.getElementById('foodidnumber${food.id}');
+								var value = parseInt(num.value);
+								num.value = value + 1;
+								
+								var lineprice = document.getElementById('price${food.id}');
+								
+								var price = document.getElementById('foodprice${food.id}');
+								var pricevalue = parseFloat(price.innerHTML);
+								
+								var cheng = pricevalue * num.value;
+								lineprice.innerHTML = cheng;
+							}							
+						</script>
+						<script type="text/javascript">
+								/* var nums = document.getElementsByClassName('food-number');
+								var prices = document.getElementsByClassName('cell-binding1'); */
+								var lineprice = document.getElementById('price${food.id}');
+								
+								var price = document.getElementById('foodprice${food.id}');
+								var pricevalue = parseFloat(price.innerHTML);
+								
+								var num = document.getElementById('foodidnumber${food.id}');
+								var numvalue = parseInt(num.value);
+								
+								var cheng = pricevalue * numvalue;
+								lineprice.innerHTML = cheng;
+						</script>
+						</c:forEach>
+						
 					</dl>
+						
+					<!-- 
 					<ul>
 						<div class="checkoutcart-tablerow2">
 							<div class="cell-binding">
@@ -116,20 +166,49 @@
 							</div>
 						</div>
 					</ul>
+					  -->
 					<div class="cell-jiesuan">
 						￥
-						<span class="cell-jine">
-								36.80
+						<span class="cell-jine" id="totalprice">
+								${total}
 							</span>
 					</div>
 					<div class="cell-jiesuan2">
 						共
-						<span class="cell-jine2">
-								2
+						<span class="cell-jine2" id="totalnumber">
+								${num}
 							</span> 份商品
 					</div>
 				</div>
+				
+				<script type="text/javascript">
+				var div = document.getElementById('order-details-container');
+				div.onclick = function() {
+					var total = document.getElementById('totalprice');
+					var number = document.getElementById('totalnumber');
+					
+					var nums = document.getElementsByClassName('food-number');
+					var prices = document.getElementsByClassName('cell-binding1');
+					
+					total.value = 0;
+					number.value = 0;
+					
+					for(var i = 0; i < nums.length; i++) {
+						var price = parseFloat(prices[i].innerHTML);
+						var num = parseInt(nums[i].value);
+						
+						total.value += price;
+						number.value += num;
+						
+					}
+					total.innerHTML = total.value;
+					number.innerHTML = number.value;
+				}
+				</script>
 			</div>
+			
+			
+			
 			<div id="other-info">
 				<div class="checkout-shdz">
 					<h2 class="checkout-fkfs-title">收获地址
@@ -139,7 +218,7 @@
 						<li class="checkout-tjdz-bk">
 							<i class="Hui-iconfont" style="vertical-align: middle;width: 63px;height: 42px; display: table-cell; border-right: 1px solid #eee;font-size: 30px;text-align: center;color: #999999;">&#xe6c9;</i>
 							<div class="checkout-tjdz-address">
-								<p> 顾家文 先生 18201727218</p>
+								<p> ${user.username} 先生 ${user.phone}</p>
 								<p>民润大厦宜山路13881楼中软国际</p>
 							</div>
 						</li>

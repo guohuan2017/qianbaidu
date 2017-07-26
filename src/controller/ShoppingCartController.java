@@ -1,16 +1,25 @@
 package controller;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+import javax.websocket.Session;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
+import pojo.Food;
 import pojo.ShoppingCart;
+import pojo.Store;
 import pojo.User;
+import service.FoodService;
 import service.ShoppingCartService;
+import service.StoreService;
 
 @Controller
 public class ShoppingCartController {
@@ -18,18 +27,31 @@ public class ShoppingCartController {
 	@Autowired
 	private ShoppingCartService service;
 	
+	@Autowired
+	private StoreService storeService;
+	
+	@Autowired
+	private FoodService foodService;
+	
 	@RequestMapping("/buy.action")
 	public ModelAndView shopjsp(HttpServletRequest request, HttpServletResponse response) {
-		ModelAndView mav = new ModelAndView("shop/index_whs");
+		ModelAndView mav = new ModelAndView("zhifu/confirm");
 		String buy = request.getParameter("shoppingcart");
 		
-		User user = (User) request.getSession().getAttribute("user");
+		HttpSession session = request.getSession();
+		User user = (User) session.getAttribute("user");
 		String[] price = buy.split(",");
 //		System.out.println(price[0]);
 		//总价
 		String total_price = price[0];
 		
+		int num = 0;
+		
 		Integer store_id = Integer.parseInt(price[1]);
+		
+		List<Food> foodlist = new ArrayList<>();
+		
+		Food food = null;
 		
 		String[] orders = price[2].split(";");
 		for (String order : orders) {
@@ -40,11 +62,19 @@ public class ShoppingCartController {
 			ShoppingCart shoppingCart = new ShoppingCart(user.getId(), store_id, food_id, food_number, 0);
 			
 			service.insert(shoppingCart);
-			System.out.println("food_id:"+food_id+",food_number:"+food_number);
+			
+			food = foodService.selectByPrimaryKey(food_id);
+			food.setNumber(food_number);
+			foodlist.add(food);
+			num += food_number;
+//			System.out.println("food_id:"+food_id+",food_number:"+food_number);
 		}
 		
-		System.out.println(total_price);
-		
+		Store store = storeService.selectByPrimaryKey(store_id);
+		session.setAttribute("store", store);
+		mav.addObject("foodlist",foodlist);
+		mav.addObject("total", total_price);
+		mav.addObject("num", num);
 		return mav;
 	}
 }

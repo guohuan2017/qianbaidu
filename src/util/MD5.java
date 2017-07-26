@@ -6,7 +6,7 @@ import java.security.NoSuchAlgorithmException;
 
 public class MD5 {
 	// 用于返回已加密的字符串
-	public String jiami(String str) throws UnsupportedEncodingException {
+	public static String jiami(String str) throws UnsupportedEncodingException {
 		String password = null;
 		MessageDigest md;
 		try {

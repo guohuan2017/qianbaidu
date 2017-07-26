@@ -36,6 +36,9 @@
 				<div class="logincontentdiv" style="border-bottom: 1px solid; border-color: rgb(221, 221, 221);">
 					<input type="password" class="logincontent" name="password" placeholder="请输入密码" />
 				</div>
+				<div class="logincontentdiv" style="border-bottom: 1px solid; border-color: rgb(221, 221, 221);">
+					<input type="password" class="logincontent" name="repassword" placeholder="请再次输入密码" />
+				</div>
 
 				<button id="loginbtn" type="submit">注册</button>
 			</div>

@@ -44,16 +44,16 @@
 		<div id="quanbu">
 			<div id="quanbu-1">
 				<div id="dzss">
-					<div id="dz">
+					<!--<div id="dz">
 						<span class="dqwz"> 当前位置: </span> <span class="dqwz1"> <a
 						href="" class="dqwz1_1"> 徐汇区宜山路1388号民润大厦1号楼中软国际 </a>
 					</span> <span class="dqwz1_2"> <a href="" class="dqwz1_3">
 							[切换地址] </a>
 					</span> <span class="transclud"> <i class="icon-arrow-right"> <img
 							src="/qianbaidu/img/user/profile/右图标.jpg" />
-					</i> <span class="ng-binding-span">设置密码</span>
+					</i> <span class="ng-binding-span">新增菜品</span>
 						</span>
-					</div>
+					</div>-->
 				</div>
 				<ul id="profile-sidebar">
 					<li class="profile-sidebar">
