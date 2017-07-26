@@ -76,6 +76,8 @@ public class StoreController {
 		store.setPhotoin("uploadstore/" + store.getId() + "_" + store.getStorename() + "/" + map.get("photoin"));
 		store.setPhoto("uploadstore/" + store.getId() + "_" + store.getStorename() + "/" + map.get("photo"));
 		
+		
+//		store.setAddress(request.getParameter("address"));
 		store.setAddress(mr.getParameter("address"));
 		store.setType(mr.getParameter("type"));
 		store.setSubtype(mr.getParameter("type"));

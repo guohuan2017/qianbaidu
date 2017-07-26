@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>    
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 
@@ -17,13 +19,13 @@
 					当前位置:
 					<a class="carttopbar-nav-path2" href="">徐汇民润大厦(宜山路北50米)</a>
 					<i class="Hui-iconfont">&#xe6d7;</i>
-					<a class="carttopbar-nav-path2" href="">甜蜜蜜港式茶餐厅(东兰路店)</a>
+					<a class="carttopbar-nav-path2" href="">${store.storename}</a>
 					<i class="Hui-iconfont">&#xe6d7;</i>
 					订单信息
 				</span>
 				<div id="dlzc">
 					<span class="dlzc1"> 
-				</span> <span> <a class="dlzc2">欢迎:</a>
+				</span> <span> <a class="dlzc2">欢迎:${user.username}</a>
 				</span>
 				</div>
 			</div>
@@ -62,7 +64,7 @@
 					</div>
 					<dl>
 						<dt class="checkoutcart-grouptitle-binding">
-							1号购物车
+							购物车
 							</dt>
 
 						<dd>
@@ -71,13 +73,35 @@
 									超级大鸡排-甘梅味
 								</div>
 								<div class="cell-itemquantity">
-
+									<!--  -->
+									<button style="position: relative; left: 5px;" class="number-btn" id="minusbtn"
+										ondblclick="reduce(foodid) ">-</button>
+									<input type="text" id="foodidnumber" class="food-number" style="width:40px" value="0"/>
+									<button style="position: relative; left: -5px; " class="number-btn" id="addbtn"
+										ondblclick="add(foodid)">+</button>
+									<!--  -->
 								</div>
 								<div class="cell-binding1">
 									¥16.80
 								</div>
 							</div>
 						</dd>
+						<script type="text/javascript">
+						 	var minus = document.getElementById('minusbtn');
+						 	var add = document.getElementById('addbtn');
+							
+							minus.onclick = function() {
+								var num = document.getElementById('foodidnumber');
+								var value = parseInt(num.value);
+								num.value = value - 1;
+							}
+							add.onclick = function() {
+								var num = document.getElementById('foodidnumber');
+								var value = parseInt(num.value);
+								num.value = value + 1;
+							}							
+							
+						</script>
 						<dd>
 							<div class="checkoutcart-tablerow">
 								<div class="cell-binding">
