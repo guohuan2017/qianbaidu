@@ -1,12 +1,7 @@
 package pojo;
 
-import java.io.UnsupportedEncodingException;
 import java.util.List;
-
-
 import org.hibernate.validator.constraints.NotEmpty;
-
-import util.MD5;
 
 public class CommericalUser {
 
