@@ -10,7 +10,7 @@
 		<link rel="stylesheet" type="text/css" href="/qianbaidu/css/shop/profile/qbd.css" />
 		<link rel="stylesheet" type="text/css" href="/qianbaidu/css/shop/profile/qbd1.css" />
 		<script type="text/javascript" src="/qianbaidu/js/jquery-3.2.1.js"></script>
-		<script type="text/javascript" src="/qianbaidu/js/shop/profile/profile.js">
+		<script type="text/javascript" src="/qianbaidu/js/profile/profile.js">
 		</script>
 	</head>
 	
@@ -44,7 +44,7 @@
 		<div id="quanbu">
 			<div id="quanbu-1">
 				<div id="dzss">
-					<div id="dz">
+					<!--<div id="dz">
 						<span class="dqwz"> 当前位置: </span> <span class="dqwz1"> <a
 						href="" class="dqwz1_1"> 徐汇区宜山路1388号民润大厦1号楼中软国际 </a>
 					</span> <span class="dqwz1_2"> <a href="" class="dqwz1_3">
@@ -53,7 +53,7 @@
 							src="/qianbaidu/img/user/profile/右图标.jpg" />
 					</i> <span class="ng-binding-span">设置密码</span>
 						</span>
-					</div>
+					</div>-->
 				</div>
 				<ul id="profile-sidebar">
 					<li class="profile-sidebar">
