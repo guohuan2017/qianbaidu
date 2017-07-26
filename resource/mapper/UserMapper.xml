@@ -152,14 +152,14 @@
     where phone = #{0,jdbcType=VARCHAR}
   </select>
   
-    <select id="selectPassword" resultType="java.lang.String" parameterType="java.lang.Integer" >
+  <select id="selectPassword" resultType="java.lang.String" parameterType="java.lang.Integer" >
     select 
     password
     from user
     where id = #{id,jdbcType=INTEGER}
   </select>
   
-    <update id="updatePasswordById"  parameterType="pojo.User" >
+  <update id="updatePasswordById"  parameterType="pojo.User" >
     update user
     <set >
         password = #{password,jdbcType=VARCHAR},
