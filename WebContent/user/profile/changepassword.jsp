@@ -127,7 +127,7 @@
 					<span class=""> 设置密码 </span>
 				</h3>
 					<div id="profile-panelcontent">
-						<form class="profile-changewd" id="pwform" action="" method="post">
+						<form class="profile-changewd" id="pwform" action="/qianbaidu/changepassword.action" method="post">
 							<p class="changewd-tip">饿了么提示你：使用大小写字母、数字与标点符号的组合，可以大幅提升帐号安全！
 							</p>
 							<div class="formfield">
@@ -162,6 +162,7 @@
 								<button type="button" class="formfield-button" id="pwbutton">确认</button>
 							</div>
 						</form>
+						<span style="color:red;" >${message}</span>
 					</div>
 				</div>
 			</div>

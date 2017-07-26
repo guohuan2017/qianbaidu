@@ -55,4 +55,12 @@ public class UserService {
 	public User selectPhone(String phone){
 		return dao.selectPhone(phone);
 	}
+	
+	public int updatePasswordById(User user){
+		return dao.updatePasswordById(user);
+	}
+	
+	public String selectPassword(Integer id){
+		return dao.selectPassword(id);
+	}
 }

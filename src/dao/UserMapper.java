@@ -59,4 +59,8 @@ public interface UserMapper {
 	User loginSelect(User user);
 	
 	User selectPhone(String phone);
+	
+	int updatePasswordById(User user);
+	
+	String selectPassword(Integer id);
 }
