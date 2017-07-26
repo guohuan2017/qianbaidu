@@ -156,7 +156,7 @@
 							</div>
 							<div class="formfield">
 								<label class="ng-binding"> </label>
-								<button type="submit" class="formfield-button" id="pwbutton">确认</button>
+								<button type="button" class="formfield-button" id="pwbutton">确认</button>
 							</div>
 						</form>
 					</div>

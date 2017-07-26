@@ -77,7 +77,7 @@
 						</h2>
 						<ul class="profile-sidebar-section-ul">
 							<li class="profile-sidebar-section-ul-li">
-								<a class="profile-sidebar-a" style="color: #0089dc;" href="myorde.jsp">近三个月订单</a>
+								<a class="profile-sidebar-a" style="color: #0089dc;" href="myorder.jsp">近三个月订单</a>
 							</li>
 							<li class="profile-sidebar-section-ul-li">
 								<a class="profile-sidebar-a" href="">待评价订单</a>

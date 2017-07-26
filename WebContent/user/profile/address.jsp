@@ -20,7 +20,7 @@
 				<a href="/qianbaidu/home/shop.jsp" class="logo"> <img class="logo1" src="/qianbaidu/img/home/index/logo.jpg" />
 				</a>
 				<a href="/qianbaidu/home/shop.jsp" class="sy"> 首页 </a>
-				<a href="myorde.jsp" class="wddd">
+				<a href="myorder.jsp" class="wddd">
 					我的订单 </a>
 				<a href="" class="jmhz"> 加盟合作 </a>
 				<nav id="shouye2">
@@ -78,7 +78,7 @@
 						</h2>
 						<ul class="profile-sidebar-section-ul">
 							<li class="profile-sidebar-section-ul-li">
-								<a class="profile-sidebar-a" href="myorde.jsp">近三个月订单</a>
+								<a class="profile-sidebar-a" href="myorder.jsp">近三个月订单</a>
 							</li>
 							<li class="profile-sidebar-section-ul-li">
 								<a class="profile-sidebar-a" href="">待评价订单</a>
