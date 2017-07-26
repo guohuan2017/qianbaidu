@@ -14,7 +14,6 @@ import service.CommercialUserService;
 import util.createUUID;
 
 @Controller
-@RequestMapping("/commercialuser")
 public class CommercialUserController {
 	
 	@Autowired
@@ -34,13 +33,13 @@ public class CommercialUserController {
 				commercialUser.setId(createUUID.getUUID());
 				int i = commercialUserService.register(commercialUser);
 				if(1 == i){
-					modelAndView.setViewName("/qianbaidu/shop/login");
-					commercialUser.setPassword();
+					modelAndView.setViewName("shop/login");
+					commercialUser.setPassword("");
 					modelAndView.addObject("commercialUser", commercialUser);
 				}
 			}
 		}else{
-			modelAndView.setViewName("/qianbaidu/shop/register");
+			modelAndView.setViewName("shop/register");
 			modelAndView.addObject("commercialUser", commercialUser);
 		}
 		

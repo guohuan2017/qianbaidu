@@ -3,7 +3,6 @@ package pojo;
 import java.io.UnsupportedEncodingException;
 import java.util.List;
 
-import javax.validation.constraints.Null;
 
 import org.hibernate.validator.constraints.NotEmpty;
 
@@ -53,18 +52,10 @@ public class CommericalUser {
 		return password;
 	}
 
-	//在set方法时加密 SpringMVC自动封装时用无参构造+set方法
+	/*在set方法时加密 SpringMVC自动封装时用无参构造+set方法*/
 	public void setPassword(String password) {
-		try {
-			this.password = new MD5().jiami(password);
-		} catch (UnsupportedEncodingException e) {
-			e.printStackTrace();
-		}
+		this.password = password;
 	}
-	public void setPassword() {
-		password = null;
-	}
-	
 
 	public int getStoreid() {
 		return storeid;

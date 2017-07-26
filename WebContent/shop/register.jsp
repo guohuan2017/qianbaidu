@@ -25,7 +25,7 @@
 
 		</div>
 
-		<form action="/qianbaidu/commercialuser/register.action" method="post">
+		<form action="/qianbaidu/register.action" method="post">
 			<div id="loginparent">
 				<div class="logincontentdiv">
 					<input type="text" class="logincontent" name="name" placeholder="请输入用户名" />
