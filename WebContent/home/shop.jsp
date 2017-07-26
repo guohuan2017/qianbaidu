@@ -13,6 +13,7 @@
 		<link rel="stylesheet" type="text/css" href="../css/home/qbd1.css" />
 		<link rel="stylesheet" type="text/css" href="../css/Hui-iconfont/1.0.8/iconfont.css" />
 		<script type="text/javascript" src="../js/jquery-3.2.1.js"></script>
+		<script type="text/javascript" src="../js/home/shop.js"></script>
 	</head>
 
 	<body>

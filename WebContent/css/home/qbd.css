@@ -185,9 +185,9 @@
 	z-index: 10;
 }
 
-#side-bar:hover{
+#side-bar:focus{
 	right: 0;
-	transition: right 1s;
+	/*transition: right 1s;*/
 }
 
 #side-menu {
