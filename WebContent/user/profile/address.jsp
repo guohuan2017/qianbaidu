@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 
 <script type="text/javascript" src="/qianbaidu/js/profile/Abiaoqian.js">
@@ -140,26 +142,63 @@
 					<div class="profile-panelcontent">
 						<div class="desk-top">
 							<div class="desktop-addresslist">
-								<div class="desktop-addressblock">
+							<c:forEach var="address" items="${addresslist}">
+								<div class="desktop-addressblock" >
 									<div class="desktop-addressblock-buttons">
-										<button class="desktop-addressblock-botton" onclick="">
+										
+										<button class="desktop-addressblock-botton" id="update${address.id}">
 											修改
-										</button>
-										<button class="desktop-addressblock-botton" onclick="">
+										</button> 
+										<button class="desktop-addressblock-botton" id="delete${address.id}">
 											删除
 										</button>
 									</div>
 									<div class="desktop-addressblock-name">
-										顾
-										<span class="desktop-addressblock-name-binding">先生</span>
+										${user.username}
+										<span class="desktop-addressblock-name-binding"></span>
 									</div>
-									<div class="desktop-addressblock-address">
-									天等路430弄24号 102室
+									<div class="desktop-addressblock-address" style="height:50px">
+										
+										<textarea rows="2" cols="30" name="address" form="address${address.id}" readonly="readonly" id="text${address.id}">${address.address}</textarea>
+									<form class=""  id="address${address.id}" action="updateaddress.action" method="post">
+											<input type="text" style="display:none" value="${address.id}" name="id">
+											<!-- <input type="text" style="height:25px;width:200px;z-index:100" value="上海市徐汇区宜山路1388号1号楼中软国际"> -->
+											<input type="submit" class="desktop-addressblock-botton"  style="float: right;display:none" id="submit${address.id}">
+										</form>
+										
 									</div>
+									<%-- 
 									<div class="desktop-addressblock-mobile">
-									18201727218
+									${user.phone}
 									</div>
+									 --%>
 								</div>
+								
+								<script type="text/javascript">
+									var update = document.getElementById('update${address.id}');
+									update.onclick = function() {
+										var text = document.getElementById('text${address.id}');
+										text.readOnly="";
+										text.style.backgroundColor="#ffff66";
+										var submit = document.getElementById('submit${address.id}');
+										submit.style.display="block";
+									}
+									
+									var deletebtn = document.getElementById('delete${address.id}');
+									deletebtn.onclick = function() {
+										var conf = confirm('确定删除吗？');
+										if(conf) {
+											var f=document.createElement('form');
+									        f.style.display='none';
+											f.action='deleteaddress.action';
+									        f.method='post';
+									        f.innerHTML='<input type="hidden" name="id" value='+${address.id}+'>';
+									        document.body.appendChild(f);
+									        f.submit();
+										}
+									}
+								</script>
+							</c:forEach>
 							<button class="desktop-addressblock2" ondblclick="">
 							<i class="icon-plus">
 							<img src="/qianbaidu/img/user/profile/加号.jpg">

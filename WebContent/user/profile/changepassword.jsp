@@ -110,7 +110,7 @@
 								<a class="profile-sidebar-a" href="">个人资料</a>
 							</li>
 							<li class="profile-sidebar-section-ul-li">
-								<a class="profile-sidebar-a" href="address.jsp">地址管理</a>
+								<a class="profile-sidebar-a" href="/qianbaidu/user/profile/address.jsp">地址管理</a>
 							</li>
 							<li class="profile-sidebar-section-ul-li">
 								<a class="profile-sidebar-a" href="">安全中心</a>

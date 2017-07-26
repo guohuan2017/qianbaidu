@@ -1,5 +1,7 @@
 package service;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -40,5 +42,14 @@ public class AddressService {
 
 	public int updateByPrimaryKey(Address record){
 		return dao.updateByPrimaryKey(record);
+	}
+	
+	public List<Address> selectAll(){
+		return dao.selectAll();
+	}
+	
+	public  List<Address> selectById(Integer id){
+		return dao.selectById(id);
+		
 	}
 }
