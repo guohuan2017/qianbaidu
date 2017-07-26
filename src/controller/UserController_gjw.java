@@ -26,58 +26,72 @@ public class UserController_gjw {
 
 	@RequestMapping("/changepassword.action")
 	public ModelAndView login(HttpServletRequest request, HttpServletResponse response) {
+		/**
+		 * 123不分先后 1.创建ModelAndView对象mav 结束方法时 return mav 2.从session中获取User对象
+		 * 以获得原密码 3.从页面拿值 request.getParameter("")
+		 * 
+		 * 4.判断用户密码 和输入的原密码 是否一致 5.一致→修改为新密码 6.在ModelAndView中 加入要传的值 如message
+		 * 7.return ModelAndView
+		 */
+
 		// 创建ModelAndView对象
 		ModelAndView mav = new ModelAndView("user/profile/changepassword");
-		
+
 		// 从session中获取User对象
 		HttpSession session = request.getSession();
 		User user = (User) session.getAttribute("user");
 		// 从user对象里获取id 根据id从数据库查找password
-		String oldpassword = service.selectPassword(user.getId());
+		Integer id = user.getId();
+		String oldpassword = service.selectPassword(id);
+		// 简写
+		// String oldpassword = service.selectPassword(user.getId());
+
 		// 从页面拿值
 		String password = request.getParameter("password");
 		String newpasswordMeiJiaMi = request.getParameter("newpassword");
-		
-//		System.out.println("未加密的原密码"+password);
-//		System.out.println("未加密的新密码"+newpasswordMeiJiaMi);
-		
-		//给拿到的值加密 创建临时user对象tmp 用set方法加密 再用get拿出
+
+		// System.out.println("未加密的原密码"+password);
+		// System.out.println("未加密的新密码"+newpasswordMeiJiaMi);
+
+		// 给拿到的值加密 创建临时user对象tmp 用set方法加密 再用get拿出
 		String newpassword = null;
-		
+
+		// tmp 为temporary 临时 程序猿很常用
 		User tmp = new User();
-		
+		// 用set方法加密
 		tmp.setPassword(password);
+		// 用get拿出
 		password = tmp.getPassword();
-		
+
+		// 重复上述过程，传入的值（newpasswordMeiJiaMi）不同
 		tmp.setPassword(newpasswordMeiJiaMi);
 		newpassword = tmp.getPassword();
-		
-//		System.out.println("数据库中的原密码"+oldpassword);
-//		System.out.println("加密后的原密码"+password);
-//		System.out.println("加密后的新密码"+newpassword);
-		
+		// newpassword已加密
+
+		// System.out.println("数据库中的原密码"+oldpassword);
+		// System.out.println("加密后的原密码"+password);
+		// System.out.println("加密后的新密码"+newpassword);
+
 		// 将页面拿到的值与原密码（oldpassword）进行比较
-		//如果不同
-		if (!oldpassword.equals( password)) {
-			//如果密码不同则返回原页面，并且提示密码不同
-			mav.addObject("message", "密码不同");
+		// 如果不同
+		if (!oldpassword.equals(password)) {
+			// 如果密码不同则返回原页面，并且提示密码不同
+			mav.addObject("message", "密码不同,请重新输入");
 			return mav;
 		}
-		//如果相同
-		else{
-			//set方法密码是MD5加密的
+		// 如果相同
+		else {
+			// set方法密码是MD5加密的
 			user.setPassword(newpasswordMeiJiaMi);
-			//返回i代表修改了几行 i==1 则只修改了一个用户的密码
-			int i =service.updatePasswordById(user);
-			if (i==1) {
+			// 返回i代表修改了几行 i==1 则只修改了一个用户的密码
+			int i = service.updatePasswordById(user);
+			if (i == 1) {
 				mav.addObject("message", "修改成功");
-			}
-			else{
+			} else {
 				mav.addObject("message", "修改失败");
 			}
 			return mav;
 		}
-		
 
 	}
 
