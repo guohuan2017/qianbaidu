@@ -1,9 +1,11 @@
 package dao;
 
-import pojo.CommericalUser;
+import pojo.CommercialUser;
 
 public interface CommercialUserMapper {
 
-	int insertSelective(CommericalUser commercialUser);
+	int insertSelective(CommercialUser commercialUser);
+
+	CommercialUser selectBytelPassword(CommercialUser commercialUser);
 
 }

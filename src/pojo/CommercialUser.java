@@ -3,7 +3,7 @@ package pojo;
 import java.util.List;
 import org.hibernate.validator.constraints.NotEmpty;
 
-public class CommericalUser {
+public class CommercialUser {
 
 	private String id;
 	@NotEmpty

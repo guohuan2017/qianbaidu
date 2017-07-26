@@ -25,15 +25,14 @@
 
 		</div>
 
-		<form action="/qianbaidu/userlogin.action" method="post">
+		<form action="/qianbaidu/commercialuser/login.action" method="post">
 			<div id="loginparent">
 				<div class="logincontentdiv">
-					<input type="text" class="logincontent" name="phone" placeholder="请输入手机号" />
+					<input type="text" class="logincontent" name="tel" placeholder="请输入手机号" />
 				</div>
 				<div class="logincontentdiv" style="border-bottom: 1px solid; border-color: rgb(221, 221, 221);">
 					<input type="password" class="logincontent" name="password" placeholder="请输入密码" />
 				</div>
-
 				<button id="loginbtn">登录</button>
 			</div>
 			<div style="text-align: center"><span style="color: red;">${message}</span></div>

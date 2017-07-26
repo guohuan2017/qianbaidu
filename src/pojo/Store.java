@@ -19,14 +19,14 @@ public class Store {
     private String photoout;
     private String photoin;
     
-    private List<CommericalUser> commericalUsers;
+    private List<CommercialUser> commericalUsers;
     
     
 	
-	public List<CommericalUser> getCommericalUsers() {
+	public List<CommercialUser> getCommericalUsers() {
 		return commericalUsers;
 	}
-	public void setCommericalUsers(List<CommericalUser> commericalUsers) {
+	public void setCommericalUsers(List<CommercialUser> commericalUsers) {
 		this.commericalUsers = commericalUsers;
 	}
 	public Integer getId() {

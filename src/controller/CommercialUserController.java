@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 
-import pojo.CommericalUser;
+import pojo.CommercialUser;
 import service.CommercialUserService;
 import util.MD5;
 import util.createUUID;
@@ -29,7 +29,7 @@ public class CommercialUserController {
 	}
 	
 	@RequestMapping("/register.action")
-	public ModelAndView register(CommericalUser commercialUser ,HttpServletRequest request ,HttpServletResponse response){
+	public ModelAndView register(CommercialUser commercialUser ,HttpServletRequest request ,HttpServletResponse response){
 		ModelAndView modelAndView = new ModelAndView();
 		String repassword = request.getParameter("repassword");
 		if(null != repassword && !"".equals(repassword)){
@@ -50,7 +50,6 @@ public class CommercialUserController {
 				}
 			}
 		}else{
-//			ModelAndView modelAndView = new ModelAndView("shop/register");
 			modelAndView.setViewName("shop/register");
 			modelAndView.addObject("commercialUser", commercialUser);
 			return modelAndView;
@@ -61,10 +60,10 @@ public class CommercialUserController {
 	
 	
 	@RequestMapping("/login.action")
-	public ModelAndView login(CommericalUser commercialUser ,HttpServletRequest request ,HttpServletResponse response){
+	public ModelAndView login(CommercialUser commercialUser ,HttpServletRequest request ,HttpServletResponse response){
 		ModelAndView modelAndView = new ModelAndView();
 		
-		
+		CommercialUser commericalUser2 = commercialUserService.login(commercialUser); 
 		
 		
 		

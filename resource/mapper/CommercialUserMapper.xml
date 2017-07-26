@@ -2,7 +2,11 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="dao.CommercialUserMapper" >
 
-	<insert id="insertSelective" parameterType="pojo.CommericalUser">
+	<insert id="insertSelective" parameterType="pojo.CommercialUser">
 		insert into commercial_user(id,name,password,tel) values(#{id},#{name},#{password},#{tel})
 	</insert>
+	
+	<select id="selectBytelPassword" parameterType="pojo.CommercialUser" resultType="pojo.CommercialUser">
+		select * from commercial_user where tel = #{tel} and password = #{password}
+	</select>
 </mapper>
