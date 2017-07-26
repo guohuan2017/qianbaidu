@@ -11,6 +11,9 @@ public class Food {
     private String type;
     private String photo;
     
+    //number临时使用 只有getset方法
+    private Integer number;
+    
 	public Integer getId() {
 		return id;
 	}
@@ -58,6 +61,12 @@ public class Food {
 	}
 	public void setType(String type) {
 		this.type = type;
+	}
+	public Integer getNumber() {
+		return number;
+	}
+	public void setNumber(Integer number) {
+		this.number = number;
 	}
 	@Override
 	public int hashCode() {
