@@ -21,7 +21,7 @@
 				<a href="/qianbaidu/home/shop.jsp" class="logo"> <img class="logo1" src="/qianbaidu/img/home/index/logo.jpg" />
 				</a>
 				<a href="/qianbaidu/home/shop.jsp" class="sy"> 首页 </a>
-				<a href="myorde.jsp" class="wddd"> 我的订单 </a>
+				<a href="myorder.jsp" class="wddd"> 我的订单 </a>
 				<a href="" class="jmhz">
 					加盟合作 </a>
 				<nav id="shouye2">
@@ -124,7 +124,7 @@
 					<span class=""> 设置密码 </span>
 				</h3>
 					<div id="profile-panelcontent">
-						<form class="profile-changewd" id="pwform" action="" method="post">
+						<form class="profile-changewd"  id="pwform"  action=""  method="post">
 							<p class="changewd-tip">饿了么提示你：使用大小写字母、数字与标点符号的组合，可以大幅提升帐号安全！
 							</p>
 							<div class="formfield">
@@ -156,7 +156,7 @@
 							</div>
 							<div class="formfield">
 								<label class="ng-binding"> </label>
-								<button type="button" class="formfield-button" id="pwbutton">确认</button>
+								<button type="submit" class="formfield-button" id="pwbutton">确认</button>
 							</div>
 						</form>
 					</div>

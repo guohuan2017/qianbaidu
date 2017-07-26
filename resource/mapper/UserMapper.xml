@@ -9,7 +9,7 @@
     -->
     <id column="id" property="id" jdbcType="INTEGER" />
     <result column="username" property="username" jdbcType="VARCHAR" />
-    <result column="password" property="password" jdbcType="VARCHAR" />
+    <!-- <result column="password" property="password" jdbcType="VARCHAR" /> -->
     <result column="phone" property="phone" jdbcType="VARCHAR" />
     <result column="level" property="level" jdbcType="INTEGER" />
   </resultMap>
@@ -151,4 +151,19 @@
     from user
     where phone = #{0,jdbcType=VARCHAR}
   </select>
+  
+    <select id="selectPassword" resultType="java.lang.String" parameterType="java.lang.Integer" >
+    select 
+    password
+    from user
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  
+    <update id="updatePasswordById"  parameterType="pojo.User" >
+    update user
+    <set >
+        password = #{password,jdbcType=VARCHAR},
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
 </mapper>
