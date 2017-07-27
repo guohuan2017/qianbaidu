@@ -25,7 +25,6 @@ import util.TimeFileRenamePolicy;
 @Controller
 
 // 在这里加注解的话 可以为类中所有方法添加上级地址
-@RequestMapping("/store")
 public class StoreController {
 	
 	@Autowired
