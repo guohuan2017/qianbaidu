@@ -129,7 +129,7 @@
 				</h3>
 					<div id="profile-panelcontent">
 						<form class="profile-changewd" id="pwform" action="/qianbaidu/changepassword.action" method="post">
-							<p class="changewd-tip">饿了么提示你：使用大小写字母、数字与标点符号的组合，可以大幅提升帐号安全！
+							<p class="changewd-tip">千百度提示你：使用大小写字母、数字与标点符号的组合，可以大幅提升帐号安全！
 							</p>
 							<div class="formfield">
 								<label class="ng-binding"> 原密码 </label> <input type="password" name="password" id="password" class="formfield-npwd" placeholder="请输入原密码" />

@@ -58,7 +58,7 @@ public class CommercialUserController {
 		return modelAndView;
 	}
 	
-	
+	  
 	@RequestMapping("/login.action")
 	public ModelAndView login(CommercialUser commercialUser ,HttpServletRequest request ,HttpServletResponse response){
 		ModelAndView modelAndView = new ModelAndView();
