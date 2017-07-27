@@ -203,3 +203,10 @@ ul {
 	display: inline-block;
 	width: 100%;
 }
+
+textarea:focus{
+	background-color: white;
+}
+
+
+
