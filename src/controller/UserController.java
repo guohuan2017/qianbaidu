@@ -15,18 +15,19 @@ import service.UserService;
 @Controller
 
 // 在这里加注解的话 可以为类中所有方法添加上级地址
+@RequestMapping("/user")
 public class UserController {
 
 	@Autowired
 	private UserService service;
 
-	@RequestMapping("/index.action")
-	public ModelAndView hello(HttpServletRequest request, HttpServletResponse response) throws Exception {
-		return new ModelAndView("test/login");
+	@RequestMapping("/login.index")
+	public ModelAndView index(HttpServletRequest request, HttpServletResponse response) throws Exception {
+		return new ModelAndView("user/login.jsp");
 	}
 
-	@RequestMapping("/sqllogin.action")
-	public ModelAndView sqllogin(User user, HttpServletRequest request, HttpServletResponse response) {
+	@RequestMapping("/login.action")
+	public ModelAndView login(User user, HttpServletRequest request, HttpServletResponse response) {
 		User user2 = service.loginSelect(user);
 		if (user2 == null) {
 			System.out.println("登陆失败");
