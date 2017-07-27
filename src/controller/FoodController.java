@@ -12,6 +12,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 import pojo.Food;
 import service.FoodService;
+import service.StoreService;
 
 @Controller
 public class FoodController {
@@ -19,10 +20,15 @@ public class FoodController {
 	@Autowired
 	private FoodService service;
 	
+	@Autowired
+	private StoreService storeService;
+	
 	@RequestMapping("/shopfood.action")
 	public ModelAndView shopjsp(HttpServletRequest request, HttpServletResponse response) {
 		ModelAndView mav = new ModelAndView("shop/index_whs");
-		List<Food> foodlist = service.selectByStoreId(Integer.parseInt(request.getParameter("id")));
+		Integer store_id = Integer.parseInt(request.getParameter("id"));
+		mav.addObject("store", storeService.selectByPrimaryKey(store_id));
+		List<Food> foodlist = service.selectByStoreId(store_id);
 		mav.addObject("foodlist", foodlist);
 		return mav;
 	}
