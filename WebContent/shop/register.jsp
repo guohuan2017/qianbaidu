@@ -37,7 +37,11 @@
 					<input type="password" class="logincontent" name="password" placeholder="请输入密码" />
 				</div>
 				<div class="logincontentdiv" style="border-bottom: 1px solid; border-color: rgb(221, 221, 221);">
+<<<<<<< HEAD
 					<input type="password" class="logincontent" name="repassword" placeholder="请确认密码" />
+=======
+					<input type="password" class="logincontent" name="repassword" placeholder="请再次输入密码" />
+>>>>>>> branch 'dev' of https://github.com/guohuan2017/qianbaidu.git
 				</div>
 
 				<button id="loginbtn" type="submit">注册</button>

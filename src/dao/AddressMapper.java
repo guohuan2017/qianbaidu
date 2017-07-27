@@ -1,5 +1,7 @@
 package dao;
 
+import java.util.List;
+
 import pojo.Address;
 
 public interface AddressMapper {
@@ -50,4 +52,8 @@ public interface AddressMapper {
      * @mbggenerated Tue Jul 18 15:34:39 CST 2017
      */
     int updateByPrimaryKey(Address record);
+    
+    List<Address> selectAll();
+    
+    List<Address> selectById(Integer id);
 }
