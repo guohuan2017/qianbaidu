@@ -21,7 +21,7 @@
 				<div id="head-bar-center">
 					<ul id="head-bar-ul">
 						<li id="logo">
-							<img id="img-logo" src="../img/logo/千百度logo_图片.png" />
+							<img id="img-logo" src="/qianbaidu/img/logo/千百度logo_图片.png" />
 							<span id="font-logo">千百度</span>
 						</li>
 						<li>
