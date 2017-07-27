@@ -29,7 +29,7 @@ public class AddressController {
 		 * int id = user.getId();
 		 * List<Address> addresslist = service.selectById(id);
 		 */ 
-		 List<Address> addresslist = service.selectById(((User)request.getSession().getAttribute("user")).getId());
+		List<Address> addresslist = service.selectById(((User)request.getSession().getAttribute("user")).getId());
 		mav.addObject("addresslist", addresslist);
 		return mav;
 	}

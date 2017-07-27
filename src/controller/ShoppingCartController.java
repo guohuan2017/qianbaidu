@@ -6,17 +6,18 @@ import java.util.List;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
-import javax.websocket.Session;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
+import pojo.Address;
 import pojo.Food;
 import pojo.ShoppingCart;
 import pojo.Store;
 import pojo.User;
+import service.AddressService;
 import service.FoodService;
 import service.ShoppingCartService;
 import service.StoreService;
@@ -33,6 +34,9 @@ public class ShoppingCartController {
 	@Autowired
 	private FoodService foodService;
 	
+	@Autowired
+	private AddressService addressService;
+	
 	@RequestMapping("/buy.action")
 	public ModelAndView shopjsp(HttpServletRequest request, HttpServletResponse response) {
 		ModelAndView mav = new ModelAndView("zhifu/confirm");
@@ -40,6 +44,7 @@ public class ShoppingCartController {
 		
 		HttpSession session = request.getSession();
 		User user = (User) session.getAttribute("user");
+		Integer user_id = user.getId();
 		String[] price = buy.split(",");
 //		System.out.println(price[0]);
 		//总价
@@ -59,7 +64,7 @@ public class ShoppingCartController {
 			Integer food_id = Integer.parseInt(foodAndNum[0]);
 			Integer food_number = Integer.parseInt(foodAndNum[1]);
 
-			ShoppingCart shoppingCart = new ShoppingCart(user.getId(), store_id, food_id, food_number, 0);
+			ShoppingCart shoppingCart = new ShoppingCart(user_id, store_id, food_id, food_number, 0);
 			
 			service.insert(shoppingCart);
 			
@@ -75,6 +80,10 @@ public class ShoppingCartController {
 		mav.addObject("foodlist",foodlist);
 		mav.addObject("total", total_price);
 		mav.addObject("num", num);
+		
+		List<Address> addresslist = addressService.selectById(user_id);
+		mav.addObject("addresslist", addresslist);
+		
 		return mav;
 	}
 }

@@ -37,13 +37,12 @@ public class Order {
 	public void setStore_id(Integer store_id) {
 		this.store_id = store_id;
 	}
-	public String getOrder_id() {
+	public String getOrderid() {
 		return orderid;
 	}
-	public void setOrder_id(String orderid) {
+	public void setOrderid(String orderid) {
 		this.orderid = orderid;
 	}
-	
 	@Override
 	public int hashCode() {
 		final int prime = 31;
