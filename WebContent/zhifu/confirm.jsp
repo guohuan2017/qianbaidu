@@ -69,6 +69,9 @@
 						<c:forEach var="food" items="${foodlist}">
 						<dd>
 							<div class="checkoutcart-tablerow">
+								<div class="foodid" id="foodid${food.id}" style="display:none">
+									${food.id}
+								</div>
 								<div class="cell-binding">
 									${food.foodname}
 								</div>
@@ -291,6 +294,10 @@
 					var nums = document.getElementsByClassName('food-number');
 					var prices = document.getElementsByClassName('cell-binding1');
 					
+					var foodids = document.getElementsByClassName('foodid');
+					
+					var order ="";
+					
 					total.value = 0;
 					number.value = 0;
 					
@@ -301,9 +308,21 @@
 						total.value += price;
 						number.value += num;
 						
+						order =order+foodids[i].innerHTML+"_"+num+";";
 					}
+					
 					total.innerHTML = total.value;
 					number.innerHTML = number.value;
+					
+					order = total.value+","+${store.id}+","+order;
+					
+					var f=document.createElement('form');
+			        f.style.display='none';
+					f.action='buy.action';
+			        f.method='post';
+			        f.innerHTML='<input type="hidden" name="shoppingcart" value='+order+'>';
+			        document.body.appendChild(f);
+			        f.submit();
 				}
 				</script>
 			</div>
