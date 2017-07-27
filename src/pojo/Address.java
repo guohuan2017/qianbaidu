@@ -3,47 +3,76 @@ package pojo;
 public class Address {
 
 	private Integer id;
-	private String name;
-    private String country;
-    private String province;
-    private String city;
-    private String detail;
+	private Integer user_id;
+    private String address;
 	public Integer getId() {
 		return id;
 	}
 	public void setId(Integer id) {
 		this.id = id;
 	}
-	public String getName() {
-		return name;
+	public Integer getUser_id() {
+		return user_id;
 	}
-	public void setName(String name) {
-		this.name = name;
+	public void setUser_id(Integer user_id) {
+		this.user_id = user_id;
 	}
-	public String getCountry() {
-		return country;
+	public String getAddress() {
+		return address;
 	}
-	public void setCountry(String country) {
-		this.country = country;
+	public void setAddress(String address) {
+		this.address = address;
 	}
-	public String getProvince() {
-		return province;
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((address == null) ? 0 : address.hashCode());
+		result = prime * result + ((id == null) ? 0 : id.hashCode());
+		result = prime * result + ((user_id == null) ? 0 : user_id.hashCode());
+		return result;
 	}
-	public void setProvince(String province) {
-		this.province = province;
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Address other = (Address) obj;
+		if (address == null) {
+			if (other.address != null)
+				return false;
+		} else if (!address.equals(other.address))
+			return false;
+		if (id == null) {
+			if (other.id != null)
+				return false;
+		} else if (!id.equals(other.id))
+			return false;
+		if (user_id == null) {
+			if (other.user_id != null)
+				return false;
+		} else if (!user_id.equals(other.user_id))
+			return false;
+		return true;
 	}
-	public String getCity() {
-		return city;
+	@Override
+	public String toString() {
+		return "Address [id=" + id + ", user_id=" + user_id + ", address=" + address + "]";
 	}
-	public void setCity(String city) {
-		this.city = city;
+	public Address() {
 	}
-	public String getDetail() {
-		return detail;
+	public Address(Integer user_id, String address) {
+		this.user_id = user_id;
+		this.address = address;
 	}
-	public void setDetail(String detail) {
-		this.detail = detail;
+	public Address(Integer id, Integer user_id, String address) {
+		this.id = id;
+		this.user_id = user_id;
+		this.address = address;
 	}
-  
+    
     
 }
