@@ -41,7 +41,7 @@
 						<a><i style="font-size: 20px; margin-right: 2px" class="Hui-iconfont Hui-iconfont-kefu"></i>服务中心</a>
 						<a>规则中心</a>
 						<a><i style="font-size: 21px; margin-right: 2px;" class="Hui-iconfont Hui-iconfont-phone"></i>手机应用</a>
-						<a style="margin-right: 0; color: white;" id="lr"><i style="font-size: 21px; margin-right: 10px;color: white;" class="Hui-iconfont Hui-iconfont-user"></i>登录/注册</a>
+						<a style="margin-right: 0; color: white;" id="lr"><i style="font-size: 21px; margin-right: 10px;color: white;" class="Hui-iconfont Hui-iconfont-user"></i>${user.username}</a>
 					</nav>
 				</div>
 			</div>
@@ -76,10 +76,10 @@
 			<div id="div-center">
 				<div id="shop-title">
 					<div id="shop-title-all">
-						<img id="shop-face" src="/qianbaidu/img/shop/index/shop-face.png" />
+						<img id="shop-face" src="${store.photo}" style="width:100px;height:100px" />
 						<div id="shop-introduce">
-							<span id="shop-name">我是一只鸡(漕河泾店)</span>
-							<span id="shop-details">(1515) 月售2307单</span>
+							<span id="shop-name">${store.storename}</span>
+							<span id="shop-details">${store.info}</span>
 						</div>
 						<div>
 							<ul id="shop-title-ul">

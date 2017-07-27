@@ -93,7 +93,12 @@ window.onload = function() {
 		if(el.className == 'del') {
 			var input = tr[el.getAttribute('index')].getElementsByTagName('input')[0]
 			input.checked = false;
-			input.onclick();
+			
+			var countInput = tr[el.getAttribute('index')].getElementsByTagName('input')[1]; //数目input
+			countInput.value = 0;
+			var subtotal = tr[el.getAttribute('index')].cells[4];
+			subtotal.innerHTML = 0;
+			getTotal(); 
 		}
 	}
 
