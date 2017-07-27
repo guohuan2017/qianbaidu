@@ -4,6 +4,7 @@ import java.io.UnsupportedEncodingException;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.websocket.Session;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -61,8 +62,6 @@ public class CommercialUserController {
 	
 	@RequestMapping("/login.action")
 	public ModelAndView login(CommercialUser commercialUser ,HttpServletRequest request ,HttpServletResponse response){
-		String path = request.getServletContext().getRealPath("uploadstore/");
-		System.out.println(path);
 		ModelAndView modelAndView = new ModelAndView();
 		try {
 			commercialUser.setPassword(MD5.jiami(commercialUser.getPassword()));
@@ -72,8 +71,8 @@ public class CommercialUserController {
 		}
 		CommercialUser commericalUser2 = commercialUserService.login(commercialUser); 
 		if(null != commericalUser2){
+			request.getSession().setAttribute("user", commercialUser);
 			modelAndView.setViewName("shop/profile/managefood");
-			modelAndView.addObject("user",commericalUser2);
 		}else{
 			modelAndView.addObject("message","登录失败！");
 			modelAndView.setViewName("shop/login");

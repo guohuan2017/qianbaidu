@@ -93,7 +93,7 @@ li {
 #content-center {
 	margin: 0 auto;
 	padding: 32px 50px;
-	height: 1470px;
+	height: 1550px;
 	width: 900px;
 	background-color: white;
 }
@@ -238,6 +238,11 @@ li {
 	margin-top: 25px;
 }
 
+#info{
+	width:767px;
+	margin-left:5px;
+}
+
 #otherplatform {
 	width: 900px;
 	height: 80px;
@@ -277,4 +282,12 @@ li {
 	width: 318px;
 	background-color: #0091ea;
 	color: white;
+}
+
+#message{
+	display: block;
+	width:200px;
+	text-align: center;
+	color:red;
+	margin: 25px auto;
 }

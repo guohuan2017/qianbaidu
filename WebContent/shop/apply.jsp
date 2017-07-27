@@ -9,6 +9,18 @@
 		<link rel="stylesheet" href="/qianbaidu/css/shop/apply.css" />
 		<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=kUAyHUuiEwHVmWdyfap31YWSUBTWjAnE"></script>
 		<script type="text/javascript" src="/qianbaidu/js/shop/applyaddress.js"></script>
+		<script type="text/javascript">
+			function uploadform(){
+				var applyform = document.getElementById("applyform");
+			var outtel = document.getElementById("outtel").value;
+			var storename = document.getElementById("shopname").value;
+			console.log(outtel);
+			applyform.action="/qianbaidu/store/apply.action?outtel=" + outtel + "&storename=" + storename;
+			console.log(applyform.action);
+			applyform.submit();
+			}
+			
+		</script>
 	</head>
 
 	<body>
@@ -33,7 +45,7 @@
 			</div>
 
 		</div>
-		<form action="" method="post" enctype="multipart/form-data">
+		<form action="/qianbaidu/store/apply.action" method="post" enctype="multipart/form-data" id="applyform">
 			<div id="content">
 				<div id="content-center">
 					<div class="single-line">
@@ -111,14 +123,19 @@
 							<input type="file" name="shoplogo" value="选择Logo" accept="image/gif, image/jpeg, image/png, image/bmp" />
 						</div>
 					</div>
+					<div class="single-line" style="margin-top:25px">
+						<label class="title"><span class="title-span">*</span>店铺描述</label>
+						<input type="text" name="info" id="info" class="input-box" />
+					</div>
 					<div id="otherplatform">
 						<label id="otherlinktitle" class="title">其他平台开店链接</label> <input type="text" name="otherlink" id="otherlink" class="input-box" />
 					</div>
 				</div>
 				<div id="btn-group">
-					<input type="button" id="stepback" class="stepbtn" value="返回上一步" />
-					<input type="button" id="stepforward" class="stepbtn" value="提交并进入下一步" />
+					<input type="reset" id="stepback" class="stepbtn" value="返回上一步" />
+					<input type="button" id="stepforward" class="stepbtn" value="提交并进入下一步" onclick="uploadform()" />
 				</div>
+				<span id="message">${message}</span>
 
 			</div>
 		</form>

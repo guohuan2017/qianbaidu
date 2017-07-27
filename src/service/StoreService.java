@@ -69,4 +69,5 @@ public class StoreService {
 	public List<Store> SearchStore(String type){
 		return dao.SearchStore(type);
 	}
+
 }
