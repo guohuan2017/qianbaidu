@@ -26,7 +26,7 @@
 
 		</div>
 
-		<form action="/qianbaidu/user/login.action" method="post">
+		<form action="/qianbaidu/userlogin.action" method="post">
 			<div id="loginparent">
 				<div class="logincontentdiv">
 					<input type="text" class="logincontent" name="phone" placeholder="请输入手机号" style="background-color: white;"/>
