@@ -46,12 +46,12 @@ public class CommercialUserController {
 					modelAndView.setViewName("shop/login");
 //					modelAndView.setViewName("shop/login");
 					commercialUser.setPassword("");
-					modelAndView.addObject("commercialUser", commercialUser);
+					modelAndView.addObject("user", commercialUser);
 				}
 			}
 		}else{
 			modelAndView.setViewName("shop/register");
-			modelAndView.addObject("commercialUser", commercialUser);
+			modelAndView.addObject("user", commercialUser);
 			return modelAndView;
 		}
 		

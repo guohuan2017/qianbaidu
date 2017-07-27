@@ -80,7 +80,7 @@
 						</h2>
 						<ul class="profile-sidebar-section-ul">
 							<li class="profile-sidebar-section-ul-li">
-								<a class="profile-sidebar-a" href="myorder.jsp">近三个月订单</a>
+								<a class="profile-sidebar-a" href="/qianbaidu/user/profile/myorder.jsp">近三个月订单</a>
 							</li>
 							<li class="profile-sidebar-section-ul-li">
 								<a class="profile-sidebar-a" href="">待评价订单</a>
@@ -127,7 +127,7 @@
 								<a class="profile-sidebar-a" href="">安全中心</a>
 							</li>
 							<li class="profile-sidebar-section-ul-li">
-								<a class="profile-sidebar-a" href="changepassword.jsp">修改密码</a>
+								<a class="profile-sidebar-a" href="/qianbaidu/user/profile/changepassword.jsp">修改密码</a>
 							</li>
 						</ul>
 					</li>
