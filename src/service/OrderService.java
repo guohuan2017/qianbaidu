@@ -41,4 +41,8 @@ public class OrderService {
 	public int updateByPrimaryKey(Order record){
 		return dao.updateByPrimaryKey(record);
 	}
+	
+	public int insertNoId(Order order){
+		return dao.insertNoId(order);
+	}
 }

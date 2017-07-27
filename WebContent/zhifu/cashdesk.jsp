@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@taglib prefix="spring" uri="http://www.springframework.org/tags"%>
-    
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>   
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 
@@ -22,16 +22,21 @@
 					<div class="order-detail clearfix" data-reactid=".0.0.1">
 						<div class="pull-left" data-reactid=".0.0.1.0">
 							<p class="text-muted" data-reactid=".0.0.1.0.0">${store.storename}外卖订单</p>
-							<p class="hidden" data-reactid=".0.0.1.0.1"><span class="text-muted text-ellipsis order-desc" data-reactid=".0.0.1.0.1.0">
-								${user.username} 先生 ${user.phone} 
-								${address.address}
-								-
-								${foodname} x${order.number}
+<!--<p class="hidden" data-reactid=".0.0.1.0.1"><span class="text-muted text-ellipsis order-desc" data-reactid=".0.0.1.0.1.0">-->								${user.username} 先生 手机：${user.phone} 
+								地址：${address.address}<br>
+								<%-- <c:forEach var="food" items="${foodlist}">
+								${food.foodname} x  ${food.number}<br>
+								</c:forEach> --%>
 </span>
 								<a class="text-primary show-detail text-link" data-reactid=".0.0.1.0.1.1"><span data-reactid=".0.0.1.0.1.1.0">查看详情</span><span class="triangle triangle-down" data-reactid=".0.0.1.0.1.1.1"></span></a>
-							</p>
+							<!-- </p> -->
 							<div class="order-detail text-muted" data-reactid=".0.0.1.0.2">
-								<p data-reactid=".0.0.1.0.2.0">${user.username} ${user.phone} ${address.address}<br>${foodname} x${order.number}
+							
+							<c:forEach var="food" items="${foodlist}">
+								${food.foodname} x  ${food.number}<br>
+								</c:forEach>
+								
+								<p data-reactid=".0.0.1.0.2.0">
 								</p>
 							</div>
 						</div>
@@ -90,7 +95,19 @@
 									</div>
 								</section>
 							</div>
-						</section><button type="button" class="btn btn-success btn-lg" data-reactid=".0.1.3.4" onclick="location.href='/qianbaidu/pay.action?orderListid=${orderList.id}&userid=${user.id}'">确认支付</button></footer>
+						</section><button type="button" id="queren" class="btn btn-success btn-lg" data-reactid=".0.1.3.4">确认支付</button></footer>
+						<script type="text/javascript">
+							var queren = document.getElementById('queren');
+							queren.onclick = function() {
+								var f=document.createElement('form');
+			  		     	    f.style.display='none';
+								f.action='pay.action';
+					   	 	  	f.method='post';
+					   	 	    f.innerHTML='<input type="hidden" name="orderListid" value='+${orderList.id}+'>';
+					   		    document.body.appendChild(f);
+					   		    f.submit();
+							}
+						</script>
 				</section>
 				<section class="messagebox-backdrop" style="display:none;" data-reactid=".0.2">
 					<div class="messagebox " data-reactid=".0.2.0"></div>

@@ -50,4 +50,6 @@ public interface OrderMapper {
      * @mbggenerated Tue Jul 18 15:34:39 CST 2017
      */
     int updateByPrimaryKey(Order record);
+    
+    int insertNoId(Order order);
 }

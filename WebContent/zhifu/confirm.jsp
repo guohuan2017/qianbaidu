@@ -221,8 +221,13 @@
 						<li class="checkout-tjdz-bk">
 							<i class="Hui-iconfont" style="vertical-align: middle;width: 63px;height: 42px; display: table-cell; border-right: 1px solid #eee;font-size: 30px;text-align: center;color: #999999;">&#xe6c9;</i>
 							<div class="checkout-tjdz-address">
-								<p> ${user.username} 先生 ${user.phone}</p>
-								<p>民润大厦宜山路13881楼中软国际</p>
+								<p>
+								<select style="width:120px; height: 40px;padding: 5px;" name="addressid" id="addressid">
+									<c:forEach var="address" items="${addresslist}">
+									<option value="${address.id}">${address.address}</option>
+									</c:forEach>
+								</select>
+								</p>
 							</div>
 						</li>
 					</ul>
@@ -304,23 +309,31 @@
 					for(var i = 0; i < nums.length; i++) {
 						var price = parseFloat(prices[i].innerHTML);
 						var num = parseInt(nums[i].value);
-						
-						total.value += price;
-						number.value += num;
-						
-						order =order+foodids[i].innerHTML+"_"+num+";";
+						//console.log(nums[i].value);
+						//console.log(num);
+						if(num > 0){
+							total.value += price;
+							number.value += num;
+							order =order+parseInt(foodids[i].innerHTML)+"_"+num+";";
+						}
 					}
 					
 					total.innerHTML = total.value;
 					number.innerHTML = number.value;
 					
-					order = total.value+","+${store.id}+","+order;
+					var select = document.getElementById('addressid'); //定位id
+					var index = select.selectedIndex; // 选中索引
+					//var text = select.options[index].text; // 选中文本
+					var addressid = select.options[index].value; // 选中值
+					
+					order = total.value+","+${store.id}+","+addressid+","+order;
+					//console.log(order);
 					
 					var f=document.createElement('form');
 			        f.style.display='none';
-					f.action='buy.action';
+					f.action='order.action';
 			        f.method='post';
-			        f.innerHTML='<input type="hidden" name="shoppingcart" value='+order+'>';
+			        f.innerHTML='<input type="hidden" name="order" value='+order+'>';
 			        document.body.appendChild(f);
 			        f.submit();
 				}
