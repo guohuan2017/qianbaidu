@@ -23,7 +23,6 @@
 			<div id="guider-bar-center">
 				<ul>
 					<li><i class="number-this">1</i> 门店信息 -----</li>
-
 					<li><i class="number-other">2</i> 资质信息 -----</li>
 					<li><i class="number-other">3</i> 合作方案 -----</li>
 					<li><i class="number-other">4</i> 配送方案 -----</li>

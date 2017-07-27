@@ -1,8 +1,8 @@
 package pojo;
 
 import java.io.UnsupportedEncodingException;
+import java.util.List;
 
-import sun.management.snmp.jvminstr.JvmRTInputArgsTableMetaImpl;
 import util.MD5;
 
 public class User {
@@ -12,6 +12,15 @@ public class User {
     private String password;
     private String phone;
     private int level;
+    
+    private List<Address> addresses;
+    
+	public List<Address> getAddresses() {
+		return addresses;
+	}
+	public void setAddresses(List<Address> addresses) {
+		this.addresses = addresses;
+	}
 	public Integer getId() {
 		return id;
 	}
