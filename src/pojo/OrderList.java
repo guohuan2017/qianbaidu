@@ -9,7 +9,7 @@ public class OrderList {
 	private Integer address_id;
 	private Integer store_id;
 	private Integer deliver_id;
-	private Integer order_id;
+	private String order_id;
 	private Double total_price;
 	private Integer status;
 	
@@ -57,11 +57,11 @@ public class OrderList {
 		this.deliver_id = deliver_id;
 	}
 
-	public Integer getOrder_id() {
+	public String getOrder_id() {
 		return order_id;
 	}
 
-	public void setOrder_id(Integer order_id) {
+	public void setOrder_id(String order_id) {
 		this.order_id = order_id;
 	}
 
@@ -89,7 +89,6 @@ public class OrderList {
 		this.time = time;
 	}
 
-	
 	@Override
 	public int hashCode() {
 		final int prime = 31;
@@ -105,7 +104,6 @@ public class OrderList {
 		result = prime * result + ((user_id == null) ? 0 : user_id.hashCode());
 		return result;
 	}
-
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
@@ -162,7 +160,6 @@ public class OrderList {
 			return false;
 		return true;
 	}
-
 	@Override
 	public String toString() {
 		return "OrderList [id=" + id + ", user_id=" + user_id + ", address_id=" + address_id + ", store_id=" + store_id
@@ -170,10 +167,9 @@ public class OrderList {
 				+ status + ", time=" + time + "]";
 	}
 
-	
 	public OrderList() {
 	}
-	public OrderList(Integer user_id, Integer address_id, Integer store_id, Integer deliver_id, Integer order_id,
+	public OrderList(Integer user_id, Integer address_id, Integer store_id, Integer deliver_id, String order_id,
 			Double total_price, Integer status) {
 		this.user_id = user_id;
 		this.address_id = address_id;
@@ -184,7 +180,7 @@ public class OrderList {
 		this.status = status;
 	}
 	public OrderList(Integer id, Integer user_id, Integer address_id, Integer store_id, Integer deliver_id,
-			Integer order_id, Double total_price, Integer status) {
+			String order_id, Double total_price, Integer status) {
 		this.id = id;
 		this.user_id = user_id;
 		this.address_id = address_id;
@@ -194,7 +190,7 @@ public class OrderList {
 		this.total_price = total_price;
 		this.status = status;
 	}
-	public OrderList(Integer user_id, Integer address_id, Integer store_id, Integer deliver_id, Integer order_id,
+	public OrderList(Integer user_id, Integer address_id, Integer store_id, Integer deliver_id, String order_id,
 			Double total_price, Integer status, Date time) {
 		this.user_id = user_id;
 		this.address_id = address_id;
@@ -206,7 +202,7 @@ public class OrderList {
 		this.time = time;
 	}
 	public OrderList(Integer id, Integer user_id, Integer address_id, Integer store_id, Integer deliver_id,
-			Integer order_id, Double total_price, Integer status, Date time) {
+			String order_id, Double total_price, Integer status, Date time) {
 		this.id = id;
 		this.user_id = user_id;
 		this.address_id = address_id;

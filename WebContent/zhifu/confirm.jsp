@@ -280,8 +280,32 @@
 					</p>
 				</div>
 				<div class="">
-					<button class="qrxd-button">确认下单</button>
+					<button class="qrxd-button" id="xiadan">确认下单</button>
 				</div>
+				<script type="text/javascript">
+				var xiadan = document.getElementById('xiadan');
+				xiadan.onclick = function() {
+					var total = document.getElementById('totalprice');
+					var number = document.getElementById('totalnumber');
+					
+					var nums = document.getElementsByClassName('food-number');
+					var prices = document.getElementsByClassName('cell-binding1');
+					
+					total.value = 0;
+					number.value = 0;
+					
+					for(var i = 0; i < nums.length; i++) {
+						var price = parseFloat(prices[i].innerHTML);
+						var num = parseInt(nums[i].value);
+						
+						total.value += price;
+						number.value += num;
+						
+					}
+					total.innerHTML = total.value;
+					number.innerHTML = number.value;
+				}
+				</script>
 			</div>
 		</div>
 	</body>
