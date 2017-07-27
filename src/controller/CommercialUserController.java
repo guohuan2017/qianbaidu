@@ -61,6 +61,8 @@ public class CommercialUserController {
 	
 	@RequestMapping("/login.action")
 	public ModelAndView login(CommercialUser commercialUser ,HttpServletRequest request ,HttpServletResponse response){
+		String path = request.getServletContext().getRealPath("uploadstore/");
+		System.out.println(path);
 		ModelAndView modelAndView = new ModelAndView();
 		try {
 			commercialUser.setPassword(MD5.jiami(commercialUser.getPassword()));

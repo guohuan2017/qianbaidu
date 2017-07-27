@@ -1,9 +1,7 @@
 package pojo;
 
 import java.util.List;
-import java.io.UnsupportedEncodingException;
 
-import util.MD5;
 
 public class Store {
 	
@@ -20,8 +18,6 @@ public class Store {
     private String photoin;
     
     private List<CommercialUser> commericalUsers;
-    
-    
 	
 	public List<CommercialUser> getCommericalUsers() {
 		return commericalUsers;

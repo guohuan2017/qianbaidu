@@ -25,13 +25,13 @@ import util.TimeFileRenamePolicy;
 @Controller
 
 // 在这里加注解的话 可以为类中所有方法添加上级地址
+@RequestMapping("/store")
 public class StoreController {
-
+	
 	@Autowired
 	private StoreService service;
 	
-	
-	@RequestMapping("/registstore.action")
+	@RequestMapping("/apply.action")
 	public ModelAndView registstore(HttpServletRequest request, HttpServletResponse response) throws IOException {
 		HttpSession session = request.getSession();
 		Store store = (Store) session.getAttribute("user");
@@ -39,7 +39,7 @@ public class StoreController {
 		ModelAndView mav = new ModelAndView("test/welcomeStore");
 
 		String path = request.getServletContext().getRealPath("uploadstore/");
-//		System.out.println(path);
+		System.out.println(path);
 
 		File file = new File(path + "\\" + store.getId() + "_" + store.getStorename());
 		if (!file.exists() && !file.isDirectory()) {
@@ -51,6 +51,7 @@ public class StoreController {
 		// 创建第三方插件的对象
 		MultipartRequest mr = new MultipartRequest(request, path, 50 * 1024 * 1024, "UTF-8",
 				new TimeFileRenamePolicy());
+		
 		// 返回的是一个枚举对象
 		Enumeration enumeration = mr.getFileNames();
 		String name = null;
@@ -73,13 +74,15 @@ public class StoreController {
 
 		store.setPhotoout("uploadstore/" + store.getId() + "_" + store.getStorename() + "/" + map.get("photoout"));
 		store.setPhotoin("uploadstore/" + store.getId() + "_" + store.getStorename() + "/" + map.get("photoin"));
-		store.setPhoto("uploadstore/" + store.getId() + "_" + store.getStorename() + "/" + map.get("photo"));
+		store.setPhoto("uploadstore/" + store.getId() + "_" + store.getStorename() + "/" + map.get("photologo"));
 		
 		
-//		store.setAddress(request.getParameter("address"));
+		store.setStorename(request.getParameter("shopname"));
+		store.setTel(request.getParameter("outtel"));
 		store.setAddress(mr.getParameter("address"));
 		store.setType(mr.getParameter("type"));
 		store.setSubtype(mr.getParameter("type"));
+		
 		
 		String tel = store.getTel();
 		store.setTel(null);

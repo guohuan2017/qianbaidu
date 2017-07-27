@@ -26,28 +26,28 @@ public class Test3 {
 	@org.junit.Test
 	public void test() {
 
-//		String path = this.getClass().getResource("").getPath();
-//		System.out.println(path);
+		String path = this.getClass().getResource("").getPath();
+		System.out.println(path);
 //		String[] string =path.split("MyBatis");
 //		System.out.println(string[0]+"MyBatis");
 		
-		String buy = "24745.14,1_3;2_1;3_2;";
-		
-		String[] price = buy.split(",");
-		System.out.println(price[0]);
-		String[] orders = price[1].split(";");
-		for (String order : orders) {
-			System.out.println(order);
-		}
-		System.out.println("finish!");
-		System.out.println();
-		System.out.println("start!");
-		for (String order : orders) {
-			String[] foodAndNum = order.split("_",2);
-			String food = foodAndNum[0];
-			String num = foodAndNum[1];
-			System.out.println("food:"+food+"number:"+num);
-		}
+//		String buy = "24745.14,1_3;2_1;3_2;";
+//		
+//		String[] price = buy.split(",");
+//		System.out.println(price[0]);
+//		String[] orders = price[1].split(";");
+//		for (String order : orders) {
+//			System.out.println(order);
+//		}
+//		System.out.println("finish!");
+//		System.out.println();
+//		System.out.println("start!");
+//		for (String order : orders) {
+//			String[] foodAndNum = order.split("_",2);
+//			String food = foodAndNum[0];
+//			String num = foodAndNum[1];
+//			System.out.println("food:"+food+"number:"+num);
+//		}
 		
 	}
 }

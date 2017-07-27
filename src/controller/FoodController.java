@@ -32,4 +32,8 @@ public class FoodController {
 		mav.addObject("foodlist", foodlist);
 		return mav;
 	}
+	
+	
+	
+	
 }
