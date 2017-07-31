@@ -8,7 +8,7 @@
 
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<title>饿了么网上订餐</title>
+		<title>千百度网上订餐</title>
 		<link rel="stylesheet" type="text/css" href="../css/home/qbd.css" />
 		<link rel="stylesheet" type="text/css" href="../css/home/qbd1.css" />
 		<link rel="stylesheet" type="text/css" href="../css/Hui-iconfont/1.0.8/iconfont.css" />
