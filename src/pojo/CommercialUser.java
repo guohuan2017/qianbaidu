@@ -19,6 +19,8 @@ public class CommercialUser {
 
 	private List<Address> addresses;
 
+	private Integer addressid;
+
 	public String getId() {
 		return id;
 	}
@@ -83,10 +85,12 @@ public class CommercialUser {
 		this.addresses = addresses;
 	}
 
-	@Override
-	public String toString() {
-		return "CommercialUser [id=" + id + ", username=" + username + ", password=" + password + ", storeid=" + storeid
-				+ ", power=" + power + ", phone=" + phone + ", store=" + store + ", addresses=" + addresses + "]";
+	public Integer getAddressid() {
+		return addressid;
+	}
+
+	public void setAddressid(Integer addressid) {
+		this.addressid = addressid;
 	}
 
 	@Override
@@ -94,6 +98,7 @@ public class CommercialUser {
 		final int prime = 31;
 		int result = 1;
 		result = prime * result + ((addresses == null) ? 0 : addresses.hashCode());
+		result = prime * result + ((addressid == null) ? 0 : addressid.hashCode());
 		result = prime * result + ((id == null) ? 0 : id.hashCode());
 		result = prime * result + ((password == null) ? 0 : password.hashCode());
 		result = prime * result + ((phone == null) ? 0 : phone.hashCode());
@@ -117,6 +122,11 @@ public class CommercialUser {
 			if (other.addresses != null)
 				return false;
 		} else if (!addresses.equals(other.addresses))
+			return false;
+		if (addressid == null) {
+			if (other.addressid != null)
+				return false;
+		} else if (!addressid.equals(other.addressid))
 			return false;
 		if (id == null) {
 			if (other.id != null)
@@ -156,7 +166,39 @@ public class CommercialUser {
 		return true;
 	}
 
+	@Override
+	public String toString() {
+		return "CommercialUser [id=" + id + ", username=" + username + ", password=" + password + ", storeid=" + storeid
+				+ ", power=" + power + ", phone=" + phone + ", store=" + store + ", addresses=" + addresses
+				+ ", addressid=" + addressid + "]";
+	}
+
 	public CommercialUser() {
+	}
+
+	public CommercialUser(String username, String password, Integer storeid, String power, String phone, Store store,
+			List<Address> addresses, Integer addressid) {
+		this.username = username;
+		this.password = password;
+		this.storeid = storeid;
+		this.power = power;
+		this.phone = phone;
+		this.store = store;
+		this.addresses = addresses;
+		this.addressid = addressid;
+	}
+
+	public CommercialUser(String id, String username, String password, Integer storeid, String power, String phone,
+			Store store, List<Address> addresses, Integer addressid) {
+		this.id = id;
+		this.username = username;
+		this.password = password;
+		this.storeid = storeid;
+		this.power = power;
+		this.phone = phone;
+		this.store = store;
+		this.addresses = addresses;
+		this.addressid = addressid;
 	}
 
 	

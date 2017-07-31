@@ -66,7 +66,6 @@ public class CommercialUserController {
 		try {
 			commercialUser.setPassword(MD5.jiami(commercialUser.getPassword()));
 		} catch (UnsupportedEncodingException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		CommercialUser commericalUser2 = commercialUserService.login(commercialUser); 
