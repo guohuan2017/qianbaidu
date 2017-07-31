@@ -66,12 +66,12 @@ public class CommercialUserController {
 		try {
 			commercialUser.setPassword(MD5.jiami(commercialUser.getPassword()));
 		} catch (UnsupportedEncodingException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		CommercialUser commericalUser2 = commercialUserService.login(commercialUser); 
+		System.out.println("commericalUser2"+commericalUser2);
 		if(null != commericalUser2){
-			request.getSession().setAttribute("user", commercialUser);
+			request.getSession().setAttribute("user", commericalUser2);
 			modelAndView.setViewName("shop/profile/managefood");
 		}else{
 			modelAndView.addObject("message","登录失败！");
