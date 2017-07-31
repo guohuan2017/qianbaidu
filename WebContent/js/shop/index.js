@@ -6,3 +6,15 @@ window.onscroll = function(){
 		$("#nav-left").hide();
 	}
 };
+
+$("#ilikestar").click(function(){
+	console.log("hello");
+	if($("#ilikestar").css("color") == "white"){
+		console.log(("#ilikestar").color);
+		$("#ilikestar").color = "yellow";
+		
+	}else{
+		console.log($("#ilikestar").css("color"));
+		("#ilikestar").color = "white"
+	}
+});
