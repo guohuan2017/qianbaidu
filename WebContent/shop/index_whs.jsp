@@ -28,10 +28,10 @@
 							<span id="font-logo">千百度</span>
 						</li>
 						<li>
-							首页
+							<a href="/qianbaidu/home/shoploginwin.jsp" style="text-decoration:none;color:white;">首页</a>
 						</li>
 						<li>
-							我的订单
+							<a href="/qianbaidu/user/profile/myorder.jsp" style="text-decoration:none;color:white;">我的订单</a>
 						</li>
 						<li>
 							加盟合作
@@ -41,7 +41,7 @@
 						<a><i style="font-size: 20px; margin-right: 2px" class="Hui-iconfont Hui-iconfont-kefu"></i>服务中心</a>
 						<a>规则中心</a>
 						<a><i style="font-size: 21px; margin-right: 2px;" class="Hui-iconfont Hui-iconfont-phone"></i>手机应用</a>
-						<a style="margin-right: 0; color: white;" id="lr"><i style="font-size: 21px; margin-right: 10px;color: white;" class="Hui-iconfont Hui-iconfont-user"></i>登录/注册</a>
+						<a style="margin-right: 0; color: white;" id="lr"><i style="font-size: 21px; margin-right: 10px;color: white;" class="Hui-iconfont Hui-iconfont-user"></i>${user.username}</a>
 					</nav>
 				</div>
 			</div>

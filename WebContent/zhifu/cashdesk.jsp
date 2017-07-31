@@ -13,7 +13,7 @@
 	</head>
 
 	<body>
-		<img src="/qianbaidu/img/zhifu/cashdesk/收银台logo.jpg" style="position: absolute;">
+		<img src="/qianbaidu/img/zhifu/cashdesk/收银台logo_看图王.jpg" style="position: absolute;">
 		<header id="header"><i class="eleme-icon logo"><h1 class="title"></h1></i></header>
 		<main id="main">
 			<main data-reactid=".0">
