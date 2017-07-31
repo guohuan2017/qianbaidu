@@ -71,7 +71,7 @@ public class CommercialUserController {
 		}
 		CommercialUser commericalUser2 = commercialUserService.login(commercialUser); 
 		if(null != commericalUser2){
-			request.getSession().setAttribute("user", commercialUser);
+			request.getSession().setAttribute("user", commericalUser2);
 			modelAndView.setViewName("shop/profile/managefood");
 		}else{
 			modelAndView.addObject("message","登录失败！");

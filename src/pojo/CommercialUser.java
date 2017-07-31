@@ -10,7 +10,7 @@ public class CommercialUser {
 	private String username;
 	@NotEmpty
 	private String password;
-	private int storeid;
+	private Integer storeid;
 	private String power;
 	@NotEmpty
 	private String phone;

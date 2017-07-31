@@ -19,6 +19,7 @@ import com.oreilly.servlet.MultipartRequest;
 
 import pojo.CommercialUser;
 import pojo.Store;
+import service.CommercialUserService;
 import service.StoreService;
 import util.TimeFileRenamePolicy;
 
@@ -30,6 +31,10 @@ public class StoreController {
 
 	@Autowired
 	private StoreService service;
+	
+	@Autowired
+	private CommercialUserService commercialUserService;
+	
 
 //	@RequestMapping("/store/apply.action")
 //	public ModelAndView registstoretel(HttpServletRequest request, HttpServletResponse response) throws IOException {
@@ -104,16 +109,16 @@ public class StoreController {
 				store.setPhotoin("uploadstore/" + store.getId() + "_" + store.getStorename() + "/" + map.get("photoin"));
 				store.setPhoto("uploadstore/" + store.getId() + "_" + store.getStorename() + "/" + map.get("photologo"));
 
-				store.setAddress(mr.getParameter("address"));
+//				store.setAddress(mr.getParameter("address"));
 				store.setType(mr.getParameter("shopcatalog"));
 				store.setSubtype(mr.getParameter("shopcatalog"));
 
 				// 接收地址
 				StringBuilder stringBuilder = new StringBuilder();
-				String province = request.getParameter("province");
-				String city = request.getParameter("city");
-				String county = request.getParameter("county");
-				String detail = request.getParameter("detailaddress");
+				String province = mr.getParameter("province");
+				String city = mr.getParameter("city");
+				String county = mr.getParameter("county");
+				String detail = mr.getParameter("detailaddress");
 				stringBuilder.append(province);
 				stringBuilder.append(city);
 				stringBuilder.append(county);
@@ -121,11 +126,15 @@ public class StoreController {
 				store.setAddress(stringBuilder.toString());
 
 				// 店铺描述
-				store.setInfo(request.getParameter("info"));
+				store.setInfo(mr.getParameter("info"));
 
 				if (service.updateByPrimaryKey(store) > 0) {
-					mav.setViewName("shop/profile/managefood");
-					mav.addObject("message", "申请成功！");
+					//插入commercial_user表中的storeid
+					commercialUser.setStoreid(store.getId());
+					if(commercialUserService.updateStoreId(commercialUser) > 0){
+						mav.setViewName("shop/profile/managefood");
+						mav.addObject("message", "申请成功！");
+					};
 				}else{
 					service.deleteByPrimaryKey(store.getId());
 				}

@@ -9,4 +9,8 @@
 	<select id="selectBytelPassword" parameterType="pojo.CommercialUser" resultType="pojo.CommercialUser">
 		select * from commercial_user where phone = #{phone} and password = #{password}
 	</select>
+	
+	<update id="updateStoreId" parameterType="pojo.CommercialUser">
+		update commercial_user set storeid = #{storeid} where id = #{id}
+	</update>
 </mapper>
