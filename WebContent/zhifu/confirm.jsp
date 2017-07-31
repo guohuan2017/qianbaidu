@@ -32,9 +32,10 @@
 		</div>
 		<div id="head-div">
 			<div id="head-info">
-				<img class="checkout" src="/qianbaidu/img/home/index/logo.jpg" />
+			
+				<!--img class="checkout" src="/qianbaidu/img/home/index/logo.jpg" /  -->
 				<span class="checkoutguide">
-					| &nbsp;订单信息
+				订单信息
 				</span>
 				<div class="checkoutpt">
 					<img src="/qianbaidu/img/zhifu/confirm/deskout.jpg" />
@@ -283,7 +284,7 @@
 						</select>
 					</p>
 					<p class="xzyh-ng-binding">
-						<span class="xzyh-ng-span">配送方式</span>
+						<span class="xzyh-ng-span">订单备注</span>
 						<input class="qtxx-ng-input" type="text" name="" id="" value="" />
 					</p>
 				</div>
