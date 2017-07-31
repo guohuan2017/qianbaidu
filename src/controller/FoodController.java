@@ -68,7 +68,7 @@ public class FoodController {
 		Food food = foodService.selectByPrimaryKey(foodid);
 
 		mav.addObject("food", food);
-		return mav;
+		return mav;     
 	}
 
 	@RequestMapping("/deletefood.action")
