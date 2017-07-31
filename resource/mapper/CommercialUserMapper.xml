@@ -11,6 +11,6 @@
 	</select>
 	
 	<update id="updateStoreId" parameterType="pojo.CommercialUser">
-		update commercial_user set storeid = #{storeid} where id = #{id}
+		update commercial_user set storeid = #{storeid，jdbcType=INTEGER} where id = #{id,jdbcType=VARCHAR}
 	</update>
 </mapper>

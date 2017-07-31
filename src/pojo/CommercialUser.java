@@ -15,17 +15,9 @@ public class CommercialUser {
 	@NotEmpty
 	private String phone;
 
-	private Store store;
-
-	private List<Address> addresses;
-
-	public List<Address> getAddresses() {
-		return addresses;
-	}
-
-	public void setAddresses(List<Address> addresses) {
-		this.addresses = addresses;
-	}
+	private List<Store> store;
+	
+	private Integer addressid;
 
 	public String getId() {
 		return id;
@@ -39,24 +31,23 @@ public class CommercialUser {
 		return username;
 	}
 
-	public void setUsername(String name) {
-		this.username = name;
+	public void setUsername(String username) {
+		this.username = username;
 	}
 
 	public String getPassword() {
 		return password;
 	}
 
-	/*在set方法时加密 SpringMVC自动封装时用无参构造+set方法*/
 	public void setPassword(String password) {
 		this.password = password;
 	}
 
-	public int getStoreid() {
+	public Integer getStoreid() {
 		return storeid;
 	}
 
-	public void setStoreid(int storeid) {
+	public void setStoreid(Integer storeid) {
 		this.storeid = storeid;
 	}
 
@@ -75,15 +66,25 @@ public class CommercialUser {
 	public void setPhone(String phone) {
 		this.phone = phone;
 	}
+	
+	
 
-	public Store getStore() {
+
+
+	public List<Store> getStore() {
 		return store;
 	}
 
-	public void setStore(Store store) {
+	public void setStore(List<Store> store) {
 		this.store = store;
 	}
-	
-	
 
+	public Integer getAddressid() {
+		return addressid;
+	}
+
+	public void setAddressid(Integer addressid) {
+		this.addressid = addressid;
+	}
+	
 }
