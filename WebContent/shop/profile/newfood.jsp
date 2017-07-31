@@ -146,7 +146,7 @@
 									<option value="快餐">小吃</option>
 									<option value="快餐">饮料</option>
 								</select>
-								<label class="ng-binding2">或输入菜品种类</label>
+								<label class="ng-binding2">或新增菜品种类</label>
 								<input type="text" name="foodtype" class="formfield-npwd" placeholder="请输入菜品种类" />
 								<div class="formfield1">
 									<span class="formfield-hint-span" id="repasswordspan">
