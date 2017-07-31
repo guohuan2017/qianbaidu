@@ -48,7 +48,7 @@ public class FoodController {
 	@RequestMapping("/addfood.action")
 	public ModelAndView registstore(HttpServletRequest request, HttpServletResponse response) throws IOException {
 		HttpSession session = request.getSession();
-		ModelAndView mav = new ModelAndView();
+		ModelAndView mav = new ModelAndView("shop/profile/managefood");
 		CommercialUser commercialUser = (CommercialUser) session.getAttribute("user");
 		if (null == commercialUser) {
 			mav.setViewName("shop/login");
@@ -59,8 +59,6 @@ public class FoodController {
 		Store store = storeService.selectByPrimaryKey(commercialUser.getStoreid());
 
 		if (store != null) {
-			store = storeService.selectTel(store.getTel());
-			if (null != store) {
 				String path = request.getServletContext().getRealPath("uploadfood/");
 				System.out.println(path);
 
@@ -99,10 +97,9 @@ public class FoodController {
 				food.setPrice(Double.parseDouble(mr.getParameter("foodprice")));
 				food.setType(mr.getParameter("foodtype"));
 				food.setFoodinfo(mr.getParameter("foodinfo"));
-
+				service.insertSelective(food);
 				return mav;
 			}
-		}
 		return mav;
 	}
 

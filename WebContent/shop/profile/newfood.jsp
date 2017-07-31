@@ -122,7 +122,7 @@
 					<span class="">新增菜品</span>
 				</h3>
 					<div id="profile-panelcontent">
-						<form class="profile-changewd" id="pwform" action="addfood.action" method="post" enctype="multipart/form-data">
+						<form class="profile-changewd" id="pwform" action="/qianbaidu/addfood.action" method="post" enctype="multipart/form-data">
 							<div class="formfield">
 								<label class="ng-binding">菜品名称</label> <input type="text" name="foodname" id="foodname" class="formfield-npwd" placeholder="请输入菜品名称" />
 								<div class="formfield1">
@@ -164,7 +164,7 @@
 							</div>
 							<div class="formfield">
 								<label class="ng-binding"> </label>
-								<button type="button" class="formfield-button" id="pwbutton">确认</button>
+								<button type="submit" class="formfield-button" id="pwbutton">确认</button>
 							</div>
 							
 						</form>
