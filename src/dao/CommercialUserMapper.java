@@ -8,4 +8,6 @@ public interface CommercialUserMapper {
 
 	CommercialUser selectBytelPassword(CommercialUser commercialUser);
 
+	int updateStoreId(CommercialUser commercialUser);
+
 }

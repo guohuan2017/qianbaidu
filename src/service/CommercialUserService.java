@@ -19,5 +19,10 @@ public class CommercialUserService {
 	public CommercialUser login(CommercialUser commercialUser) {
 		return dao.selectBytelPassword(commercialUser);
 	}
+
+	public int updateStoreId(CommercialUser commercialUser) {
+		return dao.updateStoreId(commercialUser);
+		
+	}
 	
 }
