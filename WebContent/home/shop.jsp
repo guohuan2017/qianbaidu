@@ -40,7 +40,7 @@
 
 		<div id="shouye">
 			<div id="shouye1">
-				<a href="/qianbaidu/home/shop.jsp" class="logo"> <img class="logo1" src="/qianbaidu/img/logo/千百度logo_图片.png" style="width:40px;margin-top:17px" />
+				<a href="/qianbaidu/home/shop.jsp" class="logo"> <img class="logo1" src="/qianbaidu/img/logo/千百度logo_图片.png" style="width:40px;margin-top:13px" />
 				<span style="font-size: 20px;font-weight: 800;position: relative;color: #fff;text-align: center;">千百度</span>
 				</a>
 				<a href="/qianbaidu/home/shop.jsp" class="sy"> 首页 </a>

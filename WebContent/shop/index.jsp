@@ -48,10 +48,10 @@
 						<a href="#">热销</a>
 					</li>
 					<li>
-						<a href="#">优惠</a>
+						<a href="#youhui">优惠</a>
 					</li>
 					<li>
-						<a href="#">免费领红包</a>
+						<a href="#hongbao">免费领红包</a>
 					</li>
 					<li>
 						<a href="#">免费领红包</a>
@@ -175,8 +175,8 @@
 				<div id="content-center-left">
 					<div id="head-catalog">
 						<a href="#" class="catalog">热销</a>
-						<a href="#" class="catalog">优惠</a>
-						<a href="#" class="catalog">免费领红包</a>
+						<a href="#youhui" class="catalog">优惠</a>
+						<a href="#hongbao" class="catalog">免费领红包</a>
 						<a href="#" class="catalog">一折特价菜</a>
 						<a href="#" class="catalog">热销商品5折</a>
 						<a href="#" class="catalog">下午茶半价</a>
@@ -217,7 +217,7 @@
 							<button class="add-to-cart">加入购物车</button>
 						</div>
 						
-						<div class="title">
+						<div class="title" id="youhui">
 							<h3>优惠</h3>
 							<span class="catalog-introduce">大家喜欢吃，才叫真好吃。</span>
 						</div>
@@ -272,7 +272,7 @@
 							<button class="add-to-cart">加入购物车</button>
 						</div>
 						
-						<div class="title">
+						<div class="title" id="hongbao">
 							<h3>免费领红包</h3>
 							<span class="catalog-introduce">大家喜欢吃，才叫真好吃。</span>
 						</div>
