@@ -17,26 +17,27 @@
 	<body>
 		<div id="shouye">
 			<div id="shouye1">
-				<a href="/qianbaidu/home/shop.jsp" class="logo"> <img class="logo1" src="/qianbaidu/img/home/index/logo.jpg" />
+				<a href="/qianbaidu/home/shop.jsp" class="logo" style="font-family: '幼圆 ';font-size: 18px;font-weight: 700;color: white;">
+					<img style="width:40px; position:relative;top:15px" class="logo1" src="/qianbaidu/img/logo/千百度logo_图片.png" /> 千百度
 				</a>
-				<a href="/qianbaidu/home/shop.jsp" class="sy"> 首页 </a>
-				<a href="myorde.jsp" class="wddd">
-					我的订单 </a>
-				<a href="" class="jmhz"> 加盟合作 </a>
-				<nav id="shouye2">
-					<a href="" class="fwzx"> <i class="fwzx1"> <img src="/qianbaidu/img/home/index/fwzx.jpg" />
+					<a href="/qianbaidu/home/shop.jsp" class="sy"> 首页 </a>
+					<a href="myorde.jsp" class="wddd">
+						我的订单 </a>
+					<a href="" class="jmhz"> 加盟合作 </a>
+					<nav id="shouye2">
+						<a href="" class="fwzx"> <i class="fwzx1"> <img src="/qianbaidu/img/home/index/fwzx.jpg" />
 			</i> 服务中心
-					</a>
-					<a href="" class="gzzx"> 规则中心 </a>
-					<a href="" class="sjyy"> <i class="sjyy1"> <img src="/qianbaidu/img/home/index/sjyy.jpg" />
+						</a>
+						<a href="" class="gzzx"> 规则中心 </a>
+						<a href="" class="sjyy"> <i class="sjyy1"> <img src="/qianbaidu/img/home/index/sjyy.jpg" />
 			</i> 手机应用
-					</a>
-					<div id="dlzc">
-						<span class="dlzc1"> <img src="/qianbaidu/img/home/index//dlzc.jpg" />
+						</a>
+						<div id="dlzc">
+							<span class="dlzc1"> <img src="/qianbaidu/img/home/index//dlzc.jpg" />
 				</span> <span> <a class="dlzc2">欢迎:${user.username}</a>
 				</span>
-					</div>
-				</nav>
+						</div>
+					</nav>
 			</div>
 		</div>
 		<div id="quanbu">
@@ -151,13 +152,13 @@
 										<span class="desktop-addressblock-name-binding">先生</span>
 									</div>
 									<div class="desktop-addressblock-address">
-									天等路430弄24号 102室
+										天等路430弄24号 102室
 									</div>
 									<div class="desktop-addressblock-mobile">
-									18201727218
+										18201727218
 									</div>
 								</div>
-							<button class="desktop-addressblock2" ondblclick="">
+								<button class="desktop-addressblock2" ondblclick="">
 							<i class="icon-plus">
 							<img src="/qianbaidu/img/user/profile/加号.jpg">
 							添加新地址
