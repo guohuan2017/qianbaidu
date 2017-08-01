@@ -6,7 +6,7 @@ public class Order {
 	private Integer food_id;
 	private Integer number;
 	private Integer store_id;
-	private Integer order_id;
+	private String orderid;
 	public Integer getId() {
 		return id;
 	}
@@ -37,11 +37,11 @@ public class Order {
 	public void setStore_id(Integer store_id) {
 		this.store_id = store_id;
 	}
-	public Integer getOrder_id() {
-		return order_id;
+	public String getOrderid() {
+		return orderid;
 	}
-	public void setOrder_id(Integer order_id) {
-		this.order_id = order_id;
+	public void setOrderid(String orderid) {
+		this.orderid = orderid;
 	}
 	@Override
 	public int hashCode() {
@@ -50,7 +50,7 @@ public class Order {
 		result = prime * result + ((food_id == null) ? 0 : food_id.hashCode());
 		result = prime * result + ((id == null) ? 0 : id.hashCode());
 		result = prime * result + ((number == null) ? 0 : number.hashCode());
-		result = prime * result + ((order_id == null) ? 0 : order_id.hashCode());
+		result = prime * result + ((orderid == null) ? 0 : orderid.hashCode());
 		result = prime * result + ((store_id == null) ? 0 : store_id.hashCode());
 		result = prime * result + ((user_id == null) ? 0 : user_id.hashCode());
 		return result;
@@ -79,10 +79,10 @@ public class Order {
 				return false;
 		} else if (!number.equals(other.number))
 			return false;
-		if (order_id == null) {
-			if (other.order_id != null)
+		if (orderid == null) {
+			if (other.orderid != null)
 				return false;
-		} else if (!order_id.equals(other.order_id))
+		} else if (!orderid.equals(other.orderid))
 			return false;
 		if (store_id == null) {
 			if (other.store_id != null)
@@ -96,27 +96,28 @@ public class Order {
 			return false;
 		return true;
 	}
+	
 	@Override
 	public String toString() {
 		return "Order [id=" + id + ", user_id=" + user_id + ", food_id=" + food_id + ", number=" + number
-				+ ", store_id=" + store_id + ", order_id=" + order_id + "]";
+				+ ", store_id=" + store_id + ", orderid=" + orderid + "]";
 	}
 	public Order() {
 	}
-	public Order(Integer user_id, Integer food_id, Integer number, Integer store_id, Integer order_id) {
+	public Order(Integer user_id, Integer food_id, Integer number, Integer store_id, String orderid) {
 		this.user_id = user_id;
 		this.food_id = food_id;
 		this.number = number;
 		this.store_id = store_id;
-		this.order_id = order_id;
+		this.orderid = orderid;
 	}
-	public Order(Integer id, Integer user_id, Integer food_id, Integer number, Integer store_id, Integer order_id) {
+	public Order(Integer id, Integer user_id, Integer food_id, Integer number, Integer store_id, String orderid) {
 		this.id = id;
 		this.user_id = user_id;
 		this.food_id = food_id;
 		this.number = number;
 		this.store_id = store_id;
-		this.order_id = order_id;
+		this.orderid = orderid;
 	}
 	
 	

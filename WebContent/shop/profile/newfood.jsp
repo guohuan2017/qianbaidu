@@ -17,7 +17,8 @@
 	<body>
 		<div id="shouye">
 			<div id="shouye1">
-				<a href="/qianbaidu/home/shop.jsp" class="logo"> <img class="logo1" src="/qianbaidu/img/home/index/logo.jpg" />
+				<a href="/qianbaidu/home/shop.jsp" class="logo" style="font-family: '幼圆 ';font-size: 18px;font-weight: 700;color: white;">
+					<img style="width:40px; position:relative;top:15px" class="logo1" src="/qianbaidu/img/logo/千百度logo_图片.png" /> 千百度
 				</a>
 				<a href="/qianbaidu/home/shop.jsp" class="sy"> 首页 </a>
 				<a href="myorde.jsp" class="wddd"> 我的订单 </a>
@@ -122,7 +123,7 @@
 					<span class="">新增菜品</span>
 				</h3>
 					<div id="profile-panelcontent">
-						<form class="profile-changewd" id="pwform" action="" method="post" enctype="multipart/form-data">
+						<form class="profile-changewd" id="pwform" action="/qianbaidu/addfood.action" method="post" enctype="multipart/form-data">
 							<div class="formfield">
 								<label class="ng-binding">菜品名称</label> <input type="text" name="foodname" id="foodname" class="formfield-npwd" placeholder="请输入菜品名称" />
 								<div class="formfield1">
@@ -146,7 +147,7 @@
 									<option value="快餐">小吃</option>
 									<option value="快餐">饮料</option>
 								</select>
-								<label class="ng-binding2">或输入菜品种类</label>
+								<label class="ng-binding2">或新增菜品种类</label>
 								<input type="text" name="foodtype" class="formfield-npwd" placeholder="请输入菜品种类" />
 								<div class="formfield1">
 									<span class="formfield-hint-span" id="repasswordspan">
@@ -164,7 +165,7 @@
 							</div>
 							<div class="formfield">
 								<label class="ng-binding"> </label>
-								<button type="button" class="formfield-button" id="pwbutton">确认</button>
+								<button type="submit" class="formfield-button" id="pwbutton">确认</button>
 							</div>
 							
 						</form>

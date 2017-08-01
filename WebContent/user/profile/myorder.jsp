@@ -16,9 +16,10 @@
 	<body>
 		<div id="shouye">
 			<div id="shouye1">
-				<a href="/qianbaidu/home/shop.jsp" class="logo"> <img class="logo1" src="/qianbaidu/img/home/index/logo.jpg" />
+				<a href="/qianbaidu/home/shop.jsp" class="logo"> <img class="logo1" src="/qianbaidu/img/logo/千百度logo_图片.png" style="width:40px;margin-top:17px" />
+				<span style="font-size: 20px;font-weight: 800;position: relative;color: #fff;text-align: center;">千百度</span>
 				</a>
-				<a href="/qianbaidu/home/shop.jsp" class="sy"> 首页 </a>
+				<a href="/qianbaidu/home/shoploginwin.jsp" class="sy"> 首页 </a>
 				<a href="/qianbaidu/profile/myorder.jsp" class="wddd">
 					我的订单 </a>
 				<a href="" class="jmhz"> 加盟合作 </a>

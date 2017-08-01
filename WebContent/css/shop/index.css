@@ -83,11 +83,13 @@ nav a {
 	-webkit-justify-content: center;
 	justify-content: center;*/
 	color: rgb(204, 204, 204);
+	text-decoration: none;
 }
 
 nav a:hover {
 	color: white;
 	cursor: pointer;
+	text-decoration: none;
 }
 
 #lr {
@@ -208,6 +210,11 @@ nav a:hover {
 	text-align: center;
 	background-color: rgba(255, 255, 255, 0.1);
 	border-radius: 0 0 5px 5px;
+	text-decoration:none;
+}
+
+#ilike:hover {
+	text-decoration: none;
 }
 
 #ilikestar {
@@ -589,7 +596,7 @@ nav a:hover {
 	font-weight: 500;
 }
 
-.cart-content-li > a{
+.cart-content-li>a {
 	color: #0089dc;
 	text-decoration: none;
 }
@@ -622,20 +629,20 @@ input::-webkit-inner-spin-button {
 	text-align: center;
 }
 
-#nubmer-btn-group{
+#nubmer-btn-group {
 	display: inline-block;
 	position: absolute;
 	left: 150px;
 }
 
-#add-cart > i{
-	font-size: 21px; 
-	position: absolute; 
-	right: 20px; 
+#add-cart>i {
+	font-size: 21px;
+	position: absolute;
+	right: 20px;
 	font-weight: 500;
 }
 
-#add-cart > span{
+#add-cart>span {
 	position: absolute;
 	left: 292px;
 	top: 11px;
@@ -647,10 +654,9 @@ input::-webkit-inner-spin-button {
 	font-size: 13px;
 	text-align: center;
 	line-height: 15px;
-	
 }
 
-#go-to-confirm-div{
+#go-to-confirm-div {
 	background-color: #51d862;
 	width: 120px;
 	height: 46px;
@@ -661,11 +667,9 @@ input::-webkit-inner-spin-button {
 	line-height: 46px;
 }
 
-#confirm-btn{
+#confirm-btn {
 	font-size: 14px;
 	font-weight: 700;
 	color: white;
 	text-decoration: none;
 }
-
-

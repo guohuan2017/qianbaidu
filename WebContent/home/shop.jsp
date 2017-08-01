@@ -8,7 +8,7 @@
 
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<title>饿了么网上订餐</title>
+		<title>千百度网上订餐</title>
 		<link rel="stylesheet" type="text/css" href="../css/home/qbd.css" />
 		<link rel="stylesheet" type="text/css" href="../css/home/qbd1.css" />
 		<link rel="stylesheet" type="text/css" href="../css/Hui-iconfont/1.0.8/iconfont.css" />
@@ -40,7 +40,8 @@
 
 		<div id="shouye">
 			<div id="shouye1">
-				<a href="/qianbaidu/home/shop.jsp" class="logo"> <img class="logo1" src="/qianbaidu/img/home/index/logo.jpg" />
+				<a href="/qianbaidu/home/shop.jsp" class="logo"> <img class="logo1" src="/qianbaidu/img/logo/千百度logo_图片.png" style="width:40px;margin-top:13px" />
+				<span style="font-size: 20px;font-weight: 800;position: relative;color: #fff;text-align: center;">千百度</span>
 				</a>
 				<a href="/qianbaidu/home/shop.jsp" class="sy"> 首页 </a>
 				<a href="/qianbaidu/user/profile/myorder.jsp" class="wddd"> 我的订单 </a>

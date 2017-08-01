@@ -9,6 +9,18 @@
 		<link rel="stylesheet" href="/qianbaidu/css/shop/apply.css" />
 		<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=kUAyHUuiEwHVmWdyfap31YWSUBTWjAnE"></script>
 		<script type="text/javascript" src="/qianbaidu/js/shop/applyaddress.js"></script>
+		<script type="text/javascript">
+			function uploadform(){
+				var applyform = document.getElementById("applyform");
+			var outtel = document.getElementById("outtel").value;
+			var storename = document.getElementById("shopname").value;
+			console.log(outtel);
+			applyform.action="/qianbaidu/store/apply.action?outtel=" + outtel + "&storename=" + storename;
+			console.log(applyform.action);
+			applyform.submit();
+			}
+			
+		</script>
 	</head>
 
 	<body>
@@ -23,7 +35,6 @@
 			<div id="guider-bar-center">
 				<ul>
 					<li><i class="number-this">1</i> 门店信息 -----</li>
-
 					<li><i class="number-other">2</i> 资质信息 -----</li>
 					<li><i class="number-other">3</i> 合作方案 -----</li>
 					<li><i class="number-other">4</i> 配送方案 -----</li>
@@ -34,7 +45,7 @@
 			</div>
 
 		</div>
-		<form action="" method="post" enctype="multipart/form-data">
+		<form action="/qianbaidu/store/apply.action" method="post" enctype="multipart/form-data" id="applyform">
 			<div id="content">
 				<div id="content-center">
 					<div class="single-line">
@@ -100,10 +111,10 @@
 					<div class="photo">
 						<label class="title"><span class="title-span">*</span>门店照片</label>
 						<div class="box" id="upbox">
-							<input type="file" name="facephoto" id="facephote" value="门脸照" accept="image/gif, image/jpeg, image/png, image/bmp" />
+							<input type="file" name="photoout" id="facephote" value="门脸照" accept="image/gif, image/jpeg, image/png, image/bmp" />
 						</div>
 						<div class="box" id="downbox">
-							<input type="file" name="instorephoto" id="instorephoto" value="店内照片" accept="image/gif, image/jpeg, image/png, image/bmp" />
+							<input type="file" name="photoin" id="instorephoto" value="店内照片" accept="image/gif, image/jpeg, image/png, image/bmp" />
 						</div>
 					</div>
 					<div class="photo">
@@ -112,14 +123,19 @@
 							<input type="file" name="shoplogo" value="选择Logo" accept="image/gif, image/jpeg, image/png, image/bmp" />
 						</div>
 					</div>
+					<div class="single-line" style="margin-top:25px">
+						<label class="title"><span class="title-span">*</span>店铺描述</label>
+						<input type="text" name="info" id="info" class="input-box" />
+					</div>
 					<div id="otherplatform">
 						<label id="otherlinktitle" class="title">其他平台开店链接</label> <input type="text" name="otherlink" id="otherlink" class="input-box" />
 					</div>
 				</div>
 				<div id="btn-group">
-					<input type="button" id="stepback" class="stepbtn" value="返回上一步" />
-					<input type="button" id="stepforward" class="stepbtn" value="提交并进入下一步" />
+					<input type="reset" id="stepback" class="stepbtn" value="返回上一步" />
+					<input type="button" id="stepforward" class="stepbtn" value="提交并进入下一步" onclick="uploadform()" />
 				</div>
+				<span id="message">${message}</span>
 
 			</div>
 		</form>

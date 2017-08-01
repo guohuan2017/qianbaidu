@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <html>
 
 	<head>
@@ -18,7 +18,8 @@
 	<body>
 		<div id="shouye">
 			<div id="shouye1">
-				<a href="/qianbaidu/home/shop.jsp" class="logo"> <img class="logo1" src="/qianbaidu/img/home/index/logo.jpg" />
+				<a href="/qianbaidu/home/shop.jsp" class="logo" style="font-family: '幼圆 ';font-size: 18px;font-weight: 700;color: white;">
+					<img style="width:40px; position:relative;top:15px" class="logo1" src="/qianbaidu/img/logo/千百度logo_图片.png" /> 千百度
 				</a>
 				<a href="/qianbaidu/home/shop.jsp" class="sy"> 首页 </a>
 				<a href="myorde.jsp" class="wddd"> 我的订单 </a>
@@ -92,7 +93,7 @@
 								<a class="profile-sidebar-a" href="/qianbaidu/shop/profile/newfood.jsp">新增菜品</a>
 							</li>
 							<li class="profile-sidebar-section-ul-li">
-								<a class="profile-sidebar-a" style="color: #0089dc;" href="/qianbaidu/shop/profile/managefood.jsp">管理菜品</a>
+								<a class="profile-sidebar-a" style="color: #0089dc;" href="/qianbaidu/managefood.action">管理菜品</a>
 							</li>
 						</ul>
 					</li>
@@ -138,7 +139,8 @@
 						</thead>
 						<tbody>
 							<tr></tr>
-							<tr>
+							<c:forEach items="${foodlist}" var="food">
+								<tr>
 								<td class="ordertimeline-time">
 									<p class="ordertimeline-title">07-24</p>
 									<p>11:32</p>
@@ -151,58 +153,27 @@
 								</td>
 								<td class="ordertimeline-info">
 									<h3 class="ordertimeline-title">
-										<a href="">阿三生煎（东兰路）</a>
+										<a href="">${food.foodname}</a>
 									</h3>
 									<p class="ordertimeline-info-food">
 										<a href="">
-											<span>240g，骨肉松软，口感筋道，既脆又软，香辣入味，</span>
+											<span>${food.foodinfo}</span>
 										</a>
 									</p>
 								</td>
 								<td class="ordertimeline-amount">
-									<h3 class="ordertimeline-title">37.00</h3>
+									<h3 class="ordertimeline-title">${food.price}</h3>
 								</td>
 								<td class="ordertimeline-status">
-									<h3 class="ordertimeline-title">500</h3>
+									<h3 class="ordertimeline-title">${salesvolume}</h3>
 								</td>
 								<td class="ordertimeline-handle">
-									<a class="ordertimeline-handle-detail" href="">修改菜品</a>
-									<a class="deletefood" href="">删除菜品</a>
+									<a class="ordertimeline-handle-detail" href="editfood?foodid=${food.id}">修改菜品</a>
+									<a class="deletefood" href="deletefood?foodid=${food.id}">删除菜品</a>
 								</td>
 							</tr>
+							</c:forEach>
 							
-							<tr>
-								<td class="ordertimeline-time">
-									<p class="ordertimeline-title">07-24</p>
-									<p>11:32</p>
-									<i style="font-size: 12px;color: #ccc;right: -7px;position: absolute;line-height: 22px;background-color: #fff;top: 39%;" class="Hui-iconfont">&#xe601;</i>
-								</td>
-								<td class="ordertimeline-avatar">
-									<a href="">
-										<img src="/qianbaidu/img/home/index/周大虾.JPG"/>
-									</a>
-								</td>
-								<td class="ordertimeline-info">
-									<h3 class="ordertimeline-title">
-										<a href="">阿三生煎（东兰路）</a>
-									</h3>
-									<p class="ordertimeline-info-food">
-										<a href="">
-											<span>240g，骨肉松软，口感筋道，既脆又软，香辣入味，</span>
-										</a>
-									</p>
-								</td>
-								<td class="ordertimeline-amount">
-									<h3 class="ordertimeline-title">37.00</h3>
-								</td>
-								<td class="ordertimeline-status">
-									<h3 class="ordertimeline-title">500</h3>
-								</td>
-								<td class="ordertimeline-handle">
-									<a class="ordertimeline-handle-detail" href="">修改菜品</a>
-									<a class="deletefood" href="">删除菜品</a>
-								</td>
-							</tr>
 						</tbody>
 					</table>
 				</div>

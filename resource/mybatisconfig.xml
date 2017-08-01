@@ -6,6 +6,6 @@
 		<!-- <typeAlias type="com.chinasofti.ssmdemo.pojo.User" alias="User" /> -->
 		
 		<!-- 自动扫描 自动将类名作为引用名 -->
-		<package name="pojo" />
+		<package name="pojo"/>
 	</typeAliases>
 </configuration>

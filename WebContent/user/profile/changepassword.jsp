@@ -18,7 +18,8 @@
 	<body>
 		<div id="shouye">
 			<div id="shouye1">
-				<a href="/qianbaidu/home/shop.jsp" class="logo"> <img class="logo1" src="/qianbaidu/img/home/index/logo.jpg" />
+				<a href="/qianbaidu/home/shop.jsp" class="logo"> <img class="logo1" src="/qianbaidu/img/logo/千百度logo_图片.png" style="width:40px;margin-top:17px" />
+				<span style="font-size: 20px;font-weight: 800;position: relative;color: #fff;text-align: center;">千百度</span>
 				</a>
 				<a href="/qianbaidu/home/shop.jsp" class="sy"> 首页 </a>
 				<a href="myorder.jsp" class="wddd"> 我的订单 </a>
@@ -71,7 +72,7 @@
 					</h2>
 						<ul class="profile-sidebar-section-ul">
 							<li class="profile-sidebar-section-ul-li">
-								<a class="profile-sidebar-a" href="myorder.jsp">近三个月订单</a>
+								<a class="profile-sidebar-a" href="/qianbaidu/user/profile/myorder.jsp">近三个月订单</a>
 							</li>
 							<li class="profile-sidebar-section-ul-li">
 								<a class="profile-sidebar-a" href="">待评价订单</a>
@@ -110,13 +111,13 @@
 								<a class="profile-sidebar-a" href="">个人资料</a>
 							</li>
 							<li class="profile-sidebar-section-ul-li">
-								<a class="profile-sidebar-a" href="/qianbaidu/user/profile/address.jsp">地址管理</a>
+								<a class="profile-sidebar-a" href="/qianbaidu/useraddress.action">地址管理</a>
 							</li>
 							<li class="profile-sidebar-section-ul-li">
 								<a class="profile-sidebar-a" href="">安全中心</a>
 							</li>
 							<li class="profile-sidebar-section-ul-li">
-								<a class="profile-sidebar-a" style="color: #0089dc;" href="changepassword.jsp">修改密码</a>
+								<a class="profile-sidebar-a" style="color: #0089dc;" href="/qianbaidu/user/profile/changepassword.jsp">修改密码</a>
 							</li>
 						</ul>
 					</li>
@@ -128,7 +129,7 @@
 				</h3>
 					<div id="profile-panelcontent">
 						<form class="profile-changewd" id="pwform" action="/qianbaidu/changepassword.action" method="post">
-							<p class="changewd-tip">饿了么提示你：使用大小写字母、数字与标点符号的组合，可以大幅提升帐号安全！
+							<p class="changewd-tip">千百度提示你：使用大小写字母、数字与标点符号的组合，可以大幅提升帐号安全！
 							</p>
 							<div class="formfield">
 								<label class="ng-binding"> 原密码 </label> <input type="password" name="password" id="password" class="formfield-npwd" placeholder="请输入原密码" />

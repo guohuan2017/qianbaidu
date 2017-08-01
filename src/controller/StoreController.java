@@ -2,7 +2,6 @@ package controller;
 
 import java.io.File;
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.Enumeration;
 import java.util.HashMap;
 import java.util.List;
@@ -18,7 +17,9 @@ import org.springframework.web.servlet.ModelAndView;
 
 import com.oreilly.servlet.MultipartRequest;
 
+import pojo.CommercialUser;
 import pojo.Store;
+import service.CommercialUserService;
 import service.StoreService;
 import util.TimeFileRenamePolicy;
 
@@ -31,74 +32,207 @@ public class StoreController {
 	@Autowired
 	private StoreService service;
 	
+	@Autowired
+	private CommercialUserService commercialUserService;
 	
-	@RequestMapping("/registstore.action")
+
+//	@RequestMapping("/store/apply.action")
+//	public ModelAndView registstoretel(HttpServletRequest request, HttpServletResponse response) throws IOException {
+//		ModelAndView mav = new ModelAndView("forward:store/apply.action");
+//		service.insert(new Store(request.getParameter("tel"), null))
+//		return mav;
+//
+//	}
+	
+	@RequestMapping("/store/apply.action")
 	public ModelAndView registstore(HttpServletRequest request, HttpServletResponse response) throws IOException {
 		HttpSession session = request.getSession();
-		Store store = (Store) session.getAttribute("user");
-		
-		ModelAndView mav = new ModelAndView("test/welcomeStore");
-
-		String path = request.getServletContext().getRealPath("uploadstore/");
-//		System.out.println(path);
-
-		File file = new File(path + "\\" + store.getId() + "_" + store.getStorename());
-		if (!file.exists() && !file.isDirectory()) {
-			file.mkdir();
+		ModelAndView mav = new ModelAndView();
+		CommercialUser commercialUser = (CommercialUser) session.getAttribute("user");
+		if (null == commercialUser) {
+			mav.setViewName("shop/login");
+			return mav;
 		}
 
-		path = file.getPath();
-
-		// 创建第三方插件的对象
-		MultipartRequest mr = new MultipartRequest(request, path, 50 * 1024 * 1024, "UTF-8",
-				new TimeFileRenamePolicy());
-		// 返回的是一个枚举对象
-		Enumeration enumeration = mr.getFileNames();
-		String name = null;
-		String filename = null;
+		Store store = new Store();
 		
-		HashMap<String,String> map=new HashMap<String, String>();
-
-		// 循环取上传的文件的名字
-		while (enumeration.hasMoreElements()) {
-			// 获取图片文本框的name属性值
-			name = (String) enumeration.nextElement();
-			System.out.println("name " + name);
-			// 获取上传的元素名字
-			filename = mr.getFilesystemName(name);
-			System.out.println("filename " + filename);
-			map.put(name, filename);
+		// 先获取店铺电话，插入数据库中获取店铺id
+		String tel = request.getParameter("outtel");
+		//获取店铺名称
+		String storename = request.getParameter("storename");
+		if(null == tel || null == storename || "".equals(tel) || "".equals(storename)){
+			mav.setViewName("shop/apply");
+			mav.addObject("message","店铺名或电话不能为空！");
+			return mav;
 		}
+		
+		store.setTel(tel);
+		store.setStorename(storename);
+		
+		if(service.insertSelective(store) == 1){
+			store = service.selectTel(store.getTel());
+			if (null != store) {
+				String path = request.getServletContext().getRealPath("uploadstore/");
+				System.out.println(path);
+				
+				File file = new File(path + "\\" + store.getId() + "_" + store.getStorename());
+				if (!file.exists() && !file.isDirectory()) {
+					file.mkdir();
+				}
 
-		// request.setAttribute("filename", ("image/" + filename));
+				path = file.getPath();
 
-		store.setPhotoout("uploadstore/" + store.getId() + "_" + store.getStorename() + "/" + map.get("photoout"));
-		store.setPhotoin("uploadstore/" + store.getId() + "_" + store.getStorename() + "/" + map.get("photoin"));
-		store.setPhoto("uploadstore/" + store.getId() + "_" + store.getStorename() + "/" + map.get("photo"));
-		
-		
-//		store.setAddress(request.getParameter("address"));
-		store.setAddress(mr.getParameter("address"));
-		store.setType(mr.getParameter("type"));
-		store.setSubtype(mr.getParameter("type"));
-		
-		String tel = store.getTel();
-		store.setTel(null);
-		if (service.updateByPrimaryKeySelective(store) > 0) {
-			store.setTel(tel);
-			session.setAttribute("user", store);
-			mav.addObject("user", store);
-			// session.setAttribute("store", store);
-			// mav.addObject("store", store);
-			mav.addObject("message", "上传成功");
-		} else {
-			mav.addObject("message", "上传失败");
+				// 创建第三方插件的对象
+				MultipartRequest mr = new MultipartRequest(request, path, 50 * 1024 * 1024, "UTF-8",
+						new TimeFileRenamePolicy());
+
+				// 返回的是一个枚举对象
+				Enumeration enumeration = mr.getFileNames();
+				String name = null;
+				String filename = null;
+
+				HashMap<String, String> map = new HashMap<String, String>();
+
+				// 循环取上传的文件的名字
+				while (enumeration.hasMoreElements()) {
+					// 获取图片文本框的name属性值
+					name = (String) enumeration.nextElement();
+					System.out.println("name " + name);
+					// 获取上传的元素名字
+					filename = mr.getFilesystemName(name);
+					System.out.println("filename " + filename);
+					map.put(name, filename);
+				}
+
+
+				store.setPhotoout("uploadstore/" + store.getId() + "_" + store.getStorename() + "/" + map.get("photoout"));
+				store.setPhotoin("uploadstore/" + store.getId() + "_" + store.getStorename() + "/" + map.get("photoin"));
+				store.setPhoto("uploadstore/" + store.getId() + "_" + store.getStorename() + "/" + map.get("photologo"));
+
+//				store.setAddress(mr.getParameter("address"));
+				store.setType(mr.getParameter("shopcatalog"));
+				store.setSubtype(mr.getParameter("shopcatalog"));
+
+				// 接收地址
+				StringBuilder stringBuilder = new StringBuilder();
+				String province = mr.getParameter("province");
+				String city = mr.getParameter("city");
+				String county = mr.getParameter("county");
+				String detail = mr.getParameter("detailaddress");
+				stringBuilder.append(province);
+				stringBuilder.append(city);
+				stringBuilder.append(county);
+				stringBuilder.append(detail);
+				store.setAddress(stringBuilder.toString());
+
+				// 店铺描述
+				store.setInfo(mr.getParameter("info"));
+
+				if (service.updateByPrimaryKey(store) > 0) {
+					//插入commercial_user表中的storeid
+					commercialUser.setStoreid(store.getId());
+					if(commercialUserService.updateStoreId(commercialUser) > 0){
+						mav.setViewName("shop/profile/managefood");
+						mav.addObject("message", "申请成功！");
+					};
+				}else{
+					service.deleteByPrimaryKey(store.getId());
+				}
+			}else {
+				mav.setViewName("shop/apply");
+				mav.addObject("message", "申请失败！");
+			}
+		}else{
+			mav.setViewName("shop/apply");
+			mav.addObject("message","电话重复！");
 		}
 		return mav;
 	}
-	
-	
-	//测试页面用
+
+	// @RequestMapping("/storeapply.action")
+	// public ModelAndView registstore(HttpServletRequest request,
+	// HttpServletResponse response) throws IOException {
+	// HttpSession session = request.getSession();
+	// Store store = (Store) session.getAttribute("user");
+	//
+	// ModelAndView mav = new ModelAndView();
+	//
+	// String path = request.getServletContext().getRealPath("uploadstore/");
+	// System.out.println(path);
+	//
+	// File file = new File(path + "\\" + store.getId() + "_" +
+	// store.getStorename());
+	// if (!file.exists() && !file.isDirectory()) {
+	// file.mkdir();
+	// }
+	//
+	// path = file.getPath();
+	//
+	// // 创建第三方插件的对象
+	// MultipartRequest mr = new MultipartRequest(request, path, 50 * 1024 *
+	// 1024, "UTF-8",
+	// new TimeFileRenamePolicy());
+	//
+	// // 返回的是一个枚举对象
+	// Enumeration enumeration = mr.getFileNames();
+	// String name = null;
+	// String filename = null;
+	//
+	// HashMap<String,String> map=new HashMap<String, String>();
+	//
+	// // 循环取上传的文件的名字
+	// while (enumeration.hasMoreElements()) {
+	// // 获取图片文本框的name属性值
+	// name = (String) enumeration.nextElement();
+	// System.out.println("name " + name);
+	// // 获取上传的元素名字
+	// filename = mr.getFilesystemName(name);
+	// System.out.println("filename " + filename);
+	// map.put(name, filename);
+	// }
+	//
+	// // request.setAttribute("filename", ("image/" + filename));
+	//
+	// store.setPhotoout("uploadstore/" + store.getId() + "_" +
+	// store.getStorename() + "/" + map.get("photoout"));
+	// store.setPhotoin("uploadstore/" + store.getId() + "_" +
+	// store.getStorename() + "/" + map.get("photoin"));
+	// store.setPhoto("uploadstore/" + store.getId() + "_" +
+	// store.getStorename() + "/" + map.get("photologo"));
+	//
+	// store.setStorename(request.getParameter("shopname"));
+	// store.setTel(request.getParameter("outtel"));
+	// store.setAddress(mr.getParameter("address"));
+	// store.setType(mr.getParameter("shopcatalog"));
+	// store.setSubtype(mr.getParameter("shopcatalog"));
+	//
+	// StringBuilder stringBuilder = new StringBuilder();
+	// String province = request.getParameter("province");
+	// String city = request.getParameter("city");
+	// String county = request.getParameter("county");
+	// String detail = request.getParameter("detailaddress");
+	// stringBuilder.append(province);
+	// stringBuilder.append(city);
+	// stringBuilder.append(county);
+	// stringBuilder.append(detail);
+	//
+	//
+	//// String tel = store.getTel();
+	//// store.setTel(null);
+	// if (service.updateByPrimaryKeySelective(store) > 0) {
+	// store.setTel(tel);
+	// session.setAttribute("user", store);
+	// mav.addObject("user", store);
+	// // session.setAttribute("store", store);
+	// // mav.addObject("store", store);
+	// mav.addObject("message", "上传成功");
+	// } else {
+	// mav.addObject("message", "上传失败");
+	// }
+	// return mav;
+	// }
+
+	// 测试页面用
 	@RequestMapping("/storelogin.action")
 	// public ModelAndView sqllogin(Store store){
 	public ModelAndView sqllogin(Store store, HttpServletRequest request, HttpServletResponse response) {
@@ -197,7 +331,7 @@ public class StoreController {
 		}
 		return mav;
 	}
-	
+
 	@RequestMapping("/allshopjsp.action")
 	public ModelAndView shopjsp(HttpServletRequest request, HttpServletResponse response) {
 		ModelAndView mav = new ModelAndView("home/shop");
@@ -206,7 +340,7 @@ public class StoreController {
 		mav.addObject("fl", request.getParameter("fl"));
 		return mav;
 	}
-	
+
 	@RequestMapping("/loginallshopjsp.action")
 	public ModelAndView shoploginwinjsp(HttpServletRequest request, HttpServletResponse response) {
 		ModelAndView mav = new ModelAndView("home/shoploginwin");
@@ -216,9 +350,9 @@ public class StoreController {
 		mav.addObject("fl", request.getParameter("fl"));
 		return mav;
 	}
-	
+
 	@RequestMapping("/subtype.action")
-	public ModelAndView searchBySubtype(HttpServletRequest request, HttpServletResponse response){
+	public ModelAndView searchBySubtype(HttpServletRequest request, HttpServletResponse response) {
 		String subtype = request.getParameter("type");
 		ModelAndView mav = new ModelAndView("home/shoploginwin");
 		List<Store> storelist = service.SearchBySubtype(subtype);
@@ -226,9 +360,9 @@ public class StoreController {
 		mav.addObject("fl", request.getParameter("fl"));
 		return mav;
 	}
-	
+
 	@RequestMapping("/searchshop.action")
-	public ModelAndView search(HttpServletRequest request, HttpServletResponse response){
+	public ModelAndView search(HttpServletRequest request, HttpServletResponse response) {
 		String type = "%" + request.getParameter("info") + "%";
 		ModelAndView mav = new ModelAndView("home/shoploginwin");
 		List<Store> storelist = service.SearchStore(type);
