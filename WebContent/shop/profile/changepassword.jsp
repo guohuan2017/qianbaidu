@@ -18,7 +18,8 @@
 	<body>
 		<div id="shouye">
 			<div id="shouye1">
-				<a href="/qianbaidu/home/shop.jsp" class="logo"> <img class="logo1" src="/qianbaidu/img/home/index/logo.jpg" />
+				<a href="/qianbaidu/home/shop.jsp" class="logo" style="font-family: '幼圆 ';font-size: 18px;font-weight: 700;color: white;">
+					<img style="width:40px; position:relative;top:15px" class="logo1" src="/qianbaidu/img/logo/千百度logo_图片.png" /> 千百度
 				</a>
 				<a href="/qianbaidu/home/shop.jsp" class="sy"> 首页 </a>
 				<a href="myorder.jsp" class="wddd"> 我的订单 </a>
