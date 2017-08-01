@@ -7,6 +7,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import javax.validation.constraints.Null;
 
+import org.apache.catalina.SessionIdGenerator;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -86,7 +87,11 @@ public class UserController_gjw {
 			// 返回i代表修改了几行 i==1 则只修改了一个用户的密码
 			int i = service.updatePasswordById(user);
 			if (i == 1) {
+				//销毁session，达到退出目的
+				session.invalidate();
 				mav.addObject("message", "修改成功");
+				//返回登陆页面
+				mav.setViewName("user/login");
 			} else {
 				mav.addObject("message", "修改失败");
 			}
